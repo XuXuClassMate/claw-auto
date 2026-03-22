@@ -1,162 +1,75 @@
 name: Crypto Price Fetcher
 
-
-
 on:
-
   schedule:
-
-    # 每 15 分钟执行一次 (推荐，节省额度)
-
     - cron: '0,15,30,45 * * * *'
-
-  workflow_dispatch: # 允许手动触发
-
-
+  workflow_dispatch:
 
 jobs:
-
   fetch-crypto-price:
-
     runs-on: ubuntu-latest
-
     
-
     steps:
-
       - name: Checkout repository
-
         uses: actions/checkout@v4
-
       
-
       - name: Fetch crypto prices
-
         run: |
-
-          python3 << 'EOF'
-
+          python3 << 'PYTHON_EOF'
           import urllib.request
-
           import json
-
           from datetime import datetime, timezone
-
           
-
           url = 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,SOL&tsyms=USD&includePercentChange24h=true'
-
           
-
           try:
-
               req = urllib.request.Request(url, headers={'User-Agent': 'CryptoPriceFetcher/1.0'})
-
               with urllib.request.urlopen(req, timeout=10) as resp:
-
                   data = json.loads(resp.read().decode())
-
               
-
               cache = {
-
                   "last_update": datetime.now(timezone.utc).isoformat(),
-
                   "source": "CryptoCompare",
-
                   "data": []
-
               }
-
               
-
-              symbols = {
-
-                  "BTC": {"name": "Bitcoin"},
-
-                  "ETH": {"name": "Ethereum"},
-
-                  "SOL": {"name": "Solana"}
-
-              }
-
+              symbols = {"BTC": {"name": "Bitcoin"}, "ETH": {"name": "Ethereum"}, "SOL": {"name": "Solana"}}
               
-
               for symbol, info in symbols.items():
-
                   coin_data = data.get(symbol, {})
-
                   price = coin_data.get("USD", 0)
-
                   change = coin_data.get("USDPCT24H", 0)
-
                   
-
                   cache["data"].append({
-
                       "symbol": symbol,
-
                       "name": info["name"],
-
                       "current_price": price,
-
                       "price_change_percentage_24h": change,
-
                       "high_24h": price * 1.02,
-
                       "low_24h": price * 0.98
-
                   })
-
               
-
               with open('crypto_prices.json', 'w', encoding='utf-8') as f:
-
                   json.dump(cache, f, indent=2, ensure_ascii=False)
-
               
-
               print("✅ 价格获取成功")
-
               for coin in cache["data"]:
-
                   print(f"  {coin['symbol']}: ${coin['current_price']:,.2f} ({coin['price_change_percentage_24h']:+.2f}%)")
-
           
-
           except Exception as e:
-
               print(f"❌ 获取失败：{e}")
-
               exit(1)
-
-          EOF          
-
+          PYTHON_EOF
       
-
       - name: Commit and push if changed
-
         run: |
-
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-
           git config --local user.name "github-actions[bot]"
-
           git add crypto_prices.json
-
-          
-
           if ! git diff --staged --quiet; then
-
             git commit -m "📊 更新加密货币价格 $(date -u +'%Y-%m-%d %H:%M UTC')"
-
             git push
-
             echo "✅ 价格数据已更新并提交"
-
           else
-
             echo "ℹ️ 价格数据无变化"
-
-          fi          
-
+          fi
