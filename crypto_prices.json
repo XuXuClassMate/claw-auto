@@ -1,30 +1,30 @@
 {
-  "last_update": "2026-04-16T21:58:53.572456+00:00",
+  "last_update": "2026-04-16T22:52:57.505599+00:00",
   "source": "CryptoCompare",
   "data": [
     {
       "symbol": "BTC",
       "name": "Bitcoin",
-      "current_price": 74944.38,
+      "current_price": 74943.94,
       "price_change_percentage_24h": 0,
-      "high_24h": 76443.2676,
-      "low_24h": 73445.4924
+      "high_24h": 76442.81880000001,
+      "low_24h": 73445.0612
     },
     {
       "symbol": "ETH",
       "name": "Ethereum",
-      "current_price": 2341.74,
+      "current_price": 2345.98,
       "price_change_percentage_24h": 0,
-      "high_24h": 2388.5748,
-      "low_24h": 2294.9051999999997
+      "high_24h": 2392.8996,
+      "low_24h": 2299.0604
     },
     {
       "symbol": "SOL",
       "name": "Solana",
-      "current_price": 88.95,
+      "current_price": 89.15,
       "price_change_percentage_24h": 0,
-      "high_24h": 90.729,
-      "low_24h": 87.171
+      "high_24h": 90.933,
+      "low_24h": 87.367
     }
   ]
 }
