@@ -2,29 +2,20 @@
   "last_update": "2026-04-22T10:20:04.975905+00:00",
   "source": "CryptoCompare",
   "data": [
-    {
-      "symbol": "BTC",
-      "name": "Bitcoin",
-      "current_price": 78036.32,
-      "price_change_percentage_24h": 0,
-      "high_24h": 79597.0464,
-      "low_24h": 76475.59360000001
-    },
-    {
-      "symbol": "ETH",
-      "name": "Ethereum",
-      "current_price": 2391.23,
-      "price_change_percentage_24h": 0,
-      "high_24h": 2439.0546,
-      "low_24h": 2343.4054
-    },
-    {
-      "symbol": "SOL",
-      "name": "Solana",
-      "current_price": 88.23,
-      "price_change_percentage_24h": 0,
-      "high_24h": 89.9946,
-      "low_24h": 86.4654
-    }
+    {"symbol": "BTC", "name": "Bitcoin", "current_price": 78036.32, "price_change_percentage_24h": 0, "high_24h": 79597.0464, "low_24h": 76475.59360000001},
+    {"symbol": "ETH", "name": "Ethereum", "current_price": 2391.23, "price_change_percentage_24h": 0, "high_24h": 2439.0546, "low_24h": 2343.4054},
+    {"symbol": "SOL", "name": "Solana", "current_price": 88.23, "price_change_percentage_24h": 0, "high_24h": 89.9946, "low_24h": 86.4654},
+    {"symbol": "BNB", "name": "Binance Coin", "current_price": 0, "price_change_percentage_24h": 0, "high_24h": 0, "low_24h": 0},
+    {"symbol": "XRP", "name": "Ripple", "current_price": 0, "price_change_percentage_24h": 0, "high_24h": 0, "low_24h": 0},
+    {"symbol": "ADA", "name": "Cardano", "current_price": 0, "price_change_percentage_24h": 0, "high_24h": 0, "low_24h": 0},
+    {"symbol": "DOGE", "name": "Dogecoin", "current_price": 0, "price_change_percentage_24h": 0, "high_24h": 0, "low_24h": 0},
+    {"symbol": "AVAX", "name": "Avalanche", "current_price": 0, "price_change_percentage_24h": 0, "high_24h": 0, "low_24h": 0},
+    {"symbol": "DOT", "name": "Polkadot", "current_price": 0, "price_change_percentage_24h": 0, "high_24h": 0, "low_24h": 0},
+    {"symbol": "MATIC", "name": "Polygon", "current_price": 0, "price_change_percentage_24h": 0, "high_24h": 0, "low_24h": 0},
+    {"symbol": "LINK", "name": "Chainlink", "current_price": 0, "price_change_percentage_24h": 0, "high_24h": 0, "low_24h": 0},
+    {"symbol": "UNI", "name": "Uniswap", "current_price": 0, "price_change_percentage_24h": 0, "high_24h": 0, "low_24h": 0},
+    {"symbol": "ATOM", "name": "Cosmos", "current_price": 0, "price_change_percentage_24h": 0, "high_24h": 0, "low_24h": 0},
+    {"symbol": "LTC", "name": "Litecoin", "current_price": 0, "price_change_percentage_24h": 0, "high_24h": 0, "low_24h": 0},
+    {"symbol": "XLM", "name": "Stellar", "current_price": 0, "price_change_percentage_24h": 0, "high_24h": 0, "low_24h": 0}
   ]
 }

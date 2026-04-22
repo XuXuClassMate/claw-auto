@@ -1,4 +1,4 @@
-name: Crypto Price Fetcher
+name: Market Price Fetcher
 
 on:
   schedule:
@@ -20,11 +20,31 @@ jobs:
           import json
           from datetime import datetime, timezone
           
-          url = 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,SOL&tsyms=USD&includePercentChange24h=true'
+          # 扩展的加密货币列表
+          CRYPTO_SYMBOLS = {
+              "BTC": {"name": "Bitcoin", "short": "BTC"},
+              "ETH": {"name": "Ethereum", "short": "ETH"},
+              "SOL": {"name": "Solana", "short": "SOL"},
+              "BNB": {"name": "Binance Coin", "short": "BNB"},
+              "XRP": {"name": "Ripple", "short": "XRP"},
+              "ADA": {"name": "Cardano", "short": "ADA"},
+              "DOGE": {"name": "Dogecoin", "short": "DOGE"},
+              "AVAX": {"name": "Avalanche", "short": "AVAX"},
+              "DOT": {"name": "Polkadot", "short": "DOT"},
+              "MATIC": {"name": "Polygon", "short": "MATIC"},
+              "LINK": {"name": "Chainlink", "short": "LINK"},
+              "UNI": {"name": "Uniswap", "short": "UNI"},
+              "ATOM": {"name": "Cosmos", "short": "ATOM"},
+              "LTC": {"name": "Litecoin", "short": "LTC"},
+              "XLM": {"name": "Stellar", "short": "XLM"},
+          }
+          
+          fsyms = ",".join(CRYPTO_SYMBOLS.keys())
+          url = f'https://min-api.cryptocompare.com/data/pricemulti?fsyms={fsyms}&tsyms=USD&includePercentChange24h=true'
           
           try:
               req = urllib.request.Request(url, headers={'User-Agent': 'CryptoPriceFetcher/1.0'})
-              with urllib.request.urlopen(req, timeout=10) as resp:
+              with urllib.request.urlopen(req, timeout=15) as resp:
                   data = json.loads(resp.read().decode())
               
               cache = {
@@ -33,9 +53,7 @@ jobs:
                   "data": []
               }
               
-              symbols = {"BTC": {"name": "Bitcoin"}, "ETH": {"name": "Ethereum"}, "SOL": {"name": "Solana"}}
-              
-              for symbol, info in symbols.items():
+              for symbol, info in CRYPTO_SYMBOLS.items():
                   coin_data = data.get(symbol, {})
                   price = coin_data.get("USD", 0)
                   change = coin_data.get("USDPCT24H", 0)
@@ -52,7 +70,7 @@ jobs:
               with open('crypto_prices.json', 'w', encoding='utf-8') as f:
                   json.dump(cache, f, indent=2, ensure_ascii=False)
               
-              print("✅ 价格获取成功")
+              print("✅ 加密货币价格获取成功")
               for coin in cache["data"]:
                   print(f"  {coin['symbol']}: ${coin['current_price']:,.2f} ({coin['price_change_percentage_24h']:+.2f}%)")
           
@@ -61,15 +79,208 @@ jobs:
               exit(1)
           PYTHON_EOF
       
-      - name: Commit and push if changed
+      - name: Commit crypto prices
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add crypto_prices.json
           if ! git diff --staged --quiet; then
             git commit -m "📊 更新加密货币价格 $(date -u +'%Y-%m-%d %H:%M UTC')"
-            git push
-            echo "✅ 价格数据已更新并提交"
-          else
-            echo "ℹ️ 价格数据无变化"
           fi
+
+  fetch-stock-price:
+    runs-on: ubuntu-latest
+    needs: fetch-crypto-price
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install yfinance --quiet
+      
+      - name: Fetch stock prices
+        run: |
+          python3 << 'PYTHON_EOF'
+          import yfinance as yf
+          import json
+          from datetime import datetime, timezone
+          
+          # 美股主要标的列表
+          STOCKS = {
+              "AAPL": {"name": "Apple Inc.", "sector": "科技"},
+              "MSFT": {"name": "Microsoft Corporation", "sector": "科技"},
+              "GOOGL": {"name": "Alphabet Inc.", "sector": "科技"},
+              "AMZN": {"name": "Amazon.com Inc.", "sector": "消费"},
+              "NVDA": {"name": "NVIDIA Corporation", "sector": "科技"},
+              "META": {"name": "Meta Platforms Inc.", "sector": "科技"},
+              "TSLA": {"name": "Tesla Inc.", "sector": "新能源"},
+              "JPM": {"name": "JPMorgan Chase", "sector": "金融"},
+              "V": {"name": "Visa Inc.", "sector": "金融"},
+              "JNJ": {"name": "Johnson & Johnson", "sector": "医疗"},
+              "XOM": {"name": "Exxon Mobil", "sector": "能源"},
+              "PG": {"name": "Procter & Gamble", "sector": "消费"},
+              "HD": {"name": "Home Depot", "sector": "消费"},
+              "DIS": {"name": "Walt Disney", "sector": "娱乐"},
+              "NFLX": {"name": "Netflix Inc.", "sector": "娱乐"},
+          }
+          
+          def format_large_number(num):
+              if num >= 1e12:
+                  return f"${num/1e12:.2f}T"
+              elif num >= 1e9:
+                  return f"${num/1e9:.2f}B"
+              return f"${num:,.2f}"
+          
+          result = {
+              "last_update": datetime.now(timezone.utc).isoformat(),
+              "source": "Yahoo Finance (yfinance)",
+              "data": []
+          }
+          
+          for symbol, info in STOCKS.items():
+              try:
+                  ticker = yf.Ticker(symbol)
+                  hist = ticker.history(period="2d")
+                  
+                  if hist.empty or len(hist) < 2:
+                      continue
+                  
+                  current_price = hist['Close'].iloc[-1]
+                  prev_close = hist['Close'].iloc[-2]
+                  high_52w = hist['High'].max()
+                  low_52w = hist['Low'].min()
+                  
+                  price_change = current_price - prev_close
+                  price_change_pct = (price_change / prev_close) * 100
+                  
+                  info_data = ticker.info
+                  market_cap = info_data.get('marketCap', 0)
+                  pe_ratio = info_data.get('trailingPE', 0)
+                  
+                  result["data"].append({
+                      "symbol": symbol,
+                      "name": info["name"],
+                      "sector": info["sector"],
+                      "current_price": round(current_price, 2),
+                      "price_change": round(price_change, 2),
+                      "price_change_percentage": round(price_change_pct, 2),
+                      "high_52w": round(high_52w, 2),
+                      "low_52w": round(low_52w, 2),
+                      "market_cap": market_cap,
+                      "market_cap_formatted": format_large_number(market_cap) if market_cap else "N/A",
+                      "pe_ratio": round(pe_ratio, 2) if pe_ratio else None,
+                  })
+                  
+                  print(f"✅ {symbol}: ${current_price:.2f} ({price_change_pct:+.2f}%)")
+                  
+              except Exception as e:
+                  print(f"❌ {symbol}: {e}")
+                  continue
+          
+          with open('stock_prices.json', 'w', encoding='utf-8') as f:
+              json.dump(result, f, indent=2, ensure_ascii=False)
+          
+          print(f"✅ 美股数据已保存，共 {len(result['data'])} 只股票")
+          PYTHON_EOF
+      
+      - name: Commit stock prices
+        run: |
+          git add stock_prices.json
+          if ! git diff --staged --quiet; then
+            git commit -m "📈 更新美股价格 $(date -u +'%Y-%m-%d %H:%M UTC')"
+          fi
+
+  create-market-summary:
+    runs-on: ubuntu-latest
+    needs: fetch-stock-price
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Create market summary
+        run: |
+          python3 << 'PYTHON_EOF'
+          import json
+          from datetime import datetime, timezone
+          
+          # 读取加密货币数据
+          with open('crypto_prices.json', 'r') as f:
+              crypto_data = json.load(f)
+          
+          # 读取美股数据
+          with open('stock_prices.json', 'r') as f:
+              stock_data = json.load(f)
+          
+          # 创建市场汇总
+          summary = {
+              "last_update": datetime.now(timezone.utc).isoformat(),
+              "market_snapshot": {
+                  "crypto": {
+                      "count": len(crypto_data.get("data", [])),
+                      "top_gainers": [],
+                      "top_losers": []
+                  },
+                  "stocks": {
+                      "count": len(stock_data.get("data", [])),
+                      "top_gainers": [],
+                      "top_losers": []
+                  }
+              }
+          }
+          
+          # 加密货币涨跌幅排序
+          crypto_sorted = sorted(crypto_data.get("data", []), 
+                                key=lambda x: x.get("price_change_percentage_24h", 0), 
+                                reverse=True)
+          if crypto_sorted:
+              summary["market_snapshot"]["crypto"]["top_gainers"] = [
+                  {"symbol": c["symbol"], "name": c["name"], 
+                   "price": c["current_price"], "change": c.get("price_change_percentage_24h", 0)}
+                  for c in crypto_sorted[:3]
+              ]
+              summary["market_snapshot"]["crypto"]["top_losers"] = [
+                  {"symbol": c["symbol"], "name": c["name"], 
+                   "price": c["current_price"], "change": c.get("price_change_percentage_24h", 0)}
+                  for c in crypto_sorted[-3:]
+              ]
+          
+          # 美股涨跌幅排序
+          stock_sorted = sorted(stock_data.get("data", []),
+                                key=lambda x: x.get("price_change_percentage", 0),
+                                reverse=True)
+          if stock_sorted:
+              summary["market_snapshot"]["stocks"]["top_gainers"] = [
+                  {"symbol": s["symbol"], "name": s["name"],
+                   "price": s["current_price"], "change": s.get("price_change_percentage", 0)}
+                  for s in stock_sorted[:3]
+              ]
+              summary["market_snapshot"]["stocks"]["top_losers"] = [
+                  {"symbol": s["symbol"], "name": s["name"],
+                   "price": s["current_price"], "change": s.get("price_change_percentage", 0)}
+                  for s in stock_sorted[-3:]
+              ]
+          
+          # 保存汇总
+          with open('market_summary.json', 'w', encoding='utf-8') as f:
+              json.dump(summary, f, indent=2, ensure_ascii=False)
+          
+          print("✅ 市场汇总已创建")
+          print(json.dumps(summary, indent=2, ensure_ascii=False))
+          PYTHON_EOF
+      
+      - name: Commit and push all changes
+        run: |
+          git add market_summary.json
+          if ! git diff --staged --quiet; then
+            git commit -m "📋 更新市场汇总 $(date -u +'%Y-%m-%d %H:%M UTC')"
+          fi
+          git push
+          echo "✅ 所有数据已更新并推送"
