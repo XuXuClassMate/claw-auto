@@ -1,138 +1,124 @@
 {
-  "timestamp": "2026-05-12T20:05:04.703755+00:00",
-  "source": "alternative.me + 新浪财经 + RSS feeds",
+  "timestamp": "2026-05-12T21:17:39.925547Z",
+  "source": "RSS feeds (CoinTelegraph + CryptoNews + Decrypt)",
   "fear_greed": {
     "value": 49,
     "classification": "Neutral"
   },
   "results": {
     "BTC": {
-      "signal": "🟡 中性",
-      "score": 49.6,
-      "raw_score": 50.0,
-      "fgi_adjust": -0.4,
-      "confidence": 18,
+      "signal": "🟢 偏多",
+      "score": 75.0,
+      "raw_score": 75.0,
+      "fgi_adjust": 0,
+      "confidence": 50,
       "fgi_value": 49,
       "fgi_class": "Neutral",
-      "total_articles": 1,
+      "total_articles": 2,
       "samples": [
         {
-          "title": "WAIB Summit Monaco 2026 returns: the world’s most exclusive gathering for digital assets & AI",
+          "title": "Here’s what happened in crypto today",
           "sentiment": "neutral"
+        },
+        {
+          "title": "Bitcoin digests highest US CPI since 2023 as Fed rate hike woes return",
+          "sentiment": "bullish"
         }
       ]
     },
     "ETH": {
-      "signal": "🟡 中性",
-      "score": 49.6,
-      "raw_score": 50.0,
-      "fgi_adjust": -0.4,
-      "confidence": 18,
+      "signal": "🟢 偏多",
+      "score": 75.0,
+      "raw_score": 75.0,
+      "fgi_adjust": 0,
+      "confidence": 50,
       "fgi_value": 49,
       "fgi_class": "Neutral",
-      "total_articles": 1,
+      "total_articles": 2,
       "samples": [
         {
-          "title": "WAIB Summit Monaco 2026 returns: the world’s most exclusive gathering for digital assets & AI",
+          "title": "Latest version of crypto market structure bill raises eyebrows ahead of Senate markup",
+          "sentiment": "bullish"
+        },
+        {
+          "title": "Ethereum derivatives unfazed by DeFi hacks: Can ETH hit $2.6K next?",
           "sentiment": "neutral"
         }
       ]
     },
     "BNB": {
       "signal": "🟡 中性",
-      "score": 49.6,
-      "raw_score": 50.0,
-      "fgi_adjust": -0.4,
-      "confidence": 18,
+      "score": 59.0,
+      "raw_score": 59.0,
+      "fgi_adjust": 0,
+      "confidence": 35,
       "fgi_value": 49,
       "fgi_class": "Neutral",
-      "total_articles": 1,
-      "samples": [
-        {
-          "title": "WAIB Summit Monaco 2026 returns: the world’s most exclusive gathering for digital assets & AI",
-          "sentiment": "neutral"
-        }
-      ]
-    },
-    "SOL": {
-      "signal": "🟡 中性",
-      "score": 49.6,
-      "raw_score": 50.0,
-      "fgi_adjust": -0.4,
-      "confidence": 18,
-      "fgi_value": 49,
-      "fgi_class": "Neutral",
-      "total_articles": 1,
-      "samples": [
-        {
-          "title": "WAIB Summit Monaco 2026 returns: the world’s most exclusive gathering for digital assets & AI",
-          "sentiment": "neutral"
-        }
-      ]
+      "total_articles": 0,
+      "note": "使用整体加密市场情绪"
     },
     "NVDA": {
       "signal": "🟡 中性",
-      "score": 49.6,
-      "raw_score": 50.0,
-      "fgi_adjust": -0.4,
-      "confidence": 18,
+      "score": 88.9,
+      "confidence": 20,
       "fgi_value": 49,
-      "fgi_class": "Neutral",
-      "total_articles": 1,
-      "samples": [
-        {
-          "title": "WAIB Summit Monaco 2026 returns: the world’s most exclusive gathering for digital assets & AI",
-          "sentiment": "neutral"
-        }
-      ]
+      "total_articles": 0,
+      "note": "使用整体市场情绪"
     },
     "TSLA": {
-      "signal": "🟡 中性",
-      "score": 49.6,
-      "raw_score": 50.0,
-      "fgi_adjust": -0.4,
-      "confidence": 18,
+      "signal": "🟢 偏多",
+      "score": 62.5,
+      "raw_score": 62.5,
+      "confidence": 50,
       "fgi_value": 49,
-      "fgi_class": "Neutral",
-      "total_articles": 1,
+      "total_articles": 2,
       "samples": [
         {
-          "title": "WAIB Summit Monaco 2026 returns: the world’s most exclusive gathering for digital assets & AI",
-          "sentiment": "neutral"
+          "title": "Senate confirms Kevin Warsh as Federal Reserve governor, with chair vote expected",
+          "sentiment": "bullish"
+        },
+        {
+          "title": "Bitcoin may avoid historic bear market losses as ETF flows grow, says analyst",
+          "sentiment": "bearish"
         }
       ]
     },
     "AAPL": {
       "signal": "🟡 中性",
-      "score": 49.6,
-      "raw_score": 50.0,
-      "fgi_adjust": -0.4,
-      "confidence": 18,
+      "score": 88.9,
+      "confidence": 20,
       "fgi_value": 49,
-      "fgi_class": "Neutral",
-      "total_articles": 1,
-      "samples": [
-        {
-          "title": "WAIB Summit Monaco 2026 returns: the world’s most exclusive gathering for digital assets & AI",
-          "sentiment": "neutral"
-        }
-      ]
+      "total_articles": 0,
+      "note": "使用整体市场情绪"
     },
     "SPY": {
-      "signal": "🟡 中性",
-      "score": 49.6,
-      "raw_score": 50.0,
-      "fgi_adjust": -0.4,
-      "confidence": 18,
+      "signal": "🟢 偏多",
+      "score": 66.7,
+      "raw_score": 66.7,
+      "confidence": 67,
       "fgi_value": 49,
-      "fgi_class": "Neutral",
-      "total_articles": 1,
+      "total_articles": 3,
       "samples": [
         {
-          "title": "WAIB Summit Monaco 2026 returns: the world’s most exclusive gathering for digital assets & AI",
-          "sentiment": "neutral"
+          "title": "XRP traders say bullishness ‘growing’ as ETFs log largest inflow since January",
+          "sentiment": "bullish"
+        },
+        {
+          "title": "Bitcoin may avoid historic bear market losses as ETF flows grow, says analyst",
+          "sentiment": "bearish"
         }
       ]
     }
+  },
+  "methodology": "RSS新闻情绪关键词分析 + Fear&Greed指数加权",
+  "rss_feeds": {
+    "crypto": [
+      "https://cointelegraph.com/rss",
+      "https://cryptonews.com/feed/",
+      "https://decrypt.co/feed"
+    ],
+    "stocks": [
+      "https://cointelegraph.com/rss"
+    ]
   }
 }
