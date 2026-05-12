@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-05-12T06:38:42.432407+00:00",
+  "timestamp": "2026-05-12T09:12:25.153166+00:00",
   "domestic": {
     "weibo": {
       "source": "微博热搜",
       "items": [
         {
           "rank": 1,
-          "title": "降噪耳机受害者出现",
+          "title": "南京审计大学通报男生偷拍",
           "hot": ""
         },
         {
           "rank": 2,
-          "title": "腾讯 已读访客功能不会开发",
+          "title": "宇树机甲390万起",
           "hot": ""
         },
         {
           "rank": 3,
-          "title": "今天全国防灾减灾日",
+          "title": "科学避险自救指南",
           "hot": ""
         },
         {
@@ -26,39 +26,35 @@
         },
         {
           "rank": 5,
-          "title": "宇树载人变形机甲",
+          "title": "深圳夫妻囤存储芯片5个月狂涨320亿",
           "hot": ""
         },
         {
           "rank": 6,
-          "title": "詹姆斯 湖人",
+          "title": "降噪耳机受害者出现",
           "hot": ""
         },
         {
           "rank": 7,
-          "title": "机票价格大跳水",
+          "title": "中餐厅10录制",
           "hot": ""
         },
         {
           "rank": 8,
-          "title": "无忧传媒创始人凌晨发朋友圈",
+          "title": "詹姆斯回应是否退役",
           "hot": ""
         },
         {
           "rank": 9,
-          "title": "给阿嬷的情书 观众的报复性投票",
+          "title": "美总统时隔9年再次访华聚焦哪些议题",
           "hot": ""
         },
         {
           "rank": 10,
-          "title": "黑夜告白大结局",
+          "title": "低智商犯罪 五花八门的傻子",
           "hot": ""
         }
       ]
-    },
-    "baidu": {
-      "source": "百度热搜",
-      "items": []
     },
     "zhihu": {
       "source": "知乎热榜",
@@ -72,76 +68,206 @@
         {
           "rank": 1,
           "title": "Postmortem: TanStack NPM supply-chain compromise",
-          "score": 733,
+          "score": 828,
           "url": "https://tanstack.com/blog/npm-supply-chain-compromise-postmortem"
         },
         {
           "rank": 2,
-          "title": "They Live (1988) inspired Adblocker",
+          "title": "Screenshots of Old Desktop OSes",
           "score": 133,
-          "url": "https://github.com/davmlaw/they_live_adblocker"
+          "url": "http://www.typewritten.org/Media/"
         },
         {
           "rank": 3,
-          "title": "If AI writes your code, why use Python?",
-          "score": 376,
-          "url": "https://medium.com/@NMitchem/if-ai-writes-your-code-why-use-python-bf8c4ba1a055"
+          "title": "They Live (1988) inspired Adblocker",
+          "score": 214,
+          "url": "https://github.com/davmlaw/they_live_adblocker"
         },
         {
           "rank": 4,
-          "title": "Claude Platform on AWS",
-          "score": 110,
-          "url": "https://claude.com/blog/claude-platform-on-aws"
+          "title": "If AI writes your code, why use Python?",
+          "score": 470,
+          "url": "https://medium.com/@NMitchem/if-ai-writes-your-code-why-use-python-bf8c4ba1a055"
         },
         {
           "rank": 5,
           "title": "UCLA discovers first stroke rehabilitation drug to repair brain damage (2025)",
-          "score": 300,
+          "score": 330,
           "url": "https://stemcell.ucla.edu/news/ucla-discovers-first-stroke-rehabilitation-drug-r"
         },
         {
           "rank": 6,
-          "title": "Software Internals Book Club",
-          "score": 58,
-          "url": "https://eatonphil.com/bookclub.html"
+          "title": "Claude Platform on AWS",
+          "score": 133,
+          "url": "https://claude.com/blog/claude-platform-on-aws"
         },
         {
           "rank": 7,
-          "title": "Google says criminal hackers used AI to find a major software flaw",
-          "score": 159,
-          "url": "https://www.nytimes.com/2026/05/11/us/politics/google-hackers-attack-ai.html"
+          "title": "Extremely Low Frequencies",
+          "score": 66,
+          "url": "https://computer.rip/2026-05-09-extremely-low-frequencies.html"
         },
         {
           "rank": 8,
-          "title": "Screenshots of Old Desktop OSes",
-          "score": 9,
-          "url": "http://www.typewritten.org/Media/"
+          "title": "Rtwatch: Watch videos with friends using WebRTC",
+          "score": 14,
+          "url": "https://github.com/pion/rtwatch"
         },
         {
           "rank": 9,
-          "title": "Boriel BASIC",
-          "score": 16,
-          "url": "https://zxbasic.readthedocs.io/en/docs/"
+          "title": "Software Internals Book Club",
+          "score": 93,
+          "url": "https://eatonphil.com/bookclub.html"
         },
         {
           "rank": 10,
-          "title": "I let AI build a tool to help me figure out what was waking me up at night",
-          "score": 139,
-          "url": "https://martin.sh/i-let-ai-build-a-tool-to-help-me-figure-out-what-was-waking-me"
+          "title": "Google says criminal hackers used AI to find a major software flaw",
+          "score": 178,
+          "url": "https://www.nytimes.com/2026/05/11/us/politics/google-hackers-attack-ai.html"
         }
       ]
     },
-    "bing": {
-      "source": "Bing News",
+    "npr": {
+      "source": "NPR News",
       "items": []
     },
-    "techcrunch": {
-      "source": "TechCrunch",
+    "wsj": {
+      "source": "WSJ World",
       "items": []
     },
-    "guardian": {
-      "source": "The Guardian",
+    "devto": {
+      "source": "Dev.to",
       "items": []
+    },
+    "github": {
+      "source": "GitHub Trending",
+      "items": [
+        {
+          "rank": 1,
+          "title": "huangserva/3DCellForge",
+          "desc": "AI-powered interactive 3D cell generation and exploration studio.",
+          "stars": 1590,
+          "language": "JavaScript"
+        },
+        {
+          "rank": 2,
+          "title": "thakur-works/DarkGPT",
+          "desc": "Darkgpt mod free #chatgpt",
+          "stars": 532,
+          "language": null
+        },
+        {
+          "rank": 3,
+          "title": "thakur-works/Velocity-Executor",
+          "desc": "This repository contains Velocity Executor — a free Roblox script executor for P",
+          "stars": 528,
+          "language": null
+        },
+        {
+          "rank": 4,
+          "title": "RadianceToadAmend/cs2-overlay-utility",
+          "desc": "CS2 external overlay tool — memory reader, entity ESP, and visual aids. D3D11 re",
+          "stars": 498,
+          "language": "C++"
+        },
+        {
+          "rank": 5,
+          "title": "cclank/cell-architecture-studio",
+          "desc": "Interactive 3D cell architecture gallery built with React and Three.js",
+          "stars": 386,
+          "language": "TypeScript"
+        },
+        {
+          "rank": 6,
+          "title": "iampedii/WhiteDNS",
+          "desc": "Source-available Android DNS tunneling client with VPN and proxy modes, backed b",
+          "stars": 334,
+          "language": "Kotlin"
+        },
+        {
+          "rank": 7,
+          "title": "Rhythmplocutter/printer-offline-fix",
+          "desc": "printer offline fix || printer offline || printer offline driver || printer offl",
+          "stars": 300,
+          "language": "PowerShell"
+        },
+        {
+          "rank": 8,
+          "title": "TrueGunsmithFence/Hentaihunter",
+          "desc": "Hentaihunter - How to steal your Doujinshi easily",
+          "stars": 282,
+          "language": "Python"
+        },
+        {
+          "rank": 9,
+          "title": "grandeurcoredecoder/f95zone",
+          "desc": "Unofficial Game Updater for the F95Zone platform",
+          "stars": 278,
+          "language": "PowerShell"
+        },
+        {
+          "rank": 10,
+          "title": "limesupporterdoor/LockDown-Browser-Bypass-Tool",
+          "desc": "Enables window switching and tab navigation in restricted browser environments",
+          "stars": 274,
+          "language": "C#"
+        }
+      ]
+    },
+    "lobsters": {
+      "source": "Lobsters",
+      "items": [
+        {
+          "rank": 1,
+          "title": "taken",
+          "short_id": "b8gee9"
+        },
+        {
+          "rank": 2,
+          "title": "Mythos finds a curl vulnerability",
+          "short_id": "am7evd"
+        },
+        {
+          "rank": 3,
+          "title": "Ratty: A terminal emulator with inline 3D graphics",
+          "short_id": "ij94sb"
+        },
+        {
+          "rank": 4,
+          "title": "Zig vs Rust in 2026",
+          "short_id": "fnhsha"
+        },
+        {
+          "rank": 5,
+          "title": "Gram 2.0.0 released",
+          "short_id": "5jdbwv"
+        },
+        {
+          "rank": 6,
+          "title": "Popular Go library fsnotify raises supply chain alarms after maintainer access changes",
+          "short_id": "7rpqbo"
+        },
+        {
+          "rank": 7,
+          "title": "Moving from lsp-mode in GNU Emacs to Eglot",
+          "short_id": "bojb9a"
+        },
+        {
+          "rank": 8,
+          "title": "The anti-minimalist backlash is the bigger story behind Oxygen’s revival",
+          "short_id": "4guexz"
+        },
+        {
+          "rank": 9,
+          "title": "Programmable Whitelist-based Configs: Embedding Rye in Go",
+          "short_id": "vxf6cq"
+        },
+        {
+          "rank": 10,
+          "title": "Fully Preserving Fisher-Price Pixter",
+          "short_id": "jqr0fm"
+        }
+      ]
     }
   }
 }
