@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-05-12T16:22:28.858915+00:00",
+  "timestamp": "2026-05-12T17:17:31.666546+00:00",
   "domestic": {
     "weibo": {
-      "source": "微博热搜",
+      "source": "Weibo Hot Search",
       "items": [
         {
           "rank": 1,
-          "title": "特朗普访华",
+          "title": "南京审计大学偷拍男生被开除",
           "hot": ""
         },
         {
           "rank": 2,
-          "title": "南京审计大学偷拍男生被开除",
+          "title": "特朗普访华",
           "hot": ""
         },
         {
@@ -21,7 +21,7 @@
         },
         {
           "rank": 4,
-          "title": "上淘宝抢618直播红包0元付定",
+          "title": "520送礼上淘宝现货叠券7.3折起",
           "hot": ""
         },
         {
@@ -31,33 +31,33 @@
         },
         {
           "rank": 6,
-          "title": "AG战胜狼队",
+          "title": "一诺哽咽",
           "hot": ""
         },
         {
           "rank": 7,
-          "title": "南审通报男子偷拍事件",
+          "title": "辛芷蕾新片演黄柳霜",
           "hot": ""
         },
         {
           "rank": 8,
-          "title": "4月汽车销量前10仅1款油车",
+          "title": "跟孙颖莎组个安心局",
           "hot": ""
         },
         {
           "rank": 9,
-          "title": "清清 一直送",
+          "title": "AG战胜狼队",
           "hot": ""
         },
         {
           "rank": 10,
-          "title": "一诺哽咽",
+          "title": "清清 一直送",
           "hot": ""
         }
       ]
     },
     "zhihu": {
-      "source": "知乎热榜",
+      "source": "Zhihu Hot",
       "items": []
     }
   },
@@ -67,63 +67,53 @@
       "items": [
         {
           "rank": 1,
-          "title": "Bambu Lab is abusing the open source social contract",
-          "score": 355,
-          "url": "https://www.jeffgeerling.com/blog/2026/bambu-lab-abusing-open-source-social-cont"
+          "title": "Rendering the Sky, Sunsets, and Planets",
+          "score": 249
         },
         {
           "rank": 2,
-          "title": "Operation: Epic Furious",
-          "score": 56,
-          "url": "https://www.epicfurious.com/"
+          "title": "Bambu Lab is abusing the open source social contract",
+          "score": 539
         },
         {
           "rank": 3,
-          "title": "Rendering the Sky, Sunsets, and Planets",
-          "score": 190,
-          "url": "https://blog.maximeheckel.com/posts/on-rendering-the-sky-sunsets-and-planets/"
+          "title": "Learning Software Architecture",
+          "score": 402
         },
         {
           "rank": 4,
-          "title": "Learning Software Architecture",
-          "score": 381,
-          "url": "https://matklad.github.io/2026/05/12/software-architecture.html"
+          "title": "The Future of Obsidian Plugins",
+          "score": 56
         },
         {
           "rank": 5,
-          "title": "The Future of Obsidian Plugins",
-          "score": 14,
-          "url": "https://obsidian.md/blog/future-of-plugins/"
+          "title": "Launch HN: Voker (YC S24) – Analytics for AI Agents",
+          "score": 20
         },
         {
           "rank": 6,
-          "title": "Launch HN: Voker (YC S24) – Analytics for AI Agents",
-          "score": 5,
-          "url": "https://voker.ai"
+          "title": "Screenshots of Old Desktop OSes",
+          "score": 544
         },
         {
           "rank": 7,
-          "title": "Screenshots of Old Desktop OSes",
-          "score": 512,
-          "url": "http://www.typewritten.org/Media/"
+          "title": "Instructure pays ransom to Canvas hackers",
+          "score": 11
         },
         {
           "rank": 8,
-          "title": "eBay Rejects GameStop's $56B Takeover as Not Credible",
-          "score": 35,
-          "url": "https://www.bloomberg.com/news/articles/2026-05-12/ebay-rejects-gamestop-s-56-bi"
+          "title": "Why senior developers fail to communicate their expertise",
+          "score": 21
         },
         {
           "rank": 9,
           "title": "Postmortem: TanStack NPM supply-chain compromise",
-          "score": 981,
-          "url": "https://tanstack.com/blog/npm-supply-chain-compromise-postmortem"
+          "score": 1004
         },
         {
           "rank": 10,
-          "title": "Profiling.sampling – Statistical Profiler",
-          "score": 59,
-          "url": "https://docs.python.org/3.15/library/profiling.sampling.html#module-profiling.sa"
+          "title": "Show HN: Gigacatalyst – Extend your SaaS with an embedded AI builder",
+          "score": 4
         }
       ]
     },
@@ -132,173 +122,72 @@
       "items": [
         {
           "rank": 1,
-          "title": "Ask HN: What are you working on? (May 2026)",
-          "score": 271,
-          "url": ""
+          "title": "Spotify Is Down"
         },
         {
           "rank": 2,
-          "title": "Ask HN: We just had an actual UUID v4 collision...",
-          "score": 464,
-          "url": ""
+          "title": "Ask HN: What are you working on? (May 2026)"
         },
         {
           "rank": 3,
-          "title": "Rumors of my death are slightly exaggerated",
-          "score": 1658,
-          "url": ""
+          "title": "Ask HN: We just had an actual UUID v4 collision..."
         },
         {
           "rank": 4,
-          "title": "Ask HN: How to get started in electronic music",
-          "score": 9,
-          "url": ""
+          "title": "Rumors of my death are slightly exaggerated"
         },
         {
           "rank": 5,
-          "title": "Ask HN: How are you preparing for interviews nowadays?",
-          "score": 7,
-          "url": ""
+          "title": "Ask HN: How to get started in electronic music"
         }
       ]
     },
     "github": {
       "source": "GitHub Trending",
-      "items": [
-        {
-          "rank": 1,
-          "title": "huangserva/3DCellForge",
-          "desc": "AI-powered interactive 3D cell generation and exploration studio.",
-          "stars": 1674,
-          "language": "JavaScript"
-        },
-        {
-          "rank": 2,
-          "title": "thakur-works/DarkGPT",
-          "desc": "Darkgpt mod free #chatgpt",
-          "stars": 532,
-          "language": ""
-        },
-        {
-          "rank": 3,
-          "title": "thakur-works/Velocity-Executor",
-          "desc": "This repository contains Velocity Executor — a free Roblox script executor for P",
-          "stars": 528,
-          "language": ""
-        },
-        {
-          "rank": 4,
-          "title": "RadianceToadAmend/ARC-Raiders-External-Tool",
-          "desc": "External overlay tool for ARC Raiders. UE5 memory reader, entity , radar, perfor",
-          "stars": 521,
-          "language": "C++"
-        },
-        {
-          "rank": 5,
-          "title": "patchfighterway90/cs2-external-overlay",
-          "desc": "The cs2 external helper tool is a software utility designed for gamers and devel",
-          "stars": 519,
-          "language": "Python"
-        },
-        {
-          "rank": 6,
-          "title": "RadianceToadAmend/cs2-overlay-utility",
-          "desc": "CS2 external overlay tool — memory reader, entity ESP, and visual aids. D3D11 re",
-          "stars": 499,
-          "language": "C++"
-        },
-        {
-          "rank": 7,
-          "title": "cclank/cell-architecture-studio",
-          "desc": "Interactive 3D cell architecture gallery built with React and Three.js",
-          "stars": 415,
-          "language": "TypeScript"
-        },
-        {
-          "rank": 8,
-          "title": "ywnd1144/Gopay_plus_automatic",
-          "desc": "",
-          "stars": 414,
-          "language": "Python"
-        },
-        {
-          "rank": 9,
-          "title": "iampedii/WhiteDNS",
-          "desc": "Source-available Android DNS tunneling client with VPN and proxy modes, backed b",
-          "stars": 351,
-          "language": "Kotlin"
-        },
-        {
-          "rank": 10,
-          "title": "Rhythmplocutter/printer-offline-fix",
-          "desc": "printer offline fix || printer offline || printer offline driver || printer offl",
-          "stars": 326,
-          "language": "PowerShell"
-        }
-      ]
+      "items": []
     },
     "lobsters": {
       "source": "Lobsters",
       "items": [
         {
           "rank": 1,
-          "title": "taken",
-          "short_id": "b8gee9",
-          "url": "https://sinceyouarrived.world/taken"
+          "title": "taken"
         },
         {
           "rank": 2,
-          "title": "Learning Software Architecture",
-          "short_id": "f47lxm",
-          "url": "https://matklad.github.io/2026/05/12/software-architecture.html"
+          "title": "Learning Software Architecture"
         },
         {
           "rank": 3,
-          "title": "The Problem of Pedagogy in Advanced Mathematics",
-          "short_id": "ztrxoj",
-          "url": "https://susam.net/advanced-mathematics-pedagogy.html"
+          "title": "The Problem of Pedagogy in Advanced Mathematics"
         },
         {
           "rank": 4,
-          "title": "Zig vs Rust in 2026",
-          "short_id": "fnhsha",
-          "url": "https://zackoverflow.dev/writing/zig-vs-rust-in-2026/"
+          "title": "Popular Go library fsnotify raises supply chain alarms after maintainer access changes"
         },
         {
           "rank": 5,
-          "title": "Popular Go library fsnotify raises supply chain alarms after maintainer access changes",
-          "short_id": "7rpqbo",
-          "url": "https://socket.dev/blog/fsnotify-maintainer-dispute-sparks-supply-chain-concerns"
+          "title": "Zig vs Rust in 2026"
         },
         {
           "rank": 6,
-          "title": "Gram 2.0.0 released",
-          "short_id": "5jdbwv",
-          "url": "https://gram-editor.com/posts/release-2.0-0/"
+          "title": "Gram 2.0.0 released"
         },
         {
           "rank": 7,
-          "title": "Mythos finds a curl vulnerability",
-          "short_id": "am7evd",
-          "url": "https://daniel.haxx.se/blog/2026/05/11/mythos-finds-a-curl-vulnerability/"
+          "title": "How Rockstar fit an entire city into PlayStation 2 memory"
         },
         {
           "rank": 8,
-          "title": "Ratty: A terminal emulator with inline 3D graphics",
-          "short_id": "ij94sb",
-          "url": "https://ratty-term.org/"
+          "title": "Mythos finds a curl vulnerability"
         },
         {
           "rank": 9,
-          "title": "CSS & vertical rhythm for text, images, and tables",
-          "short_id": "bvqio4",
-          "url": "https://vincent.bernat.ch/en/blog/2026-css-vertical-rhythm"
+          "title": "Ratty: A terminal emulator with inline 3D graphics"
         },
         {
           "rank": 10,
-          "title": "How Rockstar fit an entire city into PlayStation 2 memory",
-          "short_id": "i6pafc",
-          "url": "https://www.youtube.com/watch?v=cIbCxbrBCys"
+          "title": "A Technical Guide to Compiling Emacs for Performance on Linux and Unix systems"
         }
       ]
     },
@@ -307,31 +196,27 @@
       "items": [
         {
           "rank": 1,
-          "title": "pip question, what is wrong with this script",
-          "answers": 0,
-          "score": 0,
+          "title": "Strapi v5.45.1 error: adminUserOwner is required",
+          "answers": 1,
           "tags": [
-            "python",
-            "pip",
-            "docx"
+            "postgresql",
+            "strapi"
           ]
         },
         {
           "rank": 2,
-          "title": "Uploading Segmentation Annotations to AWS Groundtruth",
+          "title": "How do apps like Alarmy handle AlarmKit volumes?",
           "answers": 1,
-          "score": -3,
           "tags": [
-            "amazon-web-services",
-            "amazon-sagemaker",
-            "semantic-segmentation"
+            "ios",
+            "swift",
+            "iphone"
           ]
         },
         {
           "rank": 3,
           "title": "How can I query all the GraphQL type fields without writing a long query?",
           "answers": 9,
-          "score": 392,
           "tags": [
             "php",
             "laravel",
@@ -340,24 +225,19 @@
         },
         {
           "rank": 4,
-          "title": "why is output of chained promise thenables, Interleaved?",
-          "answers": 0,
-          "score": -1,
+          "title": "How to remove texlive with Pacman",
+          "answers": 2,
           "tags": [
-            "javascript",
-            "node.js",
-            "promise"
+            "archlinux",
+            "pacman-package-manager"
           ]
         },
         {
           "rank": 5,
-          "title": "Why is my SIMD implementation of octal string parsing unable to beat the compiler's?",
-          "answers": 6,
-          "score": 4,
+          "title": "How to call a *.py from within Python along with passing a variable?",
+          "answers": 0,
           "tags": [
-            "c++",
-            "assembly",
-            "simd"
+            "python"
           ]
         }
       ]
@@ -367,9 +247,17 @@
       "items": [
         {
           "rank": 1,
+          "title": "Modsecurity parse nested keys in json",
+          "answers": 1,
+          "tags": [
+            "mod-security",
+            "owasp-crs"
+          ]
+        },
+        {
+          "rank": 2,
           "title": "What is the information security purpose of manual rotation in managed KMS services?",
           "answers": 0,
-          "score": 1,
           "tags": [
             "key-management",
             "aws",
@@ -377,24 +265,12 @@
           ]
         },
         {
-          "rank": 2,
+          "rank": 3,
           "title": "Should login/refresh authentication routes return new tokens if an existing, valid token is present?",
           "answers": 1,
-          "score": 1,
           "tags": [
             "authentication",
             "jwt"
-          ]
-        },
-        {
-          "rank": 3,
-          "title": "security concerns when configuring Windows 10 to automatically log into a Microsoft account-linked user account",
-          "answers": 1,
-          "score": 0,
-          "tags": [
-            "authentication",
-            "windows-10",
-            "microsoft"
           ]
         }
       ]
@@ -406,7 +282,6 @@
           "rank": 1,
           "title": "How do you operationalize confidence metrics correctly for a “neither” option in cue-conflict decision classification?",
           "answers": 0,
-          "score": 0,
           "tags": [
             "convolutional-neural-networks",
             "image-net"
@@ -416,7 +291,6 @@
           "rank": 2,
           "title": "In a face database containing multiple images per subject, how do we determine the face image which is most suited for face recognition?",
           "answers": 1,
-          "score": 2,
           "tags": [
             "deep-learning",
             "face-recognition"
@@ -426,7 +300,6 @@
           "rank": 3,
           "title": "What is the meaning of N in the description \"The mean operation still operates over all the elements, and divides by N\"?",
           "answers": 1,
-          "score": 0,
           "tags": [
             "python",
             "pytorch",
@@ -440,20 +313,17 @@
       "items": [
         {
           "rank": 1,
-          "title": "Kali won't boot without USB flash drive",
-          "answers": 2,
-          "score": 1,
+          "title": "Can tar verify integrity of untarred files on destination disk?",
+          "answers": 1,
           "tags": [
-            "boot",
-            "kali-linux",
-            "dual-boot"
+            "tar",
+            "checksum"
           ]
         },
         {
           "rank": 2,
           "title": "problem with grub-efi-amd64 signed probably due to encrypted hard drive",
           "answers": 0,
-          "score": 0,
           "tags": [
             "apt",
             "grub2",
@@ -462,19 +332,78 @@
         },
         {
           "rank": 3,
-          "title": "Somehow, someway, gpg: no valid OpenPGP data found",
+          "title": "Digikam tries to create sub-album in /. Why?",
           "answers": 1,
-          "score": 0,
           "tags": [
-            "gpg",
-            "tor"
+            "digikam"
           ]
         }
       ]
     }
   },
-  "x_trending": {
-    "source": "X/Twitter Trending",
-    "items": []
+  "sina_news": {
+    "source": "Sina Finance RSS",
+    "items": [
+      {
+        "rank": 1,
+        "title": "第二艘卡塔尔液化天然气运输船穿越霍尔木兹海峡抵巴基斯坦",
+        "ctime": "1778606053",
+        "intro": "周二，第二艘卡塔尔液化天然气运输船成功通过霍尔木兹海峡。此前数日，首艘此类货船在伊朗和巴基斯坦参与的安排下通过该海峡，这凸显了在持续的冲突风险下..."
+      },
+      {
+        "rank": 2,
+        "title": "美国参议院批准凯文·沃什出任美联储理事",
+        "ctime": "1778605488",
+        "intro": "美国参议院已确认凯文·沃什出任美联储理事会理事，这使他有望在鲍威尔的任期于周五结束后接任美联储主席。 周二51票赞成、45票反对的表决结果几乎完全按照党派划线."
+      },
+      {
+        "rank": 3,
+        "title": "特斯拉将向德国工厂注资2.5亿美元",
+        "ctime": "1778605384",
+        "intro": "马斯克旗下的特斯拉将向其德国工厂注资2.5亿美元，用于提高电动汽车电芯产能。随著欧洲市场销量回暖，特斯拉正借此举进一步提升该地区的整体产量。"
+      },
+      {
+        "rank": 4,
+        "title": "通胀涨幅超过薪资增速，美国中产生活水准当下正出现下滑",
+        "ctime": "1778605300",
+        "intro": "作者：艾玛・奥克曼、本・沃施库尔 事实已然明确：物价涨幅已经超过劳动者薪资涨幅。 美国政府周二公布的数据显示，4 月消费者物价同比飙升 3.8%，而平均时薪仅上"
+      },
+      {
+        "rank": 5,
+        "title": "韩国拟推出AI 全民分红政策，引发市场剧烈震荡",
+        "ctime": "1778605141",
+        "intro": "韩国一名高层政策官员表态称，国家应利用征收 AI 行业利润税收向全民发放 “分红”。 此番言论凸显社会诉求日益强烈：要求重新分配 AI 热潮带来的巨额收益，当前"
+      },
+      {
+        "rank": 6,
+        "title": "越南敦促美国允许一艘油轮通过封锁",
+        "ctime": "1778605083",
+        "intro": "越南国有石油公司敦促美国允许一艘超级油轮通过美国在波斯湾外实施的海上封锁，称这批货物对其经济至关重要。 这艘名为Agios Fanourios..."
+      },
+      {
+        "rank": 7,
+        "title": "谷歌与SpaceX洽谈轨道太空数据中心合作事宜",
+        "ctime": "1778604940",
+        "intro": "《华尔街曰报》周二援引知情人士消息称，谷歌母公司 Alphabet 正与埃隆・马斯克旗下太空公司SpaceX洽谈火箭发射合作协议，计划将数据中心部署至太空轨道。"
+      },
+      {
+        "rank": 8,
+        "title": "欧洲股市下跌 银行股承压 美国通胀数据加剧市场压力",
+        "ctime": "1778604883",
+        "intro": "欧洲股市周二下跌。在美国通胀数据高于预期，突显出各国央行面临的压力并给股市前景蒙上阴影后，跌势加速。 斯托克欧洲600指数在伦敦下跌1.0%。"
+      },
+      {
+        "rank": 9,
+        "title": "沃什获参议院确认出任美联储理事，为后续出任美联储主席投票铺路",
+        "ctime": "1778604822",
+        "intro": "美国参议院周二以51 票赞成、45 票反对，批准凯文・沃什出任美联储理事会理事提名。这是他接任下一任美联储主席两步任命流程中的第一步。"
+      },
+      {
+        "rank": 10,
+        "title": "Hims & Hers公布一季度亏损、业绩指引疲软，股价暴跌15.2%",
+        "ctime": "1778604361",
+        "intro": "核心要点 数字医疗公司 Hims & Hers 周二受一季度财报疲软拖累，股价大幅下挫。 公司一季度净亏损达 9200 万美元，高于去年同期的 5000 万美元"
+      }
+    ]
   }
 }
