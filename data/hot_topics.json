@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-05-12T06:23:08.723956+00:00",
+  "timestamp": "2026-05-12T06:28:32.090589+00:00",
   "domestic": {
     "weibo": {
       "source": "微博热搜",
@@ -26,7 +26,7 @@
         },
         {
           "rank": 5,
-          "title": "宇树载人变形机甲",
+          "title": "詹姆斯 湖人",
           "hot": ""
         },
         {
@@ -36,22 +36,22 @@
         },
         {
           "rank": 7,
-          "title": "詹姆斯 湖人",
+          "title": "宝泉才是真极限",
           "hot": ""
         },
         {
           "rank": 8,
-          "title": "汶川地震的可乐男孩入职可口可乐",
+          "title": "宇树载人变形机甲",
           "hot": ""
         },
         {
           "rank": 9,
-          "title": "给阿嬷的情书 观众的报复性投票",
+          "title": "医生才是最不听医嘱的",
           "hot": ""
         },
         {
           "rank": 10,
-          "title": "黑夜告白大结局",
+          "title": "给阿嬷的情书 观众的报复性投票",
           "hot": ""
         }
       ]
@@ -66,16 +66,81 @@
     }
   },
   "international": {
-    "reddit": {
-      "source": "Reddit r/all",
+    "hackernews": {
+      "source": "Hacker News",
+      "items": [
+        {
+          "rank": 1,
+          "title": "Postmortem: TanStack NPM supply-chain compromise",
+          "score": 726,
+          "url": "https://tanstack.com/blog/npm-supply-chain-compromise-postmortem"
+        },
+        {
+          "rank": 2,
+          "title": "They Live (1988) inspired Adblocker",
+          "score": 127,
+          "url": "https://github.com/davmlaw/they_live_adblocker"
+        },
+        {
+          "rank": 3,
+          "title": "If AI writes your code, why use Python?",
+          "score": 365,
+          "url": "https://medium.com/@NMitchem/if-ai-writes-your-code-why-use-python-bf8c4ba1a055"
+        },
+        {
+          "rank": 4,
+          "title": "Claude Platform on AWS",
+          "score": 107,
+          "url": "https://claude.com/blog/claude-platform-on-aws"
+        },
+        {
+          "rank": 5,
+          "title": "UCLA discovers first stroke rehabilitation drug to repair brain damage (2025)",
+          "score": 298,
+          "url": "https://stemcell.ucla.edu/news/ucla-discovers-first-stroke-rehabilitation-drug-r"
+        },
+        {
+          "rank": 6,
+          "title": "Software Internals Book Club",
+          "score": 55,
+          "url": "https://eatonphil.com/bookclub.html"
+        },
+        {
+          "rank": 7,
+          "title": "Google says criminal hackers used AI to find a major software flaw",
+          "score": 157,
+          "url": "https://www.nytimes.com/2026/05/11/us/politics/google-hackers-attack-ai.html"
+        },
+        {
+          "rank": 8,
+          "title": "Boriel BASIC",
+          "score": 16,
+          "url": "https://zxbasic.readthedocs.io/en/docs/"
+        },
+        {
+          "rank": 9,
+          "title": "Show HN: A modern Music Player Daemon based on Rockbox firmware",
+          "score": 59,
+          "url": "https://github.com/tsirysndr/rockbox-zig"
+        },
+        {
+          "rank": 10,
+          "title": "I let AI build a tool to help me figure out what was waking me up at night",
+          "score": 133,
+          "url": "https://martin.sh/i-let-ai-build-a-tool-to-help-me-figure-out-what-was-waking-me"
+        }
+      ]
+    },
+    "google": {
+      "source": "Google News",
       "items": []
     },
-    "twitter": {
-      "source": "Twitter/X Trending",
+    "reuters": {
+      "source": "Reuters World",
       "items": []
     },
-    "bbc": {
-      "source": "BBC News World",
+    "aljazeera": {
+      "source": "Al Jazeera",
       "items": []
     }
   }
