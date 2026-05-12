@@ -84,7 +84,6 @@ def fetch_zhihu_hot():
 def fetch_hackernews():
     """Hacker News 热帖"""
     try:
-        # 获取Top Stories IDs
         ids_url = "https://hacker-news.firebaseio.com/v0/topstories.json"
         req = urllib.request.Request(ids_url, headers=HEADERS)
         with urllib.request.urlopen(req, timeout=10, context=SSL_CTX) as resp:
@@ -112,50 +111,51 @@ def fetch_hackernews():
         print(f"  Hacker News error: {e}")
         return []
 
-def fetch_google_news():
-    """Google News 国际要闻 RSS"""
+def fetch_bing_news():
+    """Bing News 国际"""
     try:
-        url = "https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en"
+        url = "https://www.bing.com/rss/news?q=world&setlang=en"
         req = urllib.request.Request(url, headers=HEADERS)
         with urllib.request.urlopen(req, timeout=10, context=SSL_CTX) as resp:
             raw = resp.read().decode("utf-8", errors="ignore")
-        items = re.findall(r'<item><title><!\[CDATA\[(.*?)\]\]></title>.*?<link>(.*?)</link>', raw, re.DOTALL)
+        titles = re.findall(r'<item><title><!\[CDATA\[(.*?)\]\]></title>', raw)
+        links = re.findall(r'<item>.*?<link>(.*?)</link>', raw, re.DOTALL)
         result = []
-        for i, (title, link) in enumerate(items[:10]):
+        for i, (title, link) in enumerate(zip(titles[:10], links[:10])):
             result.append({
                 "rank": i+1,
                 "title": clean_text(title),
-                "link": link.strip()[:100]
+                "link": link.strip()[:80]
             })
         return result
     except Exception as e:
-        print(f"  Google News error: {e}")
+        print(f"  Bing News error: {e}")
         return []
 
-def fetch_reuters_world():
-    """路透社世界新闻"""
+def fetch_techcrunch():
+    """TechCrunch RSS"""
     try:
-        url = "https://feeds.reuters.com/reuters/worldnews"
-        req = urllib.request.Request(url, headers=HEADERS)
-        with urllib.request.urlopen(req, timeout=10, context=SSL_CTX) as resp:
-            raw = resp.read().decode("utf-8", errors="ignore")
-        titles = re.findall(r'<title><!\[CDATA\[(.*?)\]\]></title>', raw)
-        return [{"rank": i+1, "title": clean_text(t)} for i, t in enumerate(titles[2:12])]  # skip header
-    except Exception as e:
-        print(f"  Reuters error: {e}")
-        return []
-
-def fetch_aljazeera():
-    """半岛电视台 Al Jazeera"""
-    try:
-        url = "https://www.aljazeera.com/xml/rss/all.xml"
+        url = "https://techcrunch.com/feed/"
         req = urllib.request.Request(url, headers=HEADERS)
         with urllib.request.urlopen(req, timeout=10, context=SSL_CTX) as resp:
             raw = resp.read().decode("utf-8", errors="ignore")
         titles = re.findall(r'<title><!\[CDATA\[(.*?)\]\]></title>', raw)
         return [{"rank": i+1, "title": clean_text(t)} for i, t in enumerate(titles[2:12])]
     except Exception as e:
-        print(f"  Al Jazeera error: {e}")
+        print(f"  TechCrunch error: {e}")
+        return []
+
+def fetch_guardian_world():
+    """The Guardian 世界新闻"""
+    try:
+        url = "https://www.theguardian.com/world/rss"
+        req = urllib.request.Request(url, headers=HEADERS)
+        with urllib.request.urlopen(req, timeout=10, context=SSL_CTX) as resp:
+            raw = resp.read().decode("utf-8", errors="ignore")
+        titles = re.findall(r'<title><!\[CDATA\[(.*?)\]\]></title>', raw)
+        return [{"rank": i+1, "title": clean_text(t)} for i, t in enumerate(titles[2:12])]
+    except Exception as e:
+        print(f"  Guardian error: {e}")
         return []
 
 def main():
@@ -173,14 +173,14 @@ def main():
     
     print("\n🌍 国际热点...")
     hn = fetch_hackernews()
-    google = fetch_google_news()
-    reuters = fetch_reuters_world()
-    alj = fetch_aljazeera()
+    bing = fetch_bing_news()
+    tc = fetch_techcrunch()
+    guardian = fetch_guardian_world()
     
     print(f"  Hacker News: {len(hn)} 条")
-    print(f"  Google News: {len(google)} 条")
-    print(f"  路透社: {len(reuters)} 条")
-    print(f"  半岛电视台: {len(alj)} 条")
+    print(f"  Bing News: {len(bing)} 条")
+    print(f"  TechCrunch: {len(tc)} 条")
+    print(f"  The Guardian: {len(guardian)} 条")
     
     result = {
         "timestamp": datetime.now(timezone.utc).isoformat(),
@@ -191,9 +191,9 @@ def main():
         },
         "international": {
             "hackernews": {"source": "Hacker News", "items": hn},
-            "google": {"source": "Google News", "items": google},
-            "reuters": {"source": "Reuters World", "items": reuters},
-            "aljazeera": {"source": "Al Jazeera", "items": alj},
+            "bing": {"source": "Bing News", "items": bing},
+            "techcrunch": {"source": "TechCrunch", "items": tc},
+            "guardian": {"source": "The Guardian", "items": guardian},
         },
     }
     
