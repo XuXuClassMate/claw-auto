@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-05-12T14:19:34.621365Z",
-  "source": "RSS feeds (CoinTelegraph + CryptoNews + Decrypt)",
+  "timestamp": "2026-05-12T14:43:10.080867+00:00",
+  "source": "alternative.me + 新浪财经 + RSS feeds",
   "fear_greed": {
     "value": 49,
     "classification": "Neutral"
@@ -8,108 +8,91 @@
   "results": {
     "BTC": {
       "signal": "🟡 中性",
-      "score": 41.7,
-      "raw_score": 41.7,
-      "fgi_adjust": 0,
-      "confidence": 67,
+      "score": 49.6,
+      "raw_score": 50,
+      "fgi_adjust": -0.4,
+      "confidence": 20,
       "fgi_value": 49,
       "fgi_class": "Neutral",
-      "total_articles": 3,
-      "samples": [
-        {
-          "title": "Exodus sells over 1,000 Bitcoin as Q1 loss widens to $32M",
-          "sentiment": "bearish"
-        },
-        {
-          "title": "Bitcoin may avoid historic bear market losses as ETF flows grow, says analyst",
-          "sentiment": "bearish"
-        }
-      ]
+      "total_articles": 0,
+      "samples": []
     },
     "ETH": {
       "signal": "🟡 中性",
-      "score": 55.9,
-      "raw_score": 55.9,
-      "fgi_adjust": 0,
-      "confidence": 33,
+      "score": 49.6,
+      "raw_score": 50,
+      "fgi_adjust": -0.4,
+      "confidence": 20,
       "fgi_value": 49,
       "fgi_class": "Neutral",
       "total_articles": 0,
-      "note": "使用整体加密市场情绪"
+      "samples": []
     },
     "BNB": {
       "signal": "🟡 中性",
-      "score": 55.9,
-      "raw_score": 55.9,
-      "fgi_adjust": 0,
-      "confidence": 33,
+      "score": 49.6,
+      "raw_score": 50,
+      "fgi_adjust": -0.4,
+      "confidence": 20,
       "fgi_value": 49,
       "fgi_class": "Neutral",
       "total_articles": 0,
-      "note": "使用整体加密市场情绪"
+      "samples": []
+    },
+    "SOL": {
+      "signal": "🟡 中性",
+      "score": 49.6,
+      "raw_score": 50,
+      "fgi_adjust": -0.4,
+      "confidence": 20,
+      "fgi_value": 49,
+      "fgi_class": "Neutral",
+      "total_articles": 0,
+      "samples": []
     },
     "NVDA": {
       "signal": "🟡 中性",
-      "score": 80.3,
+      "score": 49.6,
+      "raw_score": 50,
+      "fgi_adjust": -0.4,
       "confidence": 20,
       "fgi_value": 49,
+      "fgi_class": "Neutral",
       "total_articles": 0,
-      "note": "使用整体市场情绪"
+      "samples": []
     },
     "TSLA": {
       "signal": "🟡 中性",
-      "score": 52.8,
-      "raw_score": 52.8,
-      "confidence": 67,
+      "score": 49.6,
+      "raw_score": 50,
+      "fgi_adjust": -0.4,
+      "confidence": 20,
       "fgi_value": 49,
-      "total_articles": 3,
-      "samples": [
-        {
-          "title": "Bitcoin may avoid historic bear market losses as ETF flows grow, says analyst",
-          "sentiment": "bearish"
-        },
-        {
-          "title": "Bitmine slows Ethereum buys, targets December to own 5% of supply",
-          "sentiment": "bullish"
-        }
-      ]
+      "fgi_class": "Neutral",
+      "total_articles": 0,
+      "samples": []
     },
     "AAPL": {
       "signal": "🟡 中性",
-      "score": 80.3,
+      "score": 49.6,
+      "raw_score": 50,
+      "fgi_adjust": -0.4,
       "confidence": 20,
       "fgi_value": 49,
+      "fgi_class": "Neutral",
       "total_articles": 0,
-      "note": "使用整体市场情绪"
+      "samples": []
     },
     "SPY": {
-      "signal": "🟢 偏多",
-      "score": 63.9,
-      "raw_score": 63.9,
-      "confidence": 67,
+      "signal": "🟡 中性",
+      "score": 49.6,
+      "raw_score": 50,
+      "fgi_adjust": -0.4,
+      "confidence": 20,
       "fgi_value": 49,
-      "total_articles": 3,
-      "samples": [
-        {
-          "title": "Bitcoin may avoid historic bear market losses as ETF flows grow, says analyst",
-          "sentiment": "bearish"
-        },
-        {
-          "title": "Wells Fargo lifts Ether ETF holdings in Q1 as Bitcoin positions shift",
-          "sentiment": "bullish"
-        }
-      ]
+      "fgi_class": "Neutral",
+      "total_articles": 0,
+      "samples": []
     }
-  },
-  "methodology": "RSS新闻情绪关键词分析 + Fear&Greed指数加权",
-  "rss_feeds": {
-    "crypto": [
-      "https://cointelegraph.com/rss",
-      "https://cryptonews.com/feed/",
-      "https://decrypt.co/feed"
-    ],
-    "stocks": [
-      "https://cointelegraph.com/rss"
-    ]
   }
 }
