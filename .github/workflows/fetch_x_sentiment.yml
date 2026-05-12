@@ -1,0 +1,181 @@
+name: X Sentiment Fetcher
+
+on:
+  schedule:
+    - cron: '0 */2 * * *'  # 每2小时
+  workflow_dispatch:
+
+jobs:
+  fetch-sentiment:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Fetch Fear & Greed Index
+        run: |
+          python3 << 'PYTHON_EOF'
+          import urllib.request, ssl, json
+          from datetime import datetime, timezone
+
+          SSL_CTX = ssl.create_default_context()
+          SSL_CTX.check_hostname = False
+          SSL_CTX.verify_mode = ssl.CERT_NONE
+
+          # 1. 获取恐惧贪婪指数
+          def fetch_fgi():
+              try:
+                  url = "https://api.alternative.me/fng/"
+                  req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+                  with urllib.request.urlopen(req, timeout=8, context=SSL_CTX) as resp:
+                      d = json.loads(resp.read())
+                  item = d.get("data", [{}])[0]
+                  return {"value": int(item.get("value", 50)), "classification": item.get("value_classification", "Neutral")}
+              except Exception as e:
+                  print(f"FGI error: {e}")
+                  return {"value": 50, "classification": "Unknown"}
+
+          # 2. 获取新浪财经新闻
+          def fetch_news(num=30):
+              try:
+                  url = f"https://feed.mix.sina.com.cn/api/roll/get?pageid=153&lid=2516&num={num}&page=1"
+                  req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0", "Referer": "https://finance.sina.com.cn"})
+                  with urllib.request.urlopen(req, timeout=10, context=SSL_CTX) as resp:
+                      raw = resp.read().decode("utf-8")
+                  d = json.loads(raw)
+                  items = d.get("result", {}).get("data", [])
+                  return [{"title": i.get("title", ""), "intro": i.get("intro", ""), "time": i.get("ctime", "")} for i in items if i.get("title")]
+              except Exception as e:
+                  print(f"News error: {e}")
+                  return []
+
+          # 3. 情绪评分
+          BULLISH_KW = ["涨","突破","新高","看涨","买入","做多","反弹","爆发","利好","连胜","超预期","增持","配置","机会","疯涨","涨停","走强","大涨","攀升","上行"]
+          BEARISH_KW = ["跌","破位","新低","看跌","卖出","做空","回调","崩盘","利空","预警","警告","风险","回撤","腰斩","套牢","走弱","大跌","下行","暴跌","下挫"]
+
+          def score_text(text):
+              t = text.lower()
+              bull = sum(1 for k in BULLISH_KW if k in t)
+              bear = sum(1 for k in BEARISH_KW if k in t)
+              total = bull + bear
+              if total == 0: return 50, "neutral"
+              s = (bull - bear) / total * 50 + 50
+              return s, "bullish" if s >= 58 else "bearish" if s <= 42 else "neutral"
+
+          # 4. 获取RSS新闻
+          def fetch_rss(url):
+              try:
+                  req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+                  with urllib.request.urlopen(req, timeout=10, context=SSL_CTX) as resp:
+                      raw = resp.read().decode("utf-8", errors="ignore")
+                  import re
+                  titles = re.findall(r'<title><!\[CDATA\[(.*?)\]\]></title>', raw)
+                  return [t.strip() for t in titles if t.strip()][:5]
+              except:
+                  return []
+
+          # 主流程
+          print("Fetching FGI...")
+          fgi = fetch_fgi()
+          print(f"FGI: {fgi['value']} ({fgi['classification']})")
+
+          print("Fetching news...")
+          news = fetch_news(30)
+          print(f"News count: {len(news)}")
+
+          print("Fetching RSS feeds...")
+          rss_news = []
+          for feed in ["https://cointelegraph.com/rss", "https://cryptonews.com/feed/", "https://decrypt.co/feed"]:
+              rss_news.extend(fetch_rss(feed))
+          print(f"RSS count: {len(rss_news)}")
+
+          # 综合情绪
+          all_texts = [n["title"] + " " + n.get("intro", "") for n in news] + rss_news
+          scores = [score_text(t) for t in all_texts]
+          if scores:
+              avg_score = sum(s[0] for s in scores) / len(scores)
+          else:
+              avg_score = 50
+
+          # FGI调整分 (-20到+20)
+          fgi_val = fgi["value"]
+          fgi_adj = (fgi_val - 50) * 0.4  # FGI 0-100 -> -20到+20
+          adjusted = min(max(avg_score + fgi_adj, 0), 100)
+
+          if adjusted >= 62: signal = "🟢 偏多"
+          elif adjusted <= 38: signal = "🔴 偏空"
+          else: signal = "🟡 中性"
+
+          # 构建结果
+          result = {
+              "timestamp": datetime.now(timezone.utc).isoformat(),
+              "source": "alternative.me + 新浪财经 + RSS feeds",
+              "fear_greed": fgi,
+              "results": {}
+          }
+
+          # 各标的情绪 (FGI对所有币种影响相同)
+          symbols = {
+              "BTC": {"name": "Bitcoin", "rss_feeds": ["https://cointelegraph.com/rss", "https://cryptonews.com/feed/"]},
+              "ETH": {"name": "Ethereum", "rss_feeds": ["https://cointelegraph.com/rss", "https://cryptonews.com/feed/"]},
+              "BNB": {"name": "BNB", "rss_feeds": ["https://cointelegraph.com/rss"]},
+              "SOL": {"name": "Solana", "rss_feeds": ["https://cryptonews.com/feed/"]},
+              "NVDA": {"name": "NVIDIA", "rss_feeds": ["https://cointelegraph.com/rss"]},
+              "TSLA": {"name": "Tesla", "rss_feeds": ["https://cointelegraph.com/rss"]},
+              "AAPL": {"name": "Apple", "rss_feeds": ["https://cointelegraph.com/rss"]},
+              "SPY": {"name": "S&P 500 ETF", "rss_feeds": ["https://cointelegraph.com/rss"]},
+          }
+
+          for sym, info in symbols.items():
+              # 取该标的相关的新闻（标题含标的名称或符号）
+              related = [t for t in rss_news if sym.lower() in t.lower() or info["name"].lower() in t.lower()]
+              if not related:
+                  related = rss_news[:2]  # 默认用前两条
+              
+              rel_scores = [score_text(t) for t in related]
+              if rel_scores:
+                  raw_score = sum(s[0] for s in rel_scores) / len(rel_scores)
+              else:
+                  raw_score = 50
+
+              final_score = min(max(raw_score + fgi_adj, 0), 100)
+              if final_score >= 62: sig = "🟢 偏多"
+              elif final_score <= 38: sig = "🔴 偏空"
+              else: sig = "🟡 中性"
+
+              conf = min(round(len(related) / 5 * 90), 90) if related else 20
+
+              result["results"][sym] = {
+                  "signal": sig,
+                  "score": round(final_score, 1),
+                  "raw_score": round(raw_score, 1),
+                  "fgi_adjust": round(fgi_adj, 1),
+                  "confidence": conf,
+                  "fgi_value": fgi_val,
+                  "fgi_class": fgi["classification"],
+                  "total_articles": len(related),
+                  "samples": [{"title": t[:100], "sentiment": score_text(t)[1]} for t in related[:3]]
+              }
+
+          # 保存
+          with open("data/x_sentiment.json", "w", encoding="utf-8") as f:
+              json.dump(result, f, ensure_ascii=False, indent=2)
+
+          print(f"\n✅ 情绪数据已保存")
+          print(f"整体信号: {signal} (score={adjusted:.1f})")
+          print(json.dumps(result, indent=2, ensure_ascii=False)[:500])
+          PYTHON_EOF
+
+      - name: Commit and push
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/x_sentiment.json
+          if ! git diff --staged --quiet; then
+            git commit -m "📊 更新X情绪数据 $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+            echo "✅ 已推送情绪数据"
+          else
+            echo "ℹ️ 数据无变化，无需推送"
+          fi
