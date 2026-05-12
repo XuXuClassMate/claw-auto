@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-05-12T06:36:37.719284+00:00",
+  "timestamp": "2026-05-12T06:38:42.432407+00:00",
   "domestic": {
     "weibo": {
       "source": "微博热搜",
@@ -11,7 +11,7 @@
         },
         {
           "rank": 2,
-          "title": "詹姆斯 湖人",
+          "title": "腾讯 已读访客功能不会开发",
           "hot": ""
         },
         {
@@ -31,17 +31,17 @@
         },
         {
           "rank": 6,
-          "title": "机票价格大跳水",
+          "title": "詹姆斯 湖人",
           "hot": ""
         },
         {
           "rank": 7,
-          "title": "雷霆4比0湖人",
+          "title": "机票价格大跳水",
           "hot": ""
         },
         {
           "rank": 8,
-          "title": "腾讯 已读访客功能不会开发",
+          "title": "无忧传媒创始人凌晨发朋友圈",
           "hot": ""
         },
         {
@@ -72,7 +72,7 @@
         {
           "rank": 1,
           "title": "Postmortem: TanStack NPM supply-chain compromise",
-          "score": 731,
+          "score": 733,
           "url": "https://tanstack.com/blog/npm-supply-chain-compromise-postmortem"
         },
         {
@@ -84,7 +84,7 @@
         {
           "rank": 3,
           "title": "If AI writes your code, why use Python?",
-          "score": 374,
+          "score": 376,
           "url": "https://medium.com/@NMitchem/if-ai-writes-your-code-why-use-python-bf8c4ba1a055"
         },
         {
@@ -101,33 +101,33 @@
         },
         {
           "rank": 6,
+          "title": "Software Internals Book Club",
+          "score": 58,
+          "url": "https://eatonphil.com/bookclub.html"
+        },
+        {
+          "rank": 7,
           "title": "Google says criminal hackers used AI to find a major software flaw",
           "score": 159,
           "url": "https://www.nytimes.com/2026/05/11/us/politics/google-hackers-attack-ai.html"
         },
         {
-          "rank": 7,
-          "title": "Software Internals Book Club",
-          "score": 57,
-          "url": "https://eatonphil.com/bookclub.html"
+          "rank": 8,
+          "title": "Screenshots of Old Desktop OSes",
+          "score": 9,
+          "url": "http://www.typewritten.org/Media/"
         },
         {
-          "rank": 8,
+          "rank": 9,
           "title": "Boriel BASIC",
           "score": 16,
           "url": "https://zxbasic.readthedocs.io/en/docs/"
         },
         {
-          "rank": 9,
+          "rank": 10,
           "title": "I let AI build a tool to help me figure out what was waking me up at night",
           "score": 139,
           "url": "https://martin.sh/i-let-ai-build-a-tool-to-help-me-figure-out-what-was-waking-me"
-        },
-        {
-          "rank": 10,
-          "title": "Show HN: A modern Music Player Daemon based on Rockbox firmware",
-          "score": 62,
-          "url": "https://github.com/tsirysndr/rockbox-zig"
         }
       ]
     },
