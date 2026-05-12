@@ -1,57 +1,57 @@
 {
-  "timestamp": "2026-05-12T10:32:06.877401+00:00",
+  "timestamp": "2026-05-12T16:22:28.858915+00:00",
   "domestic": {
     "weibo": {
       "source": "微博热搜",
       "items": [
         {
           "rank": 1,
-          "title": "女孩退礼服事件合唱团称受牵连",
+          "title": "特朗普访华",
           "hot": ""
         },
         {
           "rank": 2,
-          "title": "南京审计大学通报男生偷拍",
+          "title": "南京审计大学偷拍男生被开除",
           "hot": ""
         },
         {
           "rank": 3,
-          "title": "科学避险自救指南",
+          "title": "舒某编造涉人造大米网络谣言被罚",
           "hot": ""
         },
         {
           "rank": 4,
-          "title": "黄晓明 丫头别拿错行李箱",
+          "title": "上淘宝抢618直播红包0元付定",
           "hot": ""
         },
         {
           "rank": 5,
-          "title": "建议不要在小环境中待太久",
+          "title": "白鹿演唱会过审",
           "hot": ""
         },
         {
           "rank": 6,
-          "title": "巴掌榴莲",
+          "title": "AG战胜狼队",
           "hot": ""
         },
         {
           "rank": 7,
-          "title": "深圳夫妻囤存储芯片5个月狂涨320亿",
+          "title": "南审通报男子偷拍事件",
           "hot": ""
         },
         {
           "rank": 8,
-          "title": "原来健康的人身体是静音的",
+          "title": "4月汽车销量前10仅1款油车",
           "hot": ""
         },
         {
           "rank": 9,
-          "title": "网传歌手2026首发人数",
+          "title": "清清 一直送",
           "hot": ""
         },
         {
           "rank": 10,
-          "title": "RNG复活了",
+          "title": "一诺哽咽",
           "hot": ""
         }
       ]
@@ -67,63 +67,63 @@
       "items": [
         {
           "rank": 1,
-          "title": "Learning Software Architecture",
-          "score": 52,
-          "url": "https://matklad.github.io/2026/05/12/software-architecture.html"
+          "title": "Bambu Lab is abusing the open source social contract",
+          "score": 355,
+          "url": "https://www.jeffgeerling.com/blog/2026/bambu-lab-abusing-open-source-social-cont"
         },
         {
           "rank": 2,
-          "title": "Postmortem: TanStack NPM supply-chain compromise",
-          "score": 865,
-          "url": "https://tanstack.com/blog/npm-supply-chain-compromise-postmortem"
+          "title": "Operation: Epic Furious",
+          "score": 56,
+          "url": "https://www.epicfurious.com/"
         },
         {
           "rank": 3,
-          "title": "Screenshots of Old Desktop OSes",
-          "score": 199,
-          "url": "http://www.typewritten.org/Media/"
+          "title": "Rendering the Sky, Sunsets, and Planets",
+          "score": 190,
+          "url": "https://blog.maximeheckel.com/posts/on-rendering-the-sky-sunsets-and-planets/"
         },
         {
           "rank": 4,
-          "title": "They Live (1988) inspired Adblocker",
-          "score": 250,
-          "url": "https://github.com/davmlaw/they_live_adblocker"
+          "title": "Learning Software Architecture",
+          "score": 381,
+          "url": "https://matklad.github.io/2026/05/12/software-architecture.html"
         },
         {
           "rank": 5,
-          "title": "If AI writes your code, why use Python?",
-          "score": 520,
-          "url": "https://medium.com/@NMitchem/if-ai-writes-your-code-why-use-python-bf8c4ba1a055"
+          "title": "The Future of Obsidian Plugins",
+          "score": 14,
+          "url": "https://obsidian.md/blog/future-of-plugins/"
         },
         {
           "rank": 6,
-          "title": "Toxicity on Social Media – The Noisy Room",
-          "score": 26,
-          "url": "https://thenoisyroom.com"
+          "title": "Launch HN: Voker (YC S24) – Analytics for AI Agents",
+          "score": 5,
+          "url": "https://voker.ai"
         },
         {
           "rank": 7,
-          "title": "Rtwatch: Watch videos with friends using WebRTC",
-          "score": 30,
-          "url": "https://github.com/pion/rtwatch"
+          "title": "Screenshots of Old Desktop OSes",
+          "score": 512,
+          "url": "http://www.typewritten.org/Media/"
         },
         {
           "rank": 8,
-          "title": "UCLA discovers first stroke rehabilitation drug to repair brain damage (2025)",
-          "score": 348,
-          "url": "https://stemcell.ucla.edu/news/ucla-discovers-first-stroke-rehabilitation-drug-r"
+          "title": "eBay Rejects GameStop's $56B Takeover as Not Credible",
+          "score": 35,
+          "url": "https://www.bloomberg.com/news/articles/2026-05-12/ebay-rejects-gamestop-s-56-bi"
         },
         {
           "rank": 9,
-          "title": "Claude Platform on AWS",
-          "score": 146,
-          "url": "https://claude.com/blog/claude-platform-on-aws"
+          "title": "Postmortem: TanStack NPM supply-chain compromise",
+          "score": 981,
+          "url": "https://tanstack.com/blog/npm-supply-chain-compromise-postmortem"
         },
         {
           "rank": 10,
-          "title": "Extremely Low Frequencies",
-          "score": 81,
-          "url": "https://computer.rip/2026-05-09-extremely-low-frequencies.html"
+          "title": "Profiling.sampling – Statistical Profiler",
+          "score": 59,
+          "url": "https://docs.python.org/3.15/library/profiling.sampling.html#module-profiling.sa"
         }
       ]
     },
@@ -133,31 +133,31 @@
         {
           "rank": 1,
           "title": "Ask HN: What are you working on? (May 2026)",
-          "score": 267,
+          "score": 271,
           "url": ""
         },
         {
           "rank": 2,
           "title": "Ask HN: We just had an actual UUID v4 collision...",
-          "score": 461,
+          "score": 464,
           "url": ""
         },
         {
           "rank": 3,
           "title": "Rumors of my death are slightly exaggerated",
-          "score": 1656,
+          "score": 1658,
           "url": ""
         },
         {
           "rank": 4,
           "title": "Ask HN: How to get started in electronic music",
-          "score": 7,
+          "score": 9,
           "url": ""
         },
         {
           "rank": 5,
-          "title": "Ask HN: What happens when eventually all E2E mess. apps removed from app stores?",
-          "score": 3,
+          "title": "Ask HN: How are you preparing for interviews nowadays?",
+          "score": 7,
           "url": ""
         }
       ]
@@ -169,7 +169,7 @@
           "rank": 1,
           "title": "huangserva/3DCellForge",
           "desc": "AI-powered interactive 3D cell generation and exploration studio.",
-          "stars": 1608,
+          "stars": 1674,
           "language": "JavaScript"
         },
         {
@@ -188,52 +188,52 @@
         },
         {
           "rank": 4,
-          "title": "RadianceToadAmend/cs2-overlay-utility",
-          "desc": "CS2 external overlay tool — memory reader, entity ESP, and visual aids. D3D11 re",
-          "stars": 498,
+          "title": "RadianceToadAmend/ARC-Raiders-External-Tool",
+          "desc": "External overlay tool for ARC Raiders. UE5 memory reader, entity , radar, perfor",
+          "stars": 521,
           "language": "C++"
         },
         {
           "rank": 5,
-          "title": "cclank/cell-architecture-studio",
-          "desc": "Interactive 3D cell architecture gallery built with React and Three.js",
-          "stars": 387,
-          "language": "TypeScript"
+          "title": "patchfighterway90/cs2-external-overlay",
+          "desc": "The cs2 external helper tool is a software utility designed for gamers and devel",
+          "stars": 519,
+          "language": "Python"
         },
         {
           "rank": 6,
-          "title": "iampedii/WhiteDNS",
-          "desc": "Source-available Android DNS tunneling client with VPN and proxy modes, backed b",
-          "stars": 337,
-          "language": "Kotlin"
+          "title": "RadianceToadAmend/cs2-overlay-utility",
+          "desc": "CS2 external overlay tool — memory reader, entity ESP, and visual aids. D3D11 re",
+          "stars": 499,
+          "language": "C++"
         },
         {
           "rank": 7,
-          "title": "Rhythmplocutter/printer-offline-fix",
-          "desc": "printer offline fix || printer offline || printer offline driver || printer offl",
-          "stars": 304,
-          "language": "PowerShell"
+          "title": "cclank/cell-architecture-studio",
+          "desc": "Interactive 3D cell architecture gallery built with React and Three.js",
+          "stars": 415,
+          "language": "TypeScript"
         },
         {
           "rank": 8,
-          "title": "TrueGunsmithFence/Hentaihunter",
-          "desc": "Hentaihunter - How to steal your Doujinshi easily",
-          "stars": 286,
+          "title": "ywnd1144/Gopay_plus_automatic",
+          "desc": "",
+          "stars": 414,
           "language": "Python"
         },
         {
           "rank": 9,
-          "title": "grandeurcoredecoder/f95zone",
-          "desc": "Unofficial Game Updater for the F95Zone platform",
-          "stars": 284,
-          "language": "PowerShell"
+          "title": "iampedii/WhiteDNS",
+          "desc": "Source-available Android DNS tunneling client with VPN and proxy modes, backed b",
+          "stars": 351,
+          "language": "Kotlin"
         },
         {
           "rank": 10,
-          "title": "limesupporterdoor/LockDown-Browser-Bypass-Tool",
-          "desc": "Enables window switching and tab navigation in restricted browser environments",
-          "stars": 280,
-          "language": "C#"
+          "title": "Rhythmplocutter/printer-offline-fix",
+          "desc": "printer offline fix || printer offline || printer offline driver || printer offl",
+          "stars": 326,
+          "language": "PowerShell"
         }
       ]
     },
@@ -248,15 +248,15 @@
         },
         {
           "rank": 2,
-          "title": "Mythos finds a curl vulnerability",
-          "short_id": "am7evd",
-          "url": "https://daniel.haxx.se/blog/2026/05/11/mythos-finds-a-curl-vulnerability/"
+          "title": "Learning Software Architecture",
+          "short_id": "f47lxm",
+          "url": "https://matklad.github.io/2026/05/12/software-architecture.html"
         },
         {
           "rank": 3,
-          "title": "Ratty: A terminal emulator with inline 3D graphics",
-          "short_id": "ij94sb",
-          "url": "https://ratty-term.org/"
+          "title": "The Problem of Pedagogy in Advanced Mathematics",
+          "short_id": "ztrxoj",
+          "url": "https://susam.net/advanced-mathematics-pedagogy.html"
         },
         {
           "rank": 4,
@@ -266,27 +266,27 @@
         },
         {
           "rank": 5,
-          "title": "Gram 2.0.0 released",
-          "short_id": "5jdbwv",
-          "url": "https://gram-editor.com/posts/release-2.0-0/"
-        },
-        {
-          "rank": 6,
           "title": "Popular Go library fsnotify raises supply chain alarms after maintainer access changes",
           "short_id": "7rpqbo",
           "url": "https://socket.dev/blog/fsnotify-maintainer-dispute-sparks-supply-chain-concerns"
         },
         {
+          "rank": 6,
+          "title": "Gram 2.0.0 released",
+          "short_id": "5jdbwv",
+          "url": "https://gram-editor.com/posts/release-2.0-0/"
+        },
+        {
           "rank": 7,
-          "title": "Moving from lsp-mode in GNU Emacs to Eglot",
-          "short_id": "bojb9a",
-          "url": "https://utcc.utoronto.ca/~cks/space/blog/programming/EmacsLspModeToEglot"
+          "title": "Mythos finds a curl vulnerability",
+          "short_id": "am7evd",
+          "url": "https://daniel.haxx.se/blog/2026/05/11/mythos-finds-a-curl-vulnerability/"
         },
         {
           "rank": 8,
-          "title": "The anti-minimalist backlash is the bigger story behind Oxygen’s revival",
-          "short_id": "4guexz",
-          "url": "https://filipfila.wordpress.com/2026/05/10/the-anti-minimalist-backlash-is-the-b"
+          "title": "Ratty: A terminal emulator with inline 3D graphics",
+          "short_id": "ij94sb",
+          "url": "https://ratty-term.org/"
         },
         {
           "rank": 9,
@@ -296,9 +296,9 @@
         },
         {
           "rank": 10,
-          "title": "Programmable Whitelist-based Configs: Embedding Rye in Go",
-          "short_id": "vxf6cq",
-          "url": "https://ryelang.org/blog/posts/whitelist-config-with-rye/"
+          "title": "How Rockstar fit an entire city into PlayStation 2 memory",
+          "short_id": "i6pafc",
+          "url": "https://www.youtube.com/watch?v=cIbCxbrBCys"
         }
       ]
     },
@@ -307,56 +307,57 @@
       "items": [
         {
           "rank": 1,
-          "title": "Static URL for Google Apps script?",
-          "answers": 4,
+          "title": "pip question, what is wrong with this script",
+          "answers": 0,
           "score": 0,
           "tags": [
-            "google-apps-script",
-            "deployment",
-            "web-applications"
+            "python",
+            "pip",
+            "docx"
           ]
         },
         {
           "rank": 2,
-          "title": "How to notify a (Spring4D) TObjectDataSet when a bound object property has changed",
+          "title": "Uploading Segmentation Annotations to AWS Groundtruth",
           "answers": 1,
-          "score": 1,
+          "score": -3,
           "tags": [
-            "delphi",
-            "dbgrid",
-            "tdbgrid"
+            "amazon-web-services",
+            "amazon-sagemaker",
+            "semantic-segmentation"
           ]
         },
         {
           "rank": 3,
-          "title": "How to change setting_id start from 1 again in Opencart 3?",
-          "answers": 0,
-          "score": -3,
+          "title": "How can I query all the GraphQL type fields without writing a long query?",
+          "answers": 9,
+          "score": 392,
           "tags": [
-            "mysql",
-            "opencart-3"
+            "php",
+            "laravel",
+            "graphql"
           ]
         },
         {
           "rank": 4,
-          "title": "How to Re-publish Web App without changing URL",
-          "answers": 1,
-          "score": 3,
+          "title": "why is output of chained promise thenables, Interleaved?",
+          "answers": 0,
+          "score": -1,
           "tags": [
-            "google-apps-script",
-            "web-applications",
-            "publish"
+            "javascript",
+            "node.js",
+            "promise"
           ]
         },
         {
           "rank": 5,
-          "title": "Using std::meta::members_of() on a namespace",
-          "answers": 1,
-          "score": 3,
+          "title": "Why is my SIMD implementation of octal string parsing unable to beat the compiler's?",
+          "answers": 6,
+          "score": 4,
           "tags": [
             "c++",
-            "reflection",
-            "c++26"
+            "assembly",
+            "simd"
           ]
         }
       ]
@@ -366,6 +367,27 @@
       "items": [
         {
           "rank": 1,
+          "title": "What is the information security purpose of manual rotation in managed KMS services?",
+          "answers": 0,
+          "score": 1,
+          "tags": [
+            "key-management",
+            "aws",
+            "google-cloud-platform"
+          ]
+        },
+        {
+          "rank": 2,
+          "title": "Should login/refresh authentication routes return new tokens if an existing, valid token is present?",
+          "answers": 1,
+          "score": 1,
+          "tags": [
+            "authentication",
+            "jwt"
+          ]
+        },
+        {
+          "rank": 3,
           "title": "security concerns when configuring Windows 10 to automatically log into a Microsoft account-linked user account",
           "answers": 1,
           "score": 0,
@@ -373,28 +395,6 @@
             "authentication",
             "windows-10",
             "microsoft"
-          ]
-        },
-        {
-          "rank": 2,
-          "title": "Metasploit: java_signed_applet attack hangs after user response",
-          "answers": 1,
-          "score": 1,
-          "tags": [
-            "java",
-            "metasploit",
-            "client-side"
-          ]
-        },
-        {
-          "rank": 3,
-          "title": "After phishing incident, some entra devices have registration time stamp = activity. Odd?",
-          "answers": 0,
-          "score": 0,
-          "tags": [
-            "man-in-the-middle",
-            "phishing",
-            "incident-response"
           ]
         }
       ]
@@ -404,32 +404,33 @@
       "items": [
         {
           "rank": 1,
-          "title": "What’s the most effective way to reduce hallucinations in enterprise RAG systems?",
-          "answers": 2,
+          "title": "How do you operationalize confidence metrics correctly for a “neither” option in cue-conflict decision classification?",
+          "answers": 0,
           "score": 0,
           "tags": [
-            "large-language-models"
+            "convolutional-neural-networks",
+            "image-net"
           ]
         },
         {
           "rank": 2,
-          "title": "Where or for what could genetic algorithms be used in the context of project management?",
-          "answers": 2,
+          "title": "In a face database containing multiple images per subject, how do we determine the face image which is most suited for face recognition?",
+          "answers": 1,
           "score": 2,
           "tags": [
-            "genetic-algorithms",
-            "applications"
+            "deep-learning",
+            "face-recognition"
           ]
         },
         {
           "rank": 3,
-          "title": "Is the acronym \"MCP\" (Model Context Protocol) intentionally referencing Tron's Master Control Program?",
+          "title": "What is the meaning of N in the description \"The mean operation still operates over all the elements, and divides by N\"?",
           "answers": 1,
-          "score": 2,
+          "score": 0,
           "tags": [
-            "reference-request",
-            "terminology",
-            "history"
+            "python",
+            "pytorch",
+            "mean-squared-error"
           ]
         }
       ]
@@ -439,38 +440,41 @@
       "items": [
         {
           "rank": 1,
-          "title": "Text processing - \"merging\" partial duplicates with count",
-          "answers": 6,
-          "score": 7,
+          "title": "Kali won't boot without USB flash drive",
+          "answers": 2,
+          "score": 1,
           "tags": [
-            "shell-script",
-            "shell",
-            "text-processing"
+            "boot",
+            "kali-linux",
+            "dual-boot"
           ]
         },
         {
           "rank": 2,
-          "title": "Exiting SSH after detaching a long Byobu session doesn't complete",
-          "answers": 1,
+          "title": "problem with grub-efi-amd64 signed probably due to encrypted hard drive",
+          "answers": 0,
           "score": 0,
           "tags": [
-            "ssh",
-            "x11",
-            "vim"
+            "apt",
+            "grub2",
+            "dpkg"
           ]
         },
         {
           "rank": 3,
-          "title": "Replace the matching pattern with equal number of n characters",
-          "answers": 6,
-          "score": 3,
+          "title": "Somehow, someway, gpg: no valid OpenPGP data found",
+          "answers": 1,
+          "score": 0,
           "tags": [
-            "text-processing",
-            "command-line",
-            "perl"
+            "gpg",
+            "tor"
           ]
         }
       ]
     }
+  },
+  "x_trending": {
+    "source": "X/Twitter Trending",
+    "items": []
   }
 }
