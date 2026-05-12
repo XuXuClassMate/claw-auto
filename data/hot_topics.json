@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-05-12T09:37:51.502809+00:00",
+  "timestamp": "2026-05-12T10:32:06.877401+00:00",
   "domestic": {
     "weibo": {
       "source": "微博热搜",
       "items": [
         {
           "rank": 1,
-          "title": "南京审计大学通报男生偷拍",
+          "title": "女孩退礼服事件合唱团称受牵连",
           "hot": ""
         },
         {
           "rank": 2,
-          "title": "宇树机甲390万起",
+          "title": "南京审计大学通报男生偷拍",
           "hot": ""
         },
         {
@@ -36,7 +36,7 @@
         },
         {
           "rank": 7,
-          "title": "数码产品的颜色哲学",
+          "title": "深圳夫妻囤存储芯片5个月狂涨320亿",
           "hot": ""
         },
         {
@@ -46,12 +46,12 @@
         },
         {
           "rank": 9,
-          "title": "詹姆斯回应是否退役",
+          "title": "网传歌手2026首发人数",
           "hot": ""
         },
         {
           "rank": 10,
-          "title": "中餐厅10录制",
+          "title": "RNG复活了",
           "hot": ""
         }
       ]
@@ -67,63 +67,63 @@
       "items": [
         {
           "rank": 1,
-          "title": "Postmortem: TanStack NPM supply-chain compromise",
-          "score": 843,
-          "url": "https://tanstack.com/blog/npm-supply-chain-compromise-postmortem"
+          "title": "Learning Software Architecture",
+          "score": 52,
+          "url": "https://matklad.github.io/2026/05/12/software-architecture.html"
         },
         {
           "rank": 2,
-          "title": "Screenshots of Old Desktop OSes",
-          "score": 159,
-          "url": "http://www.typewritten.org/Media/"
+          "title": "Postmortem: TanStack NPM supply-chain compromise",
+          "score": 865,
+          "url": "https://tanstack.com/blog/npm-supply-chain-compromise-postmortem"
         },
         {
           "rank": 3,
-          "title": "They Live (1988) inspired Adblocker",
-          "score": 225,
-          "url": "https://github.com/davmlaw/they_live_adblocker"
+          "title": "Screenshots of Old Desktop OSes",
+          "score": 199,
+          "url": "http://www.typewritten.org/Media/"
         },
         {
           "rank": 4,
-          "title": "If AI writes your code, why use Python?",
-          "score": 487,
-          "url": "https://medium.com/@NMitchem/if-ai-writes-your-code-why-use-python-bf8c4ba1a055"
+          "title": "They Live (1988) inspired Adblocker",
+          "score": 250,
+          "url": "https://github.com/davmlaw/they_live_adblocker"
         },
         {
           "rank": 5,
-          "title": "UCLA discovers first stroke rehabilitation drug to repair brain damage (2025)",
-          "score": 338,
-          "url": "https://stemcell.ucla.edu/news/ucla-discovers-first-stroke-rehabilitation-drug-r"
+          "title": "If AI writes your code, why use Python?",
+          "score": 520,
+          "url": "https://medium.com/@NMitchem/if-ai-writes-your-code-why-use-python-bf8c4ba1a055"
         },
         {
           "rank": 6,
-          "title": "Claude Platform on AWS",
-          "score": 136,
-          "url": "https://claude.com/blog/claude-platform-on-aws"
+          "title": "Toxicity on Social Media – The Noisy Room",
+          "score": 26,
+          "url": "https://thenoisyroom.com"
         },
         {
           "rank": 7,
-          "title": "Extremely Low Frequencies",
-          "score": 72,
-          "url": "https://computer.rip/2026-05-09-extremely-low-frequencies.html"
+          "title": "Rtwatch: Watch videos with friends using WebRTC",
+          "score": 30,
+          "url": "https://github.com/pion/rtwatch"
         },
         {
           "rank": 8,
-          "title": "Software Internals Book Club",
-          "score": 96,
-          "url": "https://eatonphil.com/bookclub.html"
+          "title": "UCLA discovers first stroke rehabilitation drug to repair brain damage (2025)",
+          "score": 348,
+          "url": "https://stemcell.ucla.edu/news/ucla-discovers-first-stroke-rehabilitation-drug-r"
         },
         {
           "rank": 9,
-          "title": "Remembering Planet Source Code: Sharing Code Before GitHub Made It Easy",
-          "score": 9,
-          "url": "https://www.pietschsoft.com/post/2026/05/05/remembering-planet-source-code-shari"
+          "title": "Claude Platform on AWS",
+          "score": 146,
+          "url": "https://claude.com/blog/claude-platform-on-aws"
         },
         {
           "rank": 10,
-          "title": "Rtwatch: Watch videos with friends using WebRTC",
-          "score": 15,
-          "url": "https://github.com/pion/rtwatch"
+          "title": "Extremely Low Frequencies",
+          "score": 81,
+          "url": "https://computer.rip/2026-05-09-extremely-low-frequencies.html"
         }
       ]
     },
@@ -169,7 +169,7 @@
           "rank": 1,
           "title": "huangserva/3DCellForge",
           "desc": "AI-powered interactive 3D cell generation and exploration studio.",
-          "stars": 1597,
+          "stars": 1608,
           "language": "JavaScript"
         },
         {
@@ -197,42 +197,42 @@
           "rank": 5,
           "title": "cclank/cell-architecture-studio",
           "desc": "Interactive 3D cell architecture gallery built with React and Three.js",
-          "stars": 386,
+          "stars": 387,
           "language": "TypeScript"
         },
         {
           "rank": 6,
           "title": "iampedii/WhiteDNS",
           "desc": "Source-available Android DNS tunneling client with VPN and proxy modes, backed b",
-          "stars": 335,
+          "stars": 337,
           "language": "Kotlin"
         },
         {
           "rank": 7,
           "title": "Rhythmplocutter/printer-offline-fix",
           "desc": "printer offline fix || printer offline || printer offline driver || printer offl",
-          "stars": 301,
+          "stars": 304,
           "language": "PowerShell"
         },
         {
           "rank": 8,
           "title": "TrueGunsmithFence/Hentaihunter",
           "desc": "Hentaihunter - How to steal your Doujinshi easily",
-          "stars": 283,
+          "stars": 286,
           "language": "Python"
         },
         {
           "rank": 9,
           "title": "grandeurcoredecoder/f95zone",
           "desc": "Unofficial Game Updater for the F95Zone platform",
-          "stars": 279,
+          "stars": 284,
           "language": "PowerShell"
         },
         {
           "rank": 10,
           "title": "limesupporterdoor/LockDown-Browser-Bypass-Tool",
           "desc": "Enables window switching and tab navigation in restricted browser environments",
-          "stars": 275,
+          "stars": 280,
           "language": "C#"
         }
       ]
@@ -290,15 +290,15 @@
         },
         {
           "rank": 9,
-          "title": "Programmable Whitelist-based Configs: Embedding Rye in Go",
-          "short_id": "vxf6cq",
-          "url": "https://ryelang.org/blog/posts/whitelist-config-with-rye/"
+          "title": "CSS & vertical rhythm for text, images, and tables",
+          "short_id": "bvqio4",
+          "url": "https://vincent.bernat.ch/en/blog/2026-css-vertical-rhythm"
         },
         {
           "rank": 10,
-          "title": "The Cathedral, the Bazaar and the Kitchen",
-          "short_id": "iaankl",
-          "url": "https://blog.vrypan.net/2026/05/11/the-cathedral-the-bazaar-and-the-kitchen/"
+          "title": "Programmable Whitelist-based Configs: Embedding Rye in Go",
+          "short_id": "vxf6cq",
+          "url": "https://ryelang.org/blog/posts/whitelist-config-with-rye/"
         }
       ]
     },
@@ -307,54 +307,56 @@
       "items": [
         {
           "rank": 1,
-          "title": "get or set inexistant properties of Powershell object",
-          "answers": 0,
+          "title": "Static URL for Google Apps script?",
+          "answers": 4,
           "score": 0,
           "tags": [
-            "c#",
-            "powershell"
+            "google-apps-script",
+            "deployment",
+            "web-applications"
           ]
         },
         {
           "rank": 2,
-          "title": "Why does my pandas groupby() result not show total sales by product correctly?",
+          "title": "How to notify a (Spring4D) TObjectDataSet when a bound object property has changed",
           "answers": 1,
           "score": 1,
           "tags": [
-            "python",
-            "group-by"
+            "delphi",
+            "dbgrid",
+            "tdbgrid"
           ]
         },
         {
           "rank": 3,
-          "title": "VHDL FSM with a different timer for every state",
-          "answers": 1,
-          "score": 0,
+          "title": "How to change setting_id start from 1 again in Opencart 3?",
+          "answers": 0,
+          "score": -3,
           "tags": [
-            "timing",
-            "fsm",
-            "vhdl-2008"
+            "mysql",
+            "opencart-3"
           ]
         },
         {
           "rank": 4,
-          "title": "Approval Workflow Email Trigger Issues in Salesforce",
-          "answers": 0,
-          "score": 1,
+          "title": "How to Re-publish Web App without changing URL",
+          "answers": 1,
+          "score": 3,
           "tags": [
-            "email",
-            "salesforce",
-            "salesforce-communities"
+            "google-apps-script",
+            "web-applications",
+            "publish"
           ]
         },
         {
           "rank": 5,
-          "title": "How to concatenate the results of a cypher query?",
+          "title": "Using std::meta::members_of() on a namespace",
           "answers": 1,
-          "score": 0,
+          "score": 3,
           "tags": [
-            "neo4j",
-            "cypher"
+            "c++",
+            "reflection",
+            "c++26"
           ]
         }
       ]
@@ -437,6 +439,28 @@
       "items": [
         {
           "rank": 1,
+          "title": "Text processing - \"merging\" partial duplicates with count",
+          "answers": 6,
+          "score": 7,
+          "tags": [
+            "shell-script",
+            "shell",
+            "text-processing"
+          ]
+        },
+        {
+          "rank": 2,
+          "title": "Exiting SSH after detaching a long Byobu session doesn't complete",
+          "answers": 1,
+          "score": 0,
+          "tags": [
+            "ssh",
+            "x11",
+            "vim"
+          ]
+        },
+        {
+          "rank": 3,
           "title": "Replace the matching pattern with equal number of n characters",
           "answers": 6,
           "score": 3,
@@ -444,26 +468,6 @@
             "text-processing",
             "command-line",
             "perl"
-          ]
-        },
-        {
-          "rank": 2,
-          "title": "Why does systemd update trigger to build initramfs?",
-          "answers": 2,
-          "score": 0,
-          "tags": [
-            "linux",
-            "systemd",
-            "initramfs"
-          ]
-        },
-        {
-          "rank": 3,
-          "title": "Wayland multi input setup",
-          "answers": 1,
-          "score": 3,
-          "tags": [
-            "wayland"
           ]
         }
       ]
