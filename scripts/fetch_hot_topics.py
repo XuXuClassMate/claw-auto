@@ -66,6 +66,8 @@ def fetch_zhihu_hot():
             return [{"rank": i+1, "title": clean_text(item.get("target", {}).get("title", ""))} for i, item in enumerate(items)]
     except Exception as e:
         print(f"  知乎热榜 error: {e}")
+    return []
+
 # ========== 国际热点 ==========
 def fetch_hackernews_top():
     """Hacker News Top Stories"""
