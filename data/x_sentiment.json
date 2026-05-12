@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-05-12T18:00:13.119838+00:00",
+  "timestamp": "2026-05-12T20:05:04.703755+00:00",
   "source": "alternative.me + 新浪财经 + RSS feeds",
   "fear_greed": {
     "value": 49,
@@ -9,90 +9,130 @@
     "BTC": {
       "signal": "🟡 中性",
       "score": 49.6,
-      "raw_score": 50,
+      "raw_score": 50.0,
       "fgi_adjust": -0.4,
-      "confidence": 20,
+      "confidence": 18,
       "fgi_value": 49,
       "fgi_class": "Neutral",
-      "total_articles": 0,
-      "samples": []
+      "total_articles": 1,
+      "samples": [
+        {
+          "title": "WAIB Summit Monaco 2026 returns: the world’s most exclusive gathering for digital assets & AI",
+          "sentiment": "neutral"
+        }
+      ]
     },
     "ETH": {
       "signal": "🟡 中性",
       "score": 49.6,
-      "raw_score": 50,
+      "raw_score": 50.0,
       "fgi_adjust": -0.4,
-      "confidence": 20,
+      "confidence": 18,
       "fgi_value": 49,
       "fgi_class": "Neutral",
-      "total_articles": 0,
-      "samples": []
+      "total_articles": 1,
+      "samples": [
+        {
+          "title": "WAIB Summit Monaco 2026 returns: the world’s most exclusive gathering for digital assets & AI",
+          "sentiment": "neutral"
+        }
+      ]
     },
     "BNB": {
       "signal": "🟡 中性",
       "score": 49.6,
-      "raw_score": 50,
+      "raw_score": 50.0,
       "fgi_adjust": -0.4,
-      "confidence": 20,
+      "confidence": 18,
       "fgi_value": 49,
       "fgi_class": "Neutral",
-      "total_articles": 0,
-      "samples": []
+      "total_articles": 1,
+      "samples": [
+        {
+          "title": "WAIB Summit Monaco 2026 returns: the world’s most exclusive gathering for digital assets & AI",
+          "sentiment": "neutral"
+        }
+      ]
     },
     "SOL": {
       "signal": "🟡 中性",
       "score": 49.6,
-      "raw_score": 50,
+      "raw_score": 50.0,
       "fgi_adjust": -0.4,
-      "confidence": 20,
+      "confidence": 18,
       "fgi_value": 49,
       "fgi_class": "Neutral",
-      "total_articles": 0,
-      "samples": []
+      "total_articles": 1,
+      "samples": [
+        {
+          "title": "WAIB Summit Monaco 2026 returns: the world’s most exclusive gathering for digital assets & AI",
+          "sentiment": "neutral"
+        }
+      ]
     },
     "NVDA": {
       "signal": "🟡 中性",
       "score": 49.6,
-      "raw_score": 50,
+      "raw_score": 50.0,
       "fgi_adjust": -0.4,
-      "confidence": 20,
+      "confidence": 18,
       "fgi_value": 49,
       "fgi_class": "Neutral",
-      "total_articles": 0,
-      "samples": []
+      "total_articles": 1,
+      "samples": [
+        {
+          "title": "WAIB Summit Monaco 2026 returns: the world’s most exclusive gathering for digital assets & AI",
+          "sentiment": "neutral"
+        }
+      ]
     },
     "TSLA": {
       "signal": "🟡 中性",
       "score": 49.6,
-      "raw_score": 50,
+      "raw_score": 50.0,
       "fgi_adjust": -0.4,
-      "confidence": 20,
+      "confidence": 18,
       "fgi_value": 49,
       "fgi_class": "Neutral",
-      "total_articles": 0,
-      "samples": []
+      "total_articles": 1,
+      "samples": [
+        {
+          "title": "WAIB Summit Monaco 2026 returns: the world’s most exclusive gathering for digital assets & AI",
+          "sentiment": "neutral"
+        }
+      ]
     },
     "AAPL": {
       "signal": "🟡 中性",
       "score": 49.6,
-      "raw_score": 50,
+      "raw_score": 50.0,
       "fgi_adjust": -0.4,
-      "confidence": 20,
+      "confidence": 18,
       "fgi_value": 49,
       "fgi_class": "Neutral",
-      "total_articles": 0,
-      "samples": []
+      "total_articles": 1,
+      "samples": [
+        {
+          "title": "WAIB Summit Monaco 2026 returns: the world’s most exclusive gathering for digital assets & AI",
+          "sentiment": "neutral"
+        }
+      ]
     },
     "SPY": {
       "signal": "🟡 中性",
       "score": 49.6,
-      "raw_score": 50,
+      "raw_score": 50.0,
       "fgi_adjust": -0.4,
-      "confidence": 20,
+      "confidence": 18,
       "fgi_value": 49,
       "fgi_class": "Neutral",
-      "total_articles": 0,
-      "samples": []
+      "total_articles": 1,
+      "samples": [
+        {
+          "title": "WAIB Summit Monaco 2026 returns: the world’s most exclusive gathering for digital assets & AI",
+          "sentiment": "neutral"
+        }
+      ]
     }
   }
 }
