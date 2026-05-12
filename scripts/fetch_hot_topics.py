@@ -81,67 +81,82 @@ def fetch_zhihu_hot():
     return []
 
 # ========== 国际热点 ==========
-def fetch_reddit_hot():
-    """Reddit r/all 热帖"""
+def fetch_hackernews():
+    """Hacker News 热帖"""
     try:
-        url = "https://www.reddit.com/r/all/hot.json?limit=10"
-        data = fetch_json(url)
-        if data and data.get("data", {}).get("children"):
-            items = data["data"]["children"]
-            return [{"rank": i+1, "title": clean_text(item["data"].get("title", "")), "subreddit": item["data"].get("subreddit", ""), "score": item["data"].get("score", 0)} for i, item in enumerate(items)]
+        # 获取Top Stories IDs
+        ids_url = "https://hacker-news.firebaseio.com/v0/topstories.json"
+        req = urllib.request.Request(ids_url, headers=HEADERS)
+        with urllib.request.urlopen(req, timeout=10, context=SSL_CTX) as resp:
+            ids = json.loads(resp.read().decode())
+        
+        items = []
+        for story_id in ids[:10]:
+            try:
+                item_url = f"https://hacker-news.firebaseio.com/v0/item/{story_id}.json"
+                req2 = urllib.request.Request(item_url, headers=HEADERS)
+                with urllib.request.urlopen(req2, timeout=8, context=SSL_CTX) as r:
+                    item = json.loads(r.read().decode())
+                if item.get("title"):
+                    items.append({
+                        "rank": len(items)+1,
+                        "title": clean_text(item.get("title", "")),
+                        "score": item.get("score", 0),
+                        "url": item.get("url", "")[:80]
+                    })
+                    time.sleep(0.1)
+            except:
+                continue
+        return items
     except Exception as e:
-        print(f"  Reddit error: {e}")
-    return []
+        print(f"  Hacker News error: {e}")
+        return []
 
-def fetch_twitter_trending():
-    """Twitter/X Trending (via Nitter instance - 免费方案)"""
-    # Nitter 实例列表（备用）
-    nitter_instances = [
-        "https://nitter.net",
-        "https://nitter.privacydev.net",
-        "https://nitter.poast.org",
-    ]
-    for instance in nitter_instances:
-        try:
-            url = f"{instance}/i/trends"
-            req = urllib.request.Request(url, headers=HEADERS)
-            with urllib.request.urlopen(req, timeout=8, context=SSL_CTX) as resp:
-                raw = resp.read().decode("utf-8", errors="ignore")
-            
-            # 解析趋势标签
-            trends = re.findall(r'href="/[a-zA-Z0-9_]+/search\?q=[^"]+">([^<]+)<', raw)
-            if trends:
-                return [{"rank": i+1, "topic": clean_text(t)} for i, t in enumerate(trends[:10])]
-        except Exception as e:
-            print(f"  Nitter [{instance}] error: {e}")
-            continue
-    return []
-
-def fetch_google_trends():
-    """Google Trends 实时热点 (via alternative.me)"""
+def fetch_google_news():
+    """Google News 国际要闻 RSS"""
     try:
-        # Google Trends 没有免费公开API，用 CryptoCompare 的 news 作为国际经济参考
-        url = "https://min-api.cryptocompare.com/data/v2/news/?lang=EN&categories=Technology"
-        data = fetch_json(url)
-        if data and data.get("Data"):
-            items = data["Data"][:10]
-            return [{"rank": i+1, "title": clean_text(item.get("title", "")), "source": item.get("categories", ""), "url": item.get("url", "")[:80]} for i, item in enumerate(items)]
-    except Exception as e:
-        print(f"  Google Trends error: {e}")
-    return []
-
-def fetch_bbc_news():
-    """BBC News 国际要闻"""
-    try:
-        url = "https://feeds.bbci.co.uk/news/world/rss.xml"
+        url = "https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en"
         req = urllib.request.Request(url, headers=HEADERS)
         with urllib.request.urlopen(req, timeout=10, context=SSL_CTX) as resp:
             raw = resp.read().decode("utf-8", errors="ignore")
-        items = re.findall(r'<item><title><!\[CDATA\[(.*?)\]\]></title>.*?<description><!\[CDATA\[(.*?)\]\]>', raw, re.DOTALL)
-        return [{"rank": i+1, "title": clean_text(t), "desc": clean_text(d)[:100]} for i, (t, d) in enumerate(items[:10])]
+        items = re.findall(r'<item><title><!\[CDATA\[(.*?)\]\]></title>.*?<link>(.*?)</link>', raw, re.DOTALL)
+        result = []
+        for i, (title, link) in enumerate(items[:10]):
+            result.append({
+                "rank": i+1,
+                "title": clean_text(title),
+                "link": link.strip()[:100]
+            })
+        return result
     except Exception as e:
-        print(f"  BBC error: {e}")
-    return []
+        print(f"  Google News error: {e}")
+        return []
+
+def fetch_reuters_world():
+    """路透社世界新闻"""
+    try:
+        url = "https://feeds.reuters.com/reuters/worldnews"
+        req = urllib.request.Request(url, headers=HEADERS)
+        with urllib.request.urlopen(req, timeout=10, context=SSL_CTX) as resp:
+            raw = resp.read().decode("utf-8", errors="ignore")
+        titles = re.findall(r'<title><!\[CDATA\[(.*?)\]\]></title>', raw)
+        return [{"rank": i+1, "title": clean_text(t)} for i, t in enumerate(titles[2:12])]  # skip header
+    except Exception as e:
+        print(f"  Reuters error: {e}")
+        return []
+
+def fetch_aljazeera():
+    """半岛电视台 Al Jazeera"""
+    try:
+        url = "https://www.aljazeera.com/xml/rss/all.xml"
+        req = urllib.request.Request(url, headers=HEADERS)
+        with urllib.request.urlopen(req, timeout=10, context=SSL_CTX) as resp:
+            raw = resp.read().decode("utf-8", errors="ignore")
+        titles = re.findall(r'<title><!\[CDATA\[(.*?)\]\]></title>', raw)
+        return [{"rank": i+1, "title": clean_text(t)} for i, t in enumerate(titles[2:12])]
+    except Exception as e:
+        print(f"  Al Jazeera error: {e}")
+        return []
 
 def main():
     print("🔍 每日热点话题抓取")
@@ -157,13 +172,15 @@ def main():
     print(f"  知乎热榜: {len(zhihu)} 条")
     
     print("\n🌍 国际热点...")
-    reddit = fetch_reddit_hot()
-    twitter = fetch_twitter_trending()
-    bbc = fetch_bbc_news()
+    hn = fetch_hackernews()
+    google = fetch_google_news()
+    reuters = fetch_reuters_world()
+    alj = fetch_aljazeera()
     
-    print(f"  Reddit r/all: {len(reddit)} 条")
-    print(f"  Twitter/X趋势: {len(twitter)} 条")
-    print(f"  BBC News: {len(bbc)} 条")
+    print(f"  Hacker News: {len(hn)} 条")
+    print(f"  Google News: {len(google)} 条")
+    print(f"  路透社: {len(reuters)} 条")
+    print(f"  半岛电视台: {len(alj)} 条")
     
     result = {
         "timestamp": datetime.now(timezone.utc).isoformat(),
@@ -173,9 +190,10 @@ def main():
             "zhihu": {"source": "知乎热榜", "items": zhihu},
         },
         "international": {
-            "reddit": {"source": "Reddit r/all", "items": reddit},
-            "twitter": {"source": "Twitter/X Trending", "items": twitter},
-            "bbc": {"source": "BBC News World", "items": bbc},
+            "hackernews": {"source": "Hacker News", "items": hn},
+            "google": {"source": "Google News", "items": google},
+            "reuters": {"source": "Reuters World", "items": reuters},
+            "aljazeera": {"source": "Al Jazeera", "items": alj},
         },
     }
     
@@ -195,8 +213,8 @@ def main():
     for item in weibo[:5]:
         print(f"  {item['rank']}. {item['title'][:40]}")
     
-    print("\n🌍 国际热点 TOP5 (Reddit)")
-    for item in reddit[:5]:
+    print("\n🌍 国际热点 TOP5 (Hacker News)")
+    for item in hn[:5]:
         print(f"  {item['rank']}. {item['title'][:40]}")
     
     return result
