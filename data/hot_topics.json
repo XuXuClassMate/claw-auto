@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-05-12T06:28:32.090589+00:00",
+  "timestamp": "2026-05-12T06:36:37.719284+00:00",
   "domestic": {
     "weibo": {
       "source": "微博热搜",
@@ -11,7 +11,7 @@
         },
         {
           "rank": 2,
-          "title": "机票价格大跳水",
+          "title": "詹姆斯 湖人",
           "hot": ""
         },
         {
@@ -26,32 +26,32 @@
         },
         {
           "rank": 5,
-          "title": "詹姆斯 湖人",
-          "hot": ""
-        },
-        {
-          "rank": 6,
-          "title": "雷霆4比0湖人",
-          "hot": ""
-        },
-        {
-          "rank": 7,
-          "title": "宝泉才是真极限",
-          "hot": ""
-        },
-        {
-          "rank": 8,
           "title": "宇树载人变形机甲",
           "hot": ""
         },
         {
+          "rank": 6,
+          "title": "机票价格大跳水",
+          "hot": ""
+        },
+        {
+          "rank": 7,
+          "title": "雷霆4比0湖人",
+          "hot": ""
+        },
+        {
+          "rank": 8,
+          "title": "腾讯 已读访客功能不会开发",
+          "hot": ""
+        },
+        {
           "rank": 9,
-          "title": "医生才是最不听医嘱的",
+          "title": "给阿嬷的情书 观众的报复性投票",
           "hot": ""
         },
         {
           "rank": 10,
-          "title": "给阿嬷的情书 观众的报复性投票",
+          "title": "黑夜告白大结局",
           "hot": ""
         }
       ]
@@ -72,44 +72,44 @@
         {
           "rank": 1,
           "title": "Postmortem: TanStack NPM supply-chain compromise",
-          "score": 726,
+          "score": 731,
           "url": "https://tanstack.com/blog/npm-supply-chain-compromise-postmortem"
         },
         {
           "rank": 2,
           "title": "They Live (1988) inspired Adblocker",
-          "score": 127,
+          "score": 133,
           "url": "https://github.com/davmlaw/they_live_adblocker"
         },
         {
           "rank": 3,
           "title": "If AI writes your code, why use Python?",
-          "score": 365,
+          "score": 374,
           "url": "https://medium.com/@NMitchem/if-ai-writes-your-code-why-use-python-bf8c4ba1a055"
         },
         {
           "rank": 4,
           "title": "Claude Platform on AWS",
-          "score": 107,
+          "score": 110,
           "url": "https://claude.com/blog/claude-platform-on-aws"
         },
         {
           "rank": 5,
           "title": "UCLA discovers first stroke rehabilitation drug to repair brain damage (2025)",
-          "score": 298,
+          "score": 300,
           "url": "https://stemcell.ucla.edu/news/ucla-discovers-first-stroke-rehabilitation-drug-r"
         },
         {
           "rank": 6,
-          "title": "Software Internals Book Club",
-          "score": 55,
-          "url": "https://eatonphil.com/bookclub.html"
+          "title": "Google says criminal hackers used AI to find a major software flaw",
+          "score": 159,
+          "url": "https://www.nytimes.com/2026/05/11/us/politics/google-hackers-attack-ai.html"
         },
         {
           "rank": 7,
-          "title": "Google says criminal hackers used AI to find a major software flaw",
-          "score": 157,
-          "url": "https://www.nytimes.com/2026/05/11/us/politics/google-hackers-attack-ai.html"
+          "title": "Software Internals Book Club",
+          "score": 57,
+          "url": "https://eatonphil.com/bookclub.html"
         },
         {
           "rank": 8,
@@ -119,28 +119,28 @@
         },
         {
           "rank": 9,
-          "title": "Show HN: A modern Music Player Daemon based on Rockbox firmware",
-          "score": 59,
-          "url": "https://github.com/tsirysndr/rockbox-zig"
+          "title": "I let AI build a tool to help me figure out what was waking me up at night",
+          "score": 139,
+          "url": "https://martin.sh/i-let-ai-build-a-tool-to-help-me-figure-out-what-was-waking-me"
         },
         {
           "rank": 10,
-          "title": "I let AI build a tool to help me figure out what was waking me up at night",
-          "score": 133,
-          "url": "https://martin.sh/i-let-ai-build-a-tool-to-help-me-figure-out-what-was-waking-me"
+          "title": "Show HN: A modern Music Player Daemon based on Rockbox firmware",
+          "score": 62,
+          "url": "https://github.com/tsirysndr/rockbox-zig"
         }
       ]
     },
-    "google": {
-      "source": "Google News",
+    "bing": {
+      "source": "Bing News",
       "items": []
     },
-    "reuters": {
-      "source": "Reuters World",
+    "techcrunch": {
+      "source": "TechCrunch",
       "items": []
     },
-    "aljazeera": {
-      "source": "Al Jazeera",
+    "guardian": {
+      "source": "The Guardian",
       "items": []
     }
   }
