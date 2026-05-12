@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-05-12T09:12:25.153166+00:00",
+  "timestamp": "2026-05-12T09:37:51.502809+00:00",
   "domestic": {
     "weibo": {
       "source": "微博热搜",
@@ -21,37 +21,37 @@
         },
         {
           "rank": 4,
-          "title": "原来健康的人身体是静音的",
+          "title": "黄晓明 丫头别拿错行李箱",
           "hot": ""
         },
         {
           "rank": 5,
-          "title": "深圳夫妻囤存储芯片5个月狂涨320亿",
+          "title": "建议不要在小环境中待太久",
           "hot": ""
         },
         {
           "rank": 6,
-          "title": "降噪耳机受害者出现",
+          "title": "巴掌榴莲",
           "hot": ""
         },
         {
           "rank": 7,
-          "title": "中餐厅10录制",
+          "title": "数码产品的颜色哲学",
           "hot": ""
         },
         {
           "rank": 8,
-          "title": "詹姆斯回应是否退役",
+          "title": "原来健康的人身体是静音的",
           "hot": ""
         },
         {
           "rank": 9,
-          "title": "美总统时隔9年再次访华聚焦哪些议题",
+          "title": "詹姆斯回应是否退役",
           "hot": ""
         },
         {
           "rank": 10,
-          "title": "低智商犯罪 五花八门的傻子",
+          "title": "中餐厅10录制",
           "hot": ""
         }
       ]
@@ -62,82 +62,105 @@
     }
   },
   "international": {
-    "hackernews": {
-      "source": "Hacker News",
+    "hackernews_top": {
+      "source": "Hacker News Top",
       "items": [
         {
           "rank": 1,
           "title": "Postmortem: TanStack NPM supply-chain compromise",
-          "score": 828,
+          "score": 843,
           "url": "https://tanstack.com/blog/npm-supply-chain-compromise-postmortem"
         },
         {
           "rank": 2,
           "title": "Screenshots of Old Desktop OSes",
-          "score": 133,
+          "score": 159,
           "url": "http://www.typewritten.org/Media/"
         },
         {
           "rank": 3,
           "title": "They Live (1988) inspired Adblocker",
-          "score": 214,
+          "score": 225,
           "url": "https://github.com/davmlaw/they_live_adblocker"
         },
         {
           "rank": 4,
           "title": "If AI writes your code, why use Python?",
-          "score": 470,
+          "score": 487,
           "url": "https://medium.com/@NMitchem/if-ai-writes-your-code-why-use-python-bf8c4ba1a055"
         },
         {
           "rank": 5,
           "title": "UCLA discovers first stroke rehabilitation drug to repair brain damage (2025)",
-          "score": 330,
+          "score": 338,
           "url": "https://stemcell.ucla.edu/news/ucla-discovers-first-stroke-rehabilitation-drug-r"
         },
         {
           "rank": 6,
           "title": "Claude Platform on AWS",
-          "score": 133,
+          "score": 136,
           "url": "https://claude.com/blog/claude-platform-on-aws"
         },
         {
           "rank": 7,
           "title": "Extremely Low Frequencies",
-          "score": 66,
+          "score": 72,
           "url": "https://computer.rip/2026-05-09-extremely-low-frequencies.html"
         },
         {
           "rank": 8,
-          "title": "Rtwatch: Watch videos with friends using WebRTC",
-          "score": 14,
-          "url": "https://github.com/pion/rtwatch"
-        },
-        {
-          "rank": 9,
           "title": "Software Internals Book Club",
-          "score": 93,
+          "score": 96,
           "url": "https://eatonphil.com/bookclub.html"
         },
         {
+          "rank": 9,
+          "title": "Remembering Planet Source Code: Sharing Code Before GitHub Made It Easy",
+          "score": 9,
+          "url": "https://www.pietschsoft.com/post/2026/05/05/remembering-planet-source-code-shari"
+        },
+        {
           "rank": 10,
-          "title": "Google says criminal hackers used AI to find a major software flaw",
-          "score": 178,
-          "url": "https://www.nytimes.com/2026/05/11/us/politics/google-hackers-attack-ai.html"
+          "title": "Rtwatch: Watch videos with friends using WebRTC",
+          "score": 15,
+          "url": "https://github.com/pion/rtwatch"
         }
       ]
     },
-    "npr": {
-      "source": "NPR News",
-      "items": []
-    },
-    "wsj": {
-      "source": "WSJ World",
-      "items": []
-    },
-    "devto": {
-      "source": "Dev.to",
-      "items": []
+    "hackernews_ask": {
+      "source": "Hacker News Ask HN",
+      "items": [
+        {
+          "rank": 1,
+          "title": "Ask HN: What are you working on? (May 2026)",
+          "score": 267,
+          "url": ""
+        },
+        {
+          "rank": 2,
+          "title": "Ask HN: We just had an actual UUID v4 collision...",
+          "score": 461,
+          "url": ""
+        },
+        {
+          "rank": 3,
+          "title": "Rumors of my death are slightly exaggerated",
+          "score": 1656,
+          "url": ""
+        },
+        {
+          "rank": 4,
+          "title": "Ask HN: How to get started in electronic music",
+          "score": 7,
+          "url": ""
+        },
+        {
+          "rank": 5,
+          "title": "Ask HN: What happens when eventually all E2E mess. apps removed from app stores?",
+          "score": 3,
+          "url": ""
+        }
+      ]
     },
     "github": {
       "source": "GitHub Trending",
@@ -146,7 +169,7 @@
           "rank": 1,
           "title": "huangserva/3DCellForge",
           "desc": "AI-powered interactive 3D cell generation and exploration studio.",
-          "stars": 1590,
+          "stars": 1597,
           "language": "JavaScript"
         },
         {
@@ -154,14 +177,14 @@
           "title": "thakur-works/DarkGPT",
           "desc": "Darkgpt mod free #chatgpt",
           "stars": 532,
-          "language": null
+          "language": ""
         },
         {
           "rank": 3,
           "title": "thakur-works/Velocity-Executor",
           "desc": "This repository contains Velocity Executor — a free Roblox script executor for P",
           "stars": 528,
-          "language": null
+          "language": ""
         },
         {
           "rank": 4,
@@ -181,35 +204,35 @@
           "rank": 6,
           "title": "iampedii/WhiteDNS",
           "desc": "Source-available Android DNS tunneling client with VPN and proxy modes, backed b",
-          "stars": 334,
+          "stars": 335,
           "language": "Kotlin"
         },
         {
           "rank": 7,
           "title": "Rhythmplocutter/printer-offline-fix",
           "desc": "printer offline fix || printer offline || printer offline driver || printer offl",
-          "stars": 300,
+          "stars": 301,
           "language": "PowerShell"
         },
         {
           "rank": 8,
           "title": "TrueGunsmithFence/Hentaihunter",
           "desc": "Hentaihunter - How to steal your Doujinshi easily",
-          "stars": 282,
+          "stars": 283,
           "language": "Python"
         },
         {
           "rank": 9,
           "title": "grandeurcoredecoder/f95zone",
           "desc": "Unofficial Game Updater for the F95Zone platform",
-          "stars": 278,
+          "stars": 279,
           "language": "PowerShell"
         },
         {
           "rank": 10,
           "title": "limesupporterdoor/LockDown-Browser-Bypass-Tool",
           "desc": "Enables window switching and tab navigation in restricted browser environments",
-          "stars": 274,
+          "stars": 275,
           "language": "C#"
         }
       ]
@@ -220,52 +243,228 @@
         {
           "rank": 1,
           "title": "taken",
-          "short_id": "b8gee9"
+          "short_id": "b8gee9",
+          "url": "https://sinceyouarrived.world/taken"
         },
         {
           "rank": 2,
           "title": "Mythos finds a curl vulnerability",
-          "short_id": "am7evd"
+          "short_id": "am7evd",
+          "url": "https://daniel.haxx.se/blog/2026/05/11/mythos-finds-a-curl-vulnerability/"
         },
         {
           "rank": 3,
           "title": "Ratty: A terminal emulator with inline 3D graphics",
-          "short_id": "ij94sb"
+          "short_id": "ij94sb",
+          "url": "https://ratty-term.org/"
         },
         {
           "rank": 4,
           "title": "Zig vs Rust in 2026",
-          "short_id": "fnhsha"
+          "short_id": "fnhsha",
+          "url": "https://zackoverflow.dev/writing/zig-vs-rust-in-2026/"
         },
         {
           "rank": 5,
           "title": "Gram 2.0.0 released",
-          "short_id": "5jdbwv"
+          "short_id": "5jdbwv",
+          "url": "https://gram-editor.com/posts/release-2.0-0/"
         },
         {
           "rank": 6,
           "title": "Popular Go library fsnotify raises supply chain alarms after maintainer access changes",
-          "short_id": "7rpqbo"
+          "short_id": "7rpqbo",
+          "url": "https://socket.dev/blog/fsnotify-maintainer-dispute-sparks-supply-chain-concerns"
         },
         {
           "rank": 7,
           "title": "Moving from lsp-mode in GNU Emacs to Eglot",
-          "short_id": "bojb9a"
+          "short_id": "bojb9a",
+          "url": "https://utcc.utoronto.ca/~cks/space/blog/programming/EmacsLspModeToEglot"
         },
         {
           "rank": 8,
           "title": "The anti-minimalist backlash is the bigger story behind Oxygen’s revival",
-          "short_id": "4guexz"
+          "short_id": "4guexz",
+          "url": "https://filipfila.wordpress.com/2026/05/10/the-anti-minimalist-backlash-is-the-b"
         },
         {
           "rank": 9,
           "title": "Programmable Whitelist-based Configs: Embedding Rye in Go",
-          "short_id": "vxf6cq"
+          "short_id": "vxf6cq",
+          "url": "https://ryelang.org/blog/posts/whitelist-config-with-rye/"
         },
         {
           "rank": 10,
-          "title": "Fully Preserving Fisher-Price Pixter",
-          "short_id": "jqr0fm"
+          "title": "The Cathedral, the Bazaar and the Kitchen",
+          "short_id": "iaankl",
+          "url": "https://blog.vrypan.net/2026/05/11/the-cathedral-the-bazaar-and-the-kitchen/"
+        }
+      ]
+    },
+    "stackoverflow": {
+      "source": "StackOverflow",
+      "items": [
+        {
+          "rank": 1,
+          "title": "get or set inexistant properties of Powershell object",
+          "answers": 0,
+          "score": 0,
+          "tags": [
+            "c#",
+            "powershell"
+          ]
+        },
+        {
+          "rank": 2,
+          "title": "Why does my pandas groupby() result not show total sales by product correctly?",
+          "answers": 1,
+          "score": 1,
+          "tags": [
+            "python",
+            "group-by"
+          ]
+        },
+        {
+          "rank": 3,
+          "title": "VHDL FSM with a different timer for every state",
+          "answers": 1,
+          "score": 0,
+          "tags": [
+            "timing",
+            "fsm",
+            "vhdl-2008"
+          ]
+        },
+        {
+          "rank": 4,
+          "title": "Approval Workflow Email Trigger Issues in Salesforce",
+          "answers": 0,
+          "score": 1,
+          "tags": [
+            "email",
+            "salesforce",
+            "salesforce-communities"
+          ]
+        },
+        {
+          "rank": 5,
+          "title": "How to concatenate the results of a cypher query?",
+          "answers": 1,
+          "score": 0,
+          "tags": [
+            "neo4j",
+            "cypher"
+          ]
+        }
+      ]
+    },
+    "security": {
+      "source": "Security (StackExchange)",
+      "items": [
+        {
+          "rank": 1,
+          "title": "security concerns when configuring Windows 10 to automatically log into a Microsoft account-linked user account",
+          "answers": 1,
+          "score": 0,
+          "tags": [
+            "authentication",
+            "windows-10",
+            "microsoft"
+          ]
+        },
+        {
+          "rank": 2,
+          "title": "Metasploit: java_signed_applet attack hangs after user response",
+          "answers": 1,
+          "score": 1,
+          "tags": [
+            "java",
+            "metasploit",
+            "client-side"
+          ]
+        },
+        {
+          "rank": 3,
+          "title": "After phishing incident, some entra devices have registration time stamp = activity. Odd?",
+          "answers": 0,
+          "score": 0,
+          "tags": [
+            "man-in-the-middle",
+            "phishing",
+            "incident-response"
+          ]
+        }
+      ]
+    },
+    "ai": {
+      "source": "AI (StackExchange)",
+      "items": [
+        {
+          "rank": 1,
+          "title": "What’s the most effective way to reduce hallucinations in enterprise RAG systems?",
+          "answers": 2,
+          "score": 0,
+          "tags": [
+            "large-language-models"
+          ]
+        },
+        {
+          "rank": 2,
+          "title": "Where or for what could genetic algorithms be used in the context of project management?",
+          "answers": 2,
+          "score": 2,
+          "tags": [
+            "genetic-algorithms",
+            "applications"
+          ]
+        },
+        {
+          "rank": 3,
+          "title": "Is the acronym \"MCP\" (Model Context Protocol) intentionally referencing Tron's Master Control Program?",
+          "answers": 1,
+          "score": 2,
+          "tags": [
+            "reference-request",
+            "terminology",
+            "history"
+          ]
+        }
+      ]
+    },
+    "unix": {
+      "source": "Unix (StackExchange)",
+      "items": [
+        {
+          "rank": 1,
+          "title": "Replace the matching pattern with equal number of n characters",
+          "answers": 6,
+          "score": 3,
+          "tags": [
+            "text-processing",
+            "command-line",
+            "perl"
+          ]
+        },
+        {
+          "rank": 2,
+          "title": "Why does systemd update trigger to build initramfs?",
+          "answers": 2,
+          "score": 0,
+          "tags": [
+            "linux",
+            "systemd",
+            "initramfs"
+          ]
+        },
+        {
+          "rank": 3,
+          "title": "Wayland multi input setup",
+          "answers": 1,
+          "score": 3,
+          "tags": [
+            "wayland"
+          ]
         }
       ]
     }
