@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-每日热点话题抓取 - 国内 + 国际
+每日热点话题抓取 - 国内 + 国际 + X/Twitter
 国内: 微博热搜 / 知乎热榜
-国际: Hacker News / NPR News / WSJ / GitHub Trending / Dev.to
+国际: Hacker News / GitHub Trending / StackExchange / Lobsters
+X/Twitter: Nitter 实例抓取 trending 话题
 
 GitHub Actions: 每天8点(UTC)运行，保存到 data/hot_topics.json
 """
@@ -38,6 +39,96 @@ def clean_text(text):
         return text[:200]
     except:
         return str(text)[:200]
+
+# ========== X/Twitter ==========
+def fetch_x_trending():
+    """通过 Nitter 实例抓取 X/Twitter trending 话题。"""
+    # 尝试多个 Nitter 实例（RSS + HTML fallback）
+    nitter_instances = [
+        "https://nitter.net",
+        "https://nitter.privacydev.net",
+        "https://nitter.poast.org",
+        "https://nitter.fdn.fr",
+        "https://nitter.kavin.rocks",
+    ]
+    items = []
+
+    # 策略1: 尝试 RSS feed（部分实例支持 /rss/trending）
+    for base in nitter_instances:
+        try:
+            url = f"{base}/rss/trending"
+            req = urllib.request.Request(url, headers=HEADERS)
+            with urllib.request.urlopen(req, timeout=8, context=SSL_CTX) as resp:
+                raw = resp.read().decode("utf-8", errors="ignore")
+            titles = re.findall(r'<title><!\[CDATA\[(.*?)\]\]></title>', raw)
+            titles = [clean_text(t) for t in titles if t.strip() and "nitter" not in t.lower()]
+            if titles:
+                for i, title in enumerate(titles[:10], 1):
+                    items.append({"rank": i, "title": title})
+                print(f"  X/Twitter Trending (RSS@{base}): {len(items)} 条")
+                return items
+        except Exception:
+            pass
+
+    # 策略2: HTML 抓取 explore 页面（趋势话题）
+    for base in nitter_instances:
+        try:
+            url = f"{base}/i/trends"
+            req = urllib.request.Request(url, headers=HEADERS)
+            with urllib.request.urlopen(req, timeout=8, context=SSL_CTX) as resp:
+                raw = resp.read().decode("utf-8", errors="ignore")
+            # 找趋势链接模式: /search?q=%23xxx
+            trends = re.findall(r'href="(/search\?q=%23[^"&]+)"[^>]*>([^<]+)<', raw)
+            if trends:
+                trends = trends[:10]
+            else:
+                # 备选: 找任意趋势标签
+                trends = re.findall(r'href="(/search\?q=[^"&]+)"[^>]*>([^<]+)<', raw)
+                trends = [(t[0], t[1]) for t in trends if '%23' in t[0]][:10]
+            if not trends:
+                # 备选: 抓 JS 里的趋势数据
+                js_trends = re.findall(r'"name":"(#[^"]+)","url"', raw)
+                if js_trends:
+                    for i, name in enumerate(js_trends[:10], 1):
+                        items.append({"rank": i, "title": name})
+                    print(f"  X/Twitter Trending (JS@{base}): {len(items)} 条")
+                    return items
+            for i, (href, name) in enumerate(trends[:10], 1):
+                name = html.unescape(name).strip()
+                if name:
+                    items.append({"rank": i, "title": name})
+            if items:
+                print(f"  X/Twitter Trending (HTML@{base}): {len(items)} 条")
+                return items
+        except Exception:
+            pass
+
+    # 策略3: 通过 Nitter 搜索 "trending" 获取高曝光 tweet
+    for base in nitter_instances:
+        try:
+            url = f"{base}/search?f=tweets&q=trending&since=&until=&near="
+            req = urllib.request.Request(url, headers=HEADERS)
+            with urllib.request.urlopen(req, timeout=8, context=SSL_CTX) as resp:
+                raw = resp.read().decode("utf-8", errors="ignore")
+            # 提取推文标题/内容摘要
+            tweets = re.findall(r'<a href="/([^/]+)/status/\d+"[^>]*>([^<]{20,100}?)</a>', raw)
+            if tweets:
+                seen = set()
+                for i, (_, text) in enumerate(tweets[:10]):
+                    text = clean_text(text)
+                    if text and text not in seen:
+                        seen.add(text)
+                        items.append({"rank": len(items)+1, "title": text})
+                        if len(items) >= 10:
+                            break
+                if items:
+                    print(f"  X/Twitter (Search@{base}): {len(items)} 条")
+                    return items
+        except Exception:
+            pass
+
+    print(f"  X/Twitter Trending: 所有实例均不可达（网络限制）")
+    return []
 
 # ========== 国内热点 ==========
 def fetch_weibo_hot():
@@ -145,6 +236,7 @@ def fetch_stackexchange(site="stackoverflow", label="StackOverflow", limit=5):
 def fetch_github_trending():
     """GitHub Trending 热门项目"""
     try:
+        # 按更新时间排序，选取近期有活动的热门项目
         url = "https://api.github.com/search/repositories?q=created:>2026-05-09&sort=stars&order=desc&per_page=10"
         req = urllib.request.Request(url, headers={**HEADERS, "Accept": "application/vnd.github.v3+json"})
         with urllib.request.urlopen(req, timeout=10, context=SSL_CTX) as resp:
@@ -209,6 +301,10 @@ def main():
     print(f"  AI: {len(so_ai)} 条")
     print(f"  Unix: {len(so_unix)} 条")
 
+    print("\n🐦 X/Twitter Trending...")
+    x_trending = fetch_x_trending()
+    print(f"  X/Twitter: {len(x_trending)} 条")
+
     result = {
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "domestic": {
@@ -225,6 +321,7 @@ def main():
             "ai": {"source": "AI (StackExchange)", "items": so_ai},
             "unix": {"source": "Unix (StackExchange)", "items": so_unix},
         },
+        "x_trending": {"source": "X/Twitter Trending", "items": x_trending},
     }
 
     # 保存
@@ -247,6 +344,9 @@ def main():
         print(f"  {item['rank']}. {item['title'][:40]}")
     print("\n🔧 StackOverflow TOP3")
     for item in so_stackoverflow[:3]:
+        print(f"  {item['rank']}. {item['title'][:40]}")
+    print("\n🐦 X/Twitter TOP3")
+    for item in x_trending[:3]:
         print(f"  {item['rank']}. {item['title'][:40]}")
 
     return result
