@@ -1,4 +1,4 @@
-name: Market Price Fetcher
+name: Crypto Price Fetcher
 
 on:
   schedule:
@@ -6,281 +6,199 @@ on:
   workflow_dispatch:
 
 jobs:
-  fetch-crypto-price:
+  fetch-crypto-data:
     runs-on: ubuntu-latest
     
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: pip install yfinance -q
       
-      - name: Fetch crypto prices
+      - name: Fetch all crypto + stock data
         run: |
           python3 << 'PYTHON_EOF'
           import urllib.request
           import json
+          import time
+          import ssl
           from datetime import datetime, timezone
-          
-          # 扩展的加密货币列表
-          CRYPTO_SYMBOLS = {
-              "BTC": {"name": "Bitcoin", "short": "BTC"},
-              "ETH": {"name": "Ethereum", "short": "ETH"},
-              "SOL": {"name": "Solana", "short": "SOL"},
-              "BNB": {"name": "Binance Coin", "short": "BNB"},
-              "XRP": {"name": "Ripple", "short": "XRP"},
-              "ADA": {"name": "Cardano", "short": "ADA"},
-              "DOGE": {"name": "Dogecoin", "short": "DOGE"},
-              "AVAX": {"name": "Avalanche", "short": "AVAX"},
-              "DOT": {"name": "Polkadot", "short": "DOT"},
-              "MATIC": {"name": "Polygon", "short": "MATIC"},
-              "LINK": {"name": "Chainlink", "short": "LINK"},
-              "UNI": {"name": "Uniswap", "short": "UNI"},
-              "ATOM": {"name": "Cosmos", "short": "ATOM"},
-              "LTC": {"name": "Litecoin", "short": "LTC"},
-              "XLM": {"name": "Stellar", "short": "XLM"},
+
+          # ========== CRYPTO ==========
+          COINS = [
+              {"id": "bitcoin",      "symbol": "BTC",  "name": "Bitcoin"},
+              {"id": "ethereum",     "symbol": "ETH",  "name": "Ethereum"},
+              {"id": "binancecoin",  "symbol": "BNB",  "name": "BNB"},
+              {"id": "solana",       "symbol": "SOL",  "name": "Solana"},
+              {"id": "ripple",       "symbol": "XRP",  "name": "XRP"},
+              {"id": "cardano",      "symbol": "ADA",  "name": "Cardano"},
+              {"id": "dogecoin",     "symbol": "DOGE","name": "Dogecoin"},
+              {"id": "polkadot",     "symbol": "DOT",  "name": "Polkadot"},
+              {"id": "avalanche-2",  "symbol": "AVAX","name": "Avalanche"},
+              {"id": "chainlink",    "symbol": "LINK","name": "Chainlink"},
+              {"id": "tron",         "symbol": "TRX",  "name": "Tron"},
+              {"id": "polygon",       "symbol": "MATIC","name": "Polygon"},
+              {"id": "shiba-inu",    "symbol": "SHIB","name": "Shiba Inu"},
+              {"id": "litecoin",     "symbol": "LTC",  "name": "Litecoin"},
+              {"id": "uniswap",      "symbol": "UNI",  "name": "Uniswap"},
+          ]
+
+          ctx = ssl.create_default_context()
+          ctx.check_hostname = False
+          ctx.verify_mode = ssl.CERT_NONE
+
+          # --- 1. 当前价格 ---
+          SYMBOLS = ",".join([c["symbol"] for c in COINS])
+          price_url = ("https://min-api.cryptocompare.com/data/pricemultifull"
+                       "?fsyms=" + SYMBOLS + "&tsyms=USD")
+          req = urllib.request.Request(price_url, headers={"User-Agent": "MarketReporter/2.0"})
+          with urllib.request.urlopen(req, timeout=15, context=ctx) as resp:
+              price_data = json.loads(resp.read().decode())
+
+          sym_map = {c["symbol"]: c for c in COINS}
+          crypto_cache = {
+              "last_update": datetime.now(timezone.utc).isoformat(),
+              "source": "CryptoCompare",
+              "data": [],
           }
-          
-          fsyms = ",".join(CRYPTO_SYMBOLS.keys())
-          url = f'https://min-api.cryptocompare.com/data/pricemulti?fsyms={fsyms}&tsyms=USD&includePercentChange24h=true'
-          
+          for symbol, raw in price_data.get("RAW", {}).items():
+              u = raw.get("USD", {})
+              price = u.get("PRICE", 0)
+              open24 = u.get("OPEN24HOUR", price)
+              change_24h = ((price - open24) / open24 * 100) if open24 else 0
+              crypto_cache["data"].append({
+                  "id": sym_map.get(symbol, {}).get("id", symbol.lower()),
+                  "symbol": symbol,
+                  "name": sym_map.get(symbol, {}).get("name", symbol),
+                  "current_price": price,
+                  "price_change_percentage_24h": round(change_24h, 2),
+                  "market_cap": u.get("MKTCAP", 0),
+                  "high_24h": u.get("HIGH24HOUR", price * 1.02),
+                  "low_24h":  u.get("LOW24HOUR",  price * 0.98),
+              })
+              time.sleep(0.2)
+
+          with open("crypto_prices.json", "w", encoding="utf-8") as f:
+              json.dump(crypto_cache, f, indent=2, ensure_ascii=False)
+
+          print("✅ 加密货币价格: {} 种".format(len(crypto_cache["data"])))
+          for c in crypto_cache["data"][:5]:
+              print("  {}: ${:,.2f} ({:+.2f}%)".format(
+                  c["symbol"], c["current_price"], c["price_change_percentage_24h"]))
+
+          # --- 2. 历史数据 (技术分析用) ---
+          hist_cache = {
+              "last_update": datetime.now(timezone.utc).isoformat(),
+              "data": {}
+          }
+          for coin in COINS[:5]:  # 只抓前5热门币
+              sym = coin["symbol"]
+              hist_url = ("https://min-api.cryptocompare.com/data/v2/histoday"
+                          "?fsym=" + sym + "&tsym=USD&limit=60")
+              try:
+                  req3 = urllib.request.Request(hist_url, headers={"User-Agent": "MarketReporter/2.0"})
+                  with urllib.request.urlopen(req3, timeout=15, context=ctx) as resp3:
+                      hd = json.loads(resp3.read().decode())
+                  prices = [p["close"] for p in hd.get("Data", {}).get("Data", [])]
+                  if prices:
+                      hist_cache["data"][sym] = prices
+                      print("  📈 {} 历史: {}天".format(sym, len(prices)))
+              except Exception as e:
+                  print("  ⚠️ {} 历史失败: {}".format(sym, e))
+              time.sleep(0.3)
+
+          with open("crypto_history.json", "w", encoding="utf-8") as f:
+              json.dump(hist_cache, f, indent=2, ensure_ascii=False)
+
+          # ========== STOCKS ==========
+          print("\n📈 股票数据获取...")
           try:
-              req = urllib.request.Request(url, headers={'User-Agent': 'CryptoPriceFetcher/1.0'})
-              with urllib.request.urlopen(req, timeout=15) as resp:
-                  data = json.loads(resp.read().decode())
-              
-              cache = {
-                  "last_update": datetime.now(timezone.utc).isoformat(),
-                  "source": "CryptoCompare",
-                  "data": []
-              }
-              
-              for symbol, info in CRYPTO_SYMBOLS.items():
-                  coin_data = data.get(symbol, {})
-                  price = coin_data.get("USD", 0)
-                  change = coin_data.get("USDPCT24H", 0)
-                  
-                  cache["data"].append({
-                      "symbol": symbol,
-                      "name": info["name"],
-                      "current_price": price,
-                      "price_change_percentage_24h": change,
-                      "high_24h": price * 1.02,
-                      "low_24h": price * 0.98
-                  })
-              
-              with open('crypto_prices.json', 'w', encoding='utf-8') as f:
-                  json.dump(cache, f, indent=2, ensure_ascii=False)
-              
-              print("✅ 加密货币价格获取成功")
-              for coin in cache["data"]:
-                  print(f"  {coin['symbol']}: ${coin['current_price']:,.2f} ({coin['price_change_percentage_24h']:+.2f}%)")
-          
-          except Exception as e:
-              print(f"❌ 获取失败：{e}")
-              exit(1)
+              import yfinance as yf
+          except ImportError:
+              print("⚠️ yfinance 未安装")
+              with open("stock_prices.json", "w") as f:
+                  json.dump({"error": "yfinance not installed"}, f)
+              exit(0)
+
+          STOCKS = [
+              {"symbol": "SPY",   "name": "SPDR S&P 500 ETF"},
+              {"symbol": "QQQ",   "name": "Invesco QQQ Trust"},
+              {"symbol": "DIA",   "name": "SPDR Dow Jones ETF"},
+              {"symbol": "IWM",   "name": "iShares Russell 2000 ETF"},
+              {"symbol": "AAPL",  "name": "Apple Inc."},
+              {"symbol": "MSFT",  "name": "Microsoft Corp"},
+              {"symbol": "GOOGL", "name": "Alphabet Inc."},
+              {"symbol": "AMZN",  "name": "Amazon.com Inc."},
+              {"symbol": "NVDA",  "name": "NVIDIA Corp"},
+              {"symbol": "META",  "name": "Meta Platforms"},
+              {"symbol": "TSLA",  "name": "Tesla Inc."},
+              {"symbol": "BRK-B", "name": "Berkshire Hathaway"},
+              {"symbol": "JPM",   "name": "JPMorgan Chase"},
+              {"symbol": "V",     "name": "Visa Inc."},
+              {"symbol": "UNH",   "name": "UnitedHealth Group"},
+          ]
+
+          stock_cache = {
+              "last_update": datetime.now(timezone.utc).isoformat(),
+              "source": "Yahoo Finance",
+              "data": [],
+          }
+          for stock in STOCKS:
+              try:
+                  info = yf.Ticker(stock["symbol"]).info
+                  price = info.get("currentPrice") or info.get("regularMarketPrice")
+                  prev = info.get("previousClose") or info.get("regularPreviousClose")
+                  if price and prev:
+                      change = (price - prev) / prev * 100
+                      stock_cache["data"].append({
+                          "symbol": stock["symbol"],
+                          "name": stock["name"],
+                          "current_price": price,
+                          "price_change_percentage_24h": round(change, 2),
+                          "market_cap": info.get("marketCap", 0),
+                          "volume": info.get("regularMarketVolume", 0),
+                      })
+                      print("  {}: ${:.2f} ({:+.2f}%)".format(
+                          stock["symbol"], price, change))
+              except Exception as e:
+                  print("  ⚠️ {} 失败: {}".format(stock["symbol"], e))
+              time.sleep(0.2)
+
+          with open("stock_prices.json", "w", encoding="utf-8") as f:
+              json.dump(stock_cache, f, indent=2, ensure_ascii=False)
+
+          # --- 股票历史 (前5只) ---
+          hist_stocks = {"last_update": datetime.now(timezone.utc).isoformat(), "data": {}}
+          for stock in STOCKS[:5]:
+              sym = stock["symbol"]
+              try:
+                  h = yf.Ticker(sym).history(period="60d")["Close"].tolist()
+                  if h:
+                      hist_stocks["data"][sym] = h
+                      print("  📈 {} 股票历史: {}天".format(sym, len(h)))
+              except Exception as e:
+                  print("  ⚠️ {} 历史失败: {}".format(sym, e))
+              time.sleep(0.3)
+
+          with open("stock_history.json", "w", encoding="utf-8") as f:
+              json.dump(hist_stocks, f, indent=2, ensure_ascii=False)
+
+          print("\n✅ 全部完成!")
+          print("  加密货币: {}种, 历史: {}币".format(len(crypto_cache["data"]), len(hist_cache["data"])))
+          print("  股票: {}只, 历史: {}只".format(len(stock_cache["data"]), len(hist_stocks["data"])))
+
           PYTHON_EOF
-      
-      - name: Commit crypto prices
+
+      - name: Commit and push if changed
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add crypto_prices.json
+          git add crypto_prices.json crypto_history.json stock_prices.json stock_history.json
           if ! git diff --staged --quiet; then
-            git commit -m "📊 更新加密货币价格 $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git commit -m "📊 更新市场数据 $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+            echo "✅ 数据已更新并提交"
+          else
+            echo "ℹ️ 数据无变化，未提交"
           fi
-
-  fetch-stock-price:
-    runs-on: ubuntu-latest
-    needs: fetch-crypto-price
-    
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-      
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-      
-      - name: Install dependencies
-        run: |
-          pip install yfinance --quiet
-      
-      - name: Fetch stock prices
-        run: |
-          python3 << 'PYTHON_EOF'
-          import yfinance as yf
-          import json
-          from datetime import datetime, timezone
-          
-          # 美股主要标的列表
-          STOCKS = {
-              "AAPL": {"name": "Apple Inc.", "sector": "科技"},
-              "MSFT": {"name": "Microsoft Corporation", "sector": "科技"},
-              "GOOGL": {"name": "Alphabet Inc.", "sector": "科技"},
-              "AMZN": {"name": "Amazon.com Inc.", "sector": "消费"},
-              "NVDA": {"name": "NVIDIA Corporation", "sector": "科技"},
-              "META": {"name": "Meta Platforms Inc.", "sector": "科技"},
-              "TSLA": {"name": "Tesla Inc.", "sector": "新能源"},
-              "JPM": {"name": "JPMorgan Chase", "sector": "金融"},
-              "V": {"name": "Visa Inc.", "sector": "金融"},
-              "JNJ": {"name": "Johnson & Johnson", "sector": "医疗"},
-              "XOM": {"name": "Exxon Mobil", "sector": "能源"},
-              "PG": {"name": "Procter & Gamble", "sector": "消费"},
-              "HD": {"name": "Home Depot", "sector": "消费"},
-              "DIS": {"name": "Walt Disney", "sector": "娱乐"},
-              "NFLX": {"name": "Netflix Inc.", "sector": "娱乐"},
-          }
-          
-          def format_large_number(num):
-              if num >= 1e12:
-                  return f"${num/1e12:.2f}T"
-              elif num >= 1e9:
-                  return f"${num/1e9:.2f}B"
-              return f"${num:,.2f}"
-          
-          result = {
-              "last_update": datetime.now(timezone.utc).isoformat(),
-              "source": "Yahoo Finance (yfinance)",
-              "data": []
-          }
-          
-          for symbol, info in STOCKS.items():
-              try:
-                  ticker = yf.Ticker(symbol)
-                  hist = ticker.history(period="2d")
-                  
-                  if hist.empty or len(hist) < 2:
-                      continue
-                  
-                  current_price = hist['Close'].iloc[-1]
-                  prev_close = hist['Close'].iloc[-2]
-                  high_52w = hist['High'].max()
-                  low_52w = hist['Low'].min()
-                  
-                  price_change = current_price - prev_close
-                  price_change_pct = (price_change / prev_close) * 100
-                  
-                  info_data = ticker.info
-                  market_cap = info_data.get('marketCap', 0)
-                  pe_ratio = info_data.get('trailingPE', 0)
-                  
-                  result["data"].append({
-                      "symbol": symbol,
-                      "name": info["name"],
-                      "sector": info["sector"],
-                      "current_price": round(current_price, 2),
-                      "price_change": round(price_change, 2),
-                      "price_change_percentage": round(price_change_pct, 2),
-                      "high_52w": round(high_52w, 2),
-                      "low_52w": round(low_52w, 2),
-                      "market_cap": market_cap,
-                      "market_cap_formatted": format_large_number(market_cap) if market_cap else "N/A",
-                      "pe_ratio": round(pe_ratio, 2) if pe_ratio else None,
-                  })
-                  
-                  print(f"✅ {symbol}: ${current_price:.2f} ({price_change_pct:+.2f}%)")
-                  
-              except Exception as e:
-                  print(f"❌ {symbol}: {e}")
-                  continue
-          
-          with open('stock_prices.json', 'w', encoding='utf-8') as f:
-              json.dump(result, f, indent=2, ensure_ascii=False)
-          
-          print(f"✅ 美股数据已保存，共 {len(result['data'])} 只股票")
-          PYTHON_EOF
-      
-      - name: Commit stock prices
-        run: |
-          git add stock_prices.json
-          if ! git diff --staged --quiet; then
-            git commit -m "📈 更新美股价格 $(date -u +'%Y-%m-%d %H:%M UTC')"
-          fi
-
-  create-market-summary:
-    runs-on: ubuntu-latest
-    needs: fetch-stock-price
-    
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-      
-      - name: Create market summary
-        run: |
-          python3 << 'PYTHON_EOF'
-          import json
-          from datetime import datetime, timezone
-          
-          # 读取加密货币数据
-          with open('crypto_prices.json', 'r') as f:
-              crypto_data = json.load(f)
-          
-          # 读取美股数据
-          with open('stock_prices.json', 'r') as f:
-              stock_data = json.load(f)
-          
-          # 创建市场汇总
-          summary = {
-              "last_update": datetime.now(timezone.utc).isoformat(),
-              "market_snapshot": {
-                  "crypto": {
-                      "count": len(crypto_data.get("data", [])),
-                      "top_gainers": [],
-                      "top_losers": []
-                  },
-                  "stocks": {
-                      "count": len(stock_data.get("data", [])),
-                      "top_gainers": [],
-                      "top_losers": []
-                  }
-              }
-          }
-          
-          # 加密货币涨跌幅排序
-          crypto_sorted = sorted(crypto_data.get("data", []), 
-                                key=lambda x: x.get("price_change_percentage_24h", 0), 
-                                reverse=True)
-          if crypto_sorted:
-              summary["market_snapshot"]["crypto"]["top_gainers"] = [
-                  {"symbol": c["symbol"], "name": c["name"], 
-                   "price": c["current_price"], "change": c.get("price_change_percentage_24h", 0)}
-                  for c in crypto_sorted[:3]
-              ]
-              summary["market_snapshot"]["crypto"]["top_losers"] = [
-                  {"symbol": c["symbol"], "name": c["name"], 
-                   "price": c["current_price"], "change": c.get("price_change_percentage_24h", 0)}
-                  for c in crypto_sorted[-3:]
-              ]
-          
-          # 美股涨跌幅排序
-          stock_sorted = sorted(stock_data.get("data", []),
-                                key=lambda x: x.get("price_change_percentage", 0),
-                                reverse=True)
-          if stock_sorted:
-              summary["market_snapshot"]["stocks"]["top_gainers"] = [
-                  {"symbol": s["symbol"], "name": s["name"],
-                   "price": s["current_price"], "change": s.get("price_change_percentage", 0)}
-                  for s in stock_sorted[:3]
-              ]
-              summary["market_snapshot"]["stocks"]["top_losers"] = [
-                  {"symbol": s["symbol"], "name": s["name"],
-                   "price": s["current_price"], "change": s.get("price_change_percentage", 0)}
-                  for s in stock_sorted[-3:]
-              ]
-          
-          # 保存汇总
-          with open('market_summary.json', 'w', encoding='utf-8') as f:
-              json.dump(summary, f, indent=2, ensure_ascii=False)
-          
-          print("✅ 市场汇总已创建")
-          print(json.dumps(summary, indent=2, ensure_ascii=False))
-          PYTHON_EOF
-      
-      - name: Commit and push all changes
-        run: |
-          git add market_summary.json
-          if ! git diff --staged --quiet; then
-            git commit -m "📋 更新市场汇总 $(date -u +'%Y-%m-%d %H:%M UTC')"
-          fi
-          git push
-          echo "✅ 所有数据已更新并推送"

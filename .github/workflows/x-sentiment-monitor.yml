@@ -1,0 +1,38 @@
+name: X/Twitter Sentiment Monitor
+
+on:
+  schedule:
+    # 每4小时 (GitHub Actions runner 在美国，可访问境外RSS)
+    - cron: '0 */4 * * *'
+  workflow_dispatch:
+    # 手动触发测试
+
+jobs:
+  x-sentiment:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run X/RSS sentiment analysis
+        run: python3 .github/workflows/x_sentiment_nitter.py
+        continue-on-error: true
+
+      - name: Commit and push sentiment data
+        run: |
+          git config user.name "XuXuClassMate"
+          git config user.email "xuxu@innonest.cn"
+          git add data/x_sentiment.json 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "📊 Auto-update sentiment $(date -u '+%Y-%m-%d %H:%M')"
+          git push
+        continue-on-error: true
