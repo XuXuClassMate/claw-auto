@@ -1,0 +1,82 @@
+{
+  "timestamp": "2026-05-12T06:22:09.360529+00:00",
+  "domestic": {
+    "weibo": {
+      "source": "微博热搜",
+      "items": [
+        {
+          "rank": 1,
+          "title": "降噪耳机受害者出现",
+          "hot": ""
+        },
+        {
+          "rank": 2,
+          "title": "机票价格大跳水",
+          "hot": ""
+        },
+        {
+          "rank": 3,
+          "title": "今天全国防灾减灾日",
+          "hot": ""
+        },
+        {
+          "rank": 4,
+          "title": "原来健康的人身体是静音的",
+          "hot": ""
+        },
+        {
+          "rank": 5,
+          "title": "宇树载人变形机甲",
+          "hot": ""
+        },
+        {
+          "rank": 6,
+          "title": "雷霆4比0湖人",
+          "hot": ""
+        },
+        {
+          "rank": 7,
+          "title": "詹姆斯 湖人",
+          "hot": ""
+        },
+        {
+          "rank": 8,
+          "title": "汶川地震的可乐男孩入职可口可乐",
+          "hot": ""
+        },
+        {
+          "rank": 9,
+          "title": "给阿嬷的情书 观众的报复性投票",
+          "hot": ""
+        },
+        {
+          "rank": 10,
+          "title": "黑夜告白大结局",
+          "hot": ""
+        }
+      ]
+    },
+    "baidu": {
+      "source": "百度热搜",
+      "items": []
+    },
+    "zhihu": {
+      "source": "知乎热榜",
+      "items": []
+    }
+  },
+  "international": {
+    "reddit": {
+      "source": "Reddit r/all",
+      "items": []
+    },
+    "twitter": {
+      "source": "Twitter/X Trending",
+      "items": []
+    },
+    "bbc": {
+      "source": "BBC News World",
+      "items": []
+    }
+  }
+}

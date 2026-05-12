@@ -1,0 +1,43 @@
+name: Daily Hot Topics
+
+on:
+  schedule:
+    # 每天 08:00 UTC = 北京时间 16:00，给报告留出推送时间
+    - cron: '0 8 * * *'
+  workflow_dispatch:
+    # 手动触发
+
+jobs:
+  hot-topics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run hot topics fetcher
+        run: python3 scripts/fetch_hot_topics.py
+        continue-on-error: true
+
+      - name: Commit and push
+        run: |
+          git config user.name "XuXuClassMate"
+          git config user.email "xuxu@innonest.cn"
+          git add data/hot_topics.json 2>/dev/null || true
+          if ! git diff --staged --quiet; then
+            git commit -m "📰 更新热点话题 $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git push
+            echo "✅ 热点话题已更新并推送"
+          else
+            echo "ℹ️ 数据无变化"
+          fi
+        continue-on-error: true
