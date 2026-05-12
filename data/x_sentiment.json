@@ -1,287 +1,124 @@
 {
-  "timestamp": "2026-05-12T05:16:18.284890",
+  "timestamp": "2026-05-12T06:35:14.845522Z",
+  "source": "RSS feeds (CoinTelegraph + CryptoNews + Decrypt)",
   "fear_greed": {
-    "crypto": {
-      "value": 49,
-      "classification": "Neutral",
-      "status": "ok"
-    },
-    "us": {
-      "value": 49,
-      "classification": "Neutral",
-      "status": "ok"
-    }
+    "value": 49,
+    "classification": "Neutral"
   },
-  "crypto_sentiment": {
+  "results": {
     "BTC": {
-      "signal": "🟡 中性",
-      "adjusted_score": 60.2,
-      "news_score": 60.2,
-      "fgi_score": 49,
-      "fgi_desc": "中性",
-      "confidence": 33,
-      "news_signal": "🟡 中性",
-      "bull_count": 10,
-      "bear_count": 3,
-      "sample_news": [
-        {
-          "text": "东方电气盘中涨超5% 华泰证券维持“买入”评级",
-          "sentiment": "bullish",
-          "score": 100.0
-        },
-        {
-          "text": "石油股早盘表现活跃 中国石油涨逾4%昆仑能源涨逾2%",
-          "sentiment": "bullish",
-          "score": 100.0
-        }
-      ],
-      "fetch_status": "ok"
-    },
-    "ETH": {
-      "signal": "🟡 中性",
-      "adjusted_score": 60.2,
-      "news_score": 60.2,
-      "fgi_score": 49,
-      "fgi_desc": "中性",
-      "confidence": 33,
-      "news_signal": "🟡 中性",
-      "bull_count": 10,
-      "bear_count": 3,
-      "sample_news": [
-        {
-          "text": "东方电气盘中涨超5% 华泰证券维持“买入”评级",
-          "sentiment": "bullish",
-          "score": 100.0
-        },
-        {
-          "text": "石油股早盘表现活跃 中国石油涨逾4%昆仑能源涨逾2%",
-          "sentiment": "bullish",
-          "score": 100.0
-        }
-      ],
-      "fetch_status": "ok"
-    },
-    "BNB": {
-      "signal": "🟡 中性",
-      "adjusted_score": 60.2,
-      "news_score": 60.2,
-      "fgi_score": 49,
-      "fgi_desc": "中性",
-      "confidence": 33,
-      "news_signal": "🟡 中性",
-      "bull_count": 10,
-      "bear_count": 3,
-      "sample_news": [
-        {
-          "text": "东方电气盘中涨超5% 华泰证券维持“买入”评级",
-          "sentiment": "bullish",
-          "score": 100.0
-        },
-        {
-          "text": "石油股早盘表现活跃 中国石油涨逾4%昆仑能源涨逾2%",
-          "sentiment": "bullish",
-          "score": 100.0
-        }
-      ],
-      "fetch_status": "ok"
-    }
-  },
-  "usstock_sentiment": {
-    "NVDA": {
       "signal": "🟢 偏多",
-      "adjusted_score": 60.1,
-      "news_score": 60.2,
-      "confidence": 33,
-      "sample_news": [
+      "score": 83.3,
+      "raw_score": 83.3,
+      "fgi_adjust": 0,
+      "confidence": 90,
+      "fgi_value": 49,
+      "fgi_class": "Neutral",
+      "total_articles": 2,
+      "samples": [
         {
-          "text": "东方电气盘中涨超5% 华泰证券维持“买入”评级",
-          "sentiment": "bullish",
-          "score": 100.0
+          "title": "MARA shares sink on first-quarter revenue miss, $1.3B loss",
+          "sentiment": "bullish"
         },
         {
-          "text": "石油股早盘表现活跃 中国石油涨逾4%昆仑能源涨逾2%",
-          "sentiment": "bullish",
-          "score": 100.0
+          "title": "Bitcoin funding rates turn positive: Is BTC rally to $85K next?",
+          "sentiment": "bullish"
         }
       ]
     },
-    "TSLA": {
+    "ETH": {
       "signal": "🟢 偏多",
-      "adjusted_score": 60.1,
-      "news_score": 60.2,
-      "confidence": 33,
-      "sample_news": [
+      "score": 75.0,
+      "raw_score": 75.0,
+      "fgi_adjust": 0,
+      "confidence": 50,
+      "fgi_value": 49,
+      "fgi_class": "Neutral",
+      "total_articles": 2,
+      "samples": [
         {
-          "text": "东方电气盘中涨超5% 华泰证券维持“买入”评级",
-          "sentiment": "bullish",
-          "score": 100.0
+          "title": "Bitmine slows Ethereum buys, targets December to own 5% of supply",
+          "sentiment": "neutral"
         },
         {
-          "text": "石油股早盘表现活跃 中国石油涨逾4%昆仑能源涨逾2%",
-          "sentiment": "bullish",
-          "score": 100.0
+          "title": "Ethics remain sticking point as crypto market structure bill goes to markup",
+          "sentiment": "bullish"
+        }
+      ]
+    },
+    "BNB": {
+      "signal": "🟡 中性",
+      "score": 58.3,
+      "raw_score": 58.3,
+      "fgi_adjust": 0,
+      "confidence": 36,
+      "fgi_value": 49,
+      "fgi_class": "Neutral",
+      "total_articles": 0,
+      "note": "使用整体加密市场情绪"
+    },
+    "NVDA": {
+      "signal": "🟡 中性",
+      "score": 83.3,
+      "confidence": 20,
+      "fgi_value": 49,
+      "total_articles": 0,
+      "note": "使用整体市场情绪"
+    },
+    "TSLA": {
+      "signal": "🟡 中性",
+      "score": 58.4,
+      "raw_score": 58.4,
+      "confidence": 50,
+      "fgi_value": 49,
+      "total_articles": 2,
+      "samples": [
+        {
+          "title": "Bitmine slows Ethereum buys, targets December to own 5% of supply",
+          "sentiment": "neutral"
+        },
+        {
+          "title": "Bitcoin funding rates turn positive: Is BTC rally to $85K next?",
+          "sentiment": "bullish"
         }
       ]
     },
     "AAPL": {
-      "signal": "🟢 偏多",
-      "adjusted_score": 60.1,
-      "news_score": 60.2,
-      "confidence": 33,
-      "sample_news": [
-        {
-          "text": "东方电气盘中涨超5% 华泰证券维持“买入”评级",
-          "sentiment": "bullish",
-          "score": 100.0
-        },
-        {
-          "text": "石油股早盘表现活跃 中国石油涨逾4%昆仑能源涨逾2%",
-          "sentiment": "bullish",
-          "score": 100.0
-        }
-      ]
-    },
-    "MSFT": {
-      "signal": "🟢 偏多",
-      "adjusted_score": 60.1,
-      "news_score": 60.2,
-      "confidence": 33,
-      "sample_news": [
-        {
-          "text": "东方电气盘中涨超5% 华泰证券维持“买入”评级",
-          "sentiment": "bullish",
-          "score": 100.0
-        },
-        {
-          "text": "石油股早盘表现活跃 中国石油涨逾4%昆仑能源涨逾2%",
-          "sentiment": "bullish",
-          "score": 100.0
-        }
-      ]
-    },
-    "GOOGL": {
-      "signal": "🟢 偏多",
-      "adjusted_score": 60.1,
-      "news_score": 60.2,
-      "confidence": 33,
-      "sample_news": [
-        {
-          "text": "东方电气盘中涨超5% 华泰证券维持“买入”评级",
-          "sentiment": "bullish",
-          "score": 100.0
-        },
-        {
-          "text": "石油股早盘表现活跃 中国石油涨逾4%昆仑能源涨逾2%",
-          "sentiment": "bullish",
-          "score": 100.0
-        }
-      ]
-    },
-    "META": {
-      "signal": "🟢 偏多",
-      "adjusted_score": 60.1,
-      "news_score": 60.2,
-      "confidence": 33,
-      "sample_news": [
-        {
-          "text": "东方电气盘中涨超5% 华泰证券维持“买入”评级",
-          "sentiment": "bullish",
-          "score": 100.0
-        },
-        {
-          "text": "石油股早盘表现活跃 中国石油涨逾4%昆仑能源涨逾2%",
-          "sentiment": "bullish",
-          "score": 100.0
-        }
-      ]
+      "signal": "🟡 中性",
+      "score": 83.3,
+      "confidence": 20,
+      "fgi_value": 49,
+      "total_articles": 0,
+      "note": "使用整体市场情绪"
     },
     "SPY": {
-      "signal": "🟢 偏多",
-      "adjusted_score": 60.1,
-      "news_score": 60.2,
-      "confidence": 33,
-      "sample_news": [
+      "signal": "🟡 中性",
+      "score": 58.4,
+      "raw_score": 58.4,
+      "confidence": 50,
+      "fgi_value": 49,
+      "total_articles": 2,
+      "samples": [
         {
-          "text": "东方电气盘中涨超5% 华泰证券维持“买入”评级",
-          "sentiment": "bullish",
-          "score": 100.0
+          "title": "Bitcoin funding rates turn positive: Is BTC rally to $85K next?",
+          "sentiment": "bullish"
         },
         {
-          "text": "石油股早盘表现活跃 中国石油涨逾4%昆仑能源涨逾2%",
-          "sentiment": "bullish",
-          "score": 100.0
+          "title": "Solana ETF inflows show demand returning as traders eye SOL rally to $120",
+          "sentiment": "neutral"
         }
       ]
     }
   },
-  "market_news": {
-    "crypto_news_sentiment": {
-      "score": 60.2,
-      "signal": "🟡 中性",
-      "confidence": 33,
-      "total": 30,
-      "bull_count": 10,
-      "bear_count": 3,
-      "neutral_count": 17,
-      "samples": [
-        {
-          "text": "东方电气盘中涨超5% 华泰证券维持“买入”评级",
-          "sentiment": "bullish",
-          "score": 100.0
-        },
-        {
-          "text": "石油股早盘表现活跃 中国石油涨逾4%昆仑能源涨逾2%",
-          "sentiment": "bullish",
-          "score": 100.0
-        },
-        {
-          "text": "韩智库称中东冲突背景下经济下行风险仍存",
-          "sentiment": "bearish",
-          "score": 0.0
-        },
-        {
-          "text": "银河娱乐第一季度净收益为124亿港元 按年上升11%",
-          "sentiment": "bearish",
-          "score": 0.0
-        }
-      ]
-    },
-    "us_news_sentiment": {
-      "score": 60.2,
-      "signal": "🟡 中性",
-      "confidence": 33,
-      "total": 30,
-      "bull_count": 10,
-      "bear_count": 3,
-      "neutral_count": 17,
-      "samples": [
-        {
-          "text": "东方电气盘中涨超5% 华泰证券维持“买入”评级",
-          "sentiment": "bullish",
-          "score": 100.0
-        },
-        {
-          "text": "石油股早盘表现活跃 中国石油涨逾4%昆仑能源涨逾2%",
-          "sentiment": "bullish",
-          "score": 100.0
-        },
-        {
-          "text": "韩智库称中东冲突背景下经济下行风险仍存",
-          "sentiment": "bearish",
-          "score": 0.0
-        },
-        {
-          "text": "银河娱乐第一季度净收益为124亿港元 按年上升11%",
-          "sentiment": "bearish",
-          "score": 0.0
-        }
-      ]
-    }
-  },
-  "data_sources": [
-    "alternative.me Fear&Greed Index",
-    "新浪财经大盘新闻 (lid=2516)"
-  ],
-  "methodology": "新闻情绪关键词分析 + Fear&Greed指数加权",
-  "x_platform_note": "X API 为付费服务($100+/月)，本系统使用替代方案"
+  "methodology": "RSS新闻情绪关键词分析 + Fear&Greed指数加权",
+  "rss_feeds": {
+    "crypto": [
+      "https://cointelegraph.com/rss",
+      "https://cryptonews.com/feed/",
+      "https://decrypt.co/feed"
+    ],
+    "stocks": [
+      "https://cointelegraph.com/rss"
+    ]
+  }
 }
