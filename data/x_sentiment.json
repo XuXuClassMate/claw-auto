@@ -1,120 +1,98 @@
 {
-  "timestamp": "2026-05-12T10:29:34.002485Z",
-  "source": "RSS feeds (CoinTelegraph + CryptoNews + Decrypt)",
+  "timestamp": "2026-05-12T11:57:53.466837+00:00",
+  "source": "alternative.me + 新浪财经 + RSS feeds",
   "fear_greed": {
     "value": 49,
     "classification": "Neutral"
   },
   "results": {
     "BTC": {
-      "signal": "🔴 偏空",
-      "score": 0.0,
-      "raw_score": 0.0,
-      "fgi_adjust": 0,
-      "confidence": 90,
+      "signal": "🟡 中性",
+      "score": 49.6,
+      "raw_score": 50,
+      "fgi_adjust": -0.4,
+      "confidence": 20,
       "fgi_value": 49,
       "fgi_class": "Neutral",
-      "total_articles": 1,
-      "samples": [
-        {
-          "title": "CleanSpark shares slide after reporting $378M fiscal second quarter loss",
-          "sentiment": "bearish"
-        }
-      ]
+      "total_articles": 0,
+      "samples": []
     },
     "ETH": {
-      "signal": "🟢 偏多",
-      "score": 83.3,
-      "raw_score": 83.3,
-      "fgi_adjust": 0,
-      "confidence": 90,
+      "signal": "🟡 中性",
+      "score": 49.6,
+      "raw_score": 50,
+      "fgi_adjust": -0.4,
+      "confidence": 20,
       "fgi_value": 49,
       "fgi_class": "Neutral",
-      "total_articles": 2,
-      "samples": [
-        {
-          "title": "Ethereum Foundation hits ‘Glamsterdam’ milestones, names new protocol leads",
-          "sentiment": "bullish"
-        },
-        {
-          "title": "Bitmine slows Ethereum buys, targets December to own 5% of supply",
-          "sentiment": "bullish"
-        }
-      ]
+      "total_articles": 0,
+      "samples": []
     },
     "BNB": {
       "signal": "🟡 中性",
-      "score": 56.5,
-      "raw_score": 56.5,
-      "fgi_adjust": 0,
-      "confidence": 41,
+      "score": 49.6,
+      "raw_score": 50,
+      "fgi_adjust": -0.4,
+      "confidence": 20,
       "fgi_value": 49,
       "fgi_class": "Neutral",
       "total_articles": 0,
-      "note": "使用整体加密市场情绪"
+      "samples": []
+    },
+    "SOL": {
+      "signal": "🟡 中性",
+      "score": 49.6,
+      "raw_score": 50,
+      "fgi_adjust": -0.4,
+      "confidence": 20,
+      "fgi_value": 49,
+      "fgi_class": "Neutral",
+      "total_articles": 0,
+      "samples": []
     },
     "NVDA": {
       "signal": "🟡 中性",
-      "score": 80.0,
+      "score": 49.6,
+      "raw_score": 50,
+      "fgi_adjust": -0.4,
       "confidence": 20,
       "fgi_value": 49,
+      "fgi_class": "Neutral",
       "total_articles": 0,
-      "note": "使用整体市场情绪"
+      "samples": []
     },
     "TSLA": {
-      "signal": "🟢 偏多",
-      "score": 66.7,
-      "raw_score": 66.7,
-      "confidence": 90,
+      "signal": "🟡 中性",
+      "score": 49.6,
+      "raw_score": 50,
+      "fgi_adjust": -0.4,
+      "confidence": 20,
       "fgi_value": 49,
-      "total_articles": 2,
-      "samples": [
-        {
-          "title": "Bitmine slows Ethereum buys, targets December to own 5% of supply",
-          "sentiment": "bullish"
-        },
-        {
-          "title": "Bitcoin funding rates turn positive: Is BTC rally to $85K next?",
-          "sentiment": "bullish"
-        }
-      ]
+      "fgi_class": "Neutral",
+      "total_articles": 0,
+      "samples": []
     },
     "AAPL": {
       "signal": "🟡 中性",
-      "score": 80.0,
+      "score": 49.6,
+      "raw_score": 50,
+      "fgi_adjust": -0.4,
       "confidence": 20,
       "fgi_value": 49,
+      "fgi_class": "Neutral",
       "total_articles": 0,
-      "note": "使用整体市场情绪"
+      "samples": []
     },
     "SPY": {
       "signal": "🟡 中性",
-      "score": 44.5,
-      "raw_score": 44.5,
-      "confidence": 67,
+      "score": 49.6,
+      "raw_score": 50,
+      "fgi_adjust": -0.4,
+      "confidence": 20,
       "fgi_value": 49,
-      "total_articles": 3,
-      "samples": [
-        {
-          "title": "Bitcoin funding rates turn positive: Is BTC rally to $85K next?",
-          "sentiment": "bullish"
-        },
-        {
-          "title": "Ether price is still stuck below $2.4K: Here is why",
-          "sentiment": "bearish"
-        }
-      ]
+      "fgi_class": "Neutral",
+      "total_articles": 0,
+      "samples": []
     }
-  },
-  "methodology": "RSS新闻情绪关键词分析 + Fear&Greed指数加权",
-  "rss_feeds": {
-    "crypto": [
-      "https://cointelegraph.com/rss",
-      "https://cryptonews.com/feed/",
-      "https://decrypt.co/feed"
-    ],
-    "stocks": [
-      "https://cointelegraph.com/rss"
-    ]
   }
 }
