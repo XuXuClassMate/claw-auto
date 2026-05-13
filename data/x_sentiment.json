@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-05-13T18:02:33.595212+00:00",
-  "source": "alternative.me + 新浪财经 + RSS feeds",
+  "timestamp": "2026-05-13T21:24:35.106470Z",
+  "source": "RSS feeds (CoinTelegraph + CryptoNews + Decrypt)",
   "fear_greed": {
     "value": 42,
     "classification": "Fear"
@@ -8,131 +8,112 @@
   "results": {
     "BTC": {
       "signal": "🟡 中性",
-      "score": 46.8,
-      "raw_score": 50.0,
-      "fgi_adjust": -3.2,
-      "confidence": 18,
+      "score": 54.3,
+      "raw_score": 58.3,
+      "fgi_adjust": -4,
+      "confidence": 33,
       "fgi_value": 42,
       "fgi_class": "Fear",
-      "total_articles": 1,
+      "total_articles": 3,
       "samples": [
         {
-          "title": "WAIB Summit Monaco 2026 returns: the world’s most exclusive gathering for digital assets & AI",
+          "title": "Whale shorts $70M in crypto and tech: Should Bitcoin traders worry?",
           "sentiment": "neutral"
+        },
+        {
+          "title": "Bitcoin traders expect ‘fast move’ to $90K following CLARITY Act vote",
+          "sentiment": "bearish"
         }
       ]
     },
     "ETH": {
-      "signal": "🟡 中性",
-      "score": 46.8,
-      "raw_score": 50.0,
-      "fgi_adjust": -3.2,
-      "confidence": 18,
+      "signal": "🟢 偏多",
+      "score": 96.0,
+      "raw_score": 100.0,
+      "fgi_adjust": -4,
+      "confidence": 90,
       "fgi_value": 42,
       "fgi_class": "Fear",
-      "total_articles": 1,
+      "total_articles": 2,
       "samples": [
         {
-          "title": "WAIB Summit Monaco 2026 returns: the world’s most exclusive gathering for digital assets & AI",
-          "sentiment": "neutral"
+          "title": "Price predictions 5/13: BTC, ETH, BNB, XRP, SOL, DOGE, HYPE, ADA, ZEC, BCH",
+          "sentiment": "bullish"
+        },
+        {
+          "title": "Traders say Ethereum ready for a 'strong move' after ETH price taps $2.3K",
+          "sentiment": "bullish"
         }
       ]
     },
     "BNB": {
-      "signal": "🟡 中性",
-      "score": 46.8,
-      "raw_score": 50.0,
-      "fgi_adjust": -3.2,
-      "confidence": 18,
+      "signal": "🟢 偏多",
+      "score": 96.0,
+      "raw_score": 100.0,
+      "fgi_adjust": -4,
+      "confidence": 90,
       "fgi_value": 42,
       "fgi_class": "Fear",
       "total_articles": 1,
       "samples": [
         {
-          "title": "WAIB Summit Monaco 2026 returns: the world’s most exclusive gathering for digital assets & AI",
-          "sentiment": "neutral"
-        }
-      ]
-    },
-    "SOL": {
-      "signal": "🟡 中性",
-      "score": 46.8,
-      "raw_score": 50.0,
-      "fgi_adjust": -3.2,
-      "confidence": 18,
-      "fgi_value": 42,
-      "fgi_class": "Fear",
-      "total_articles": 1,
-      "samples": [
-        {
-          "title": "WAIB Summit Monaco 2026 returns: the world’s most exclusive gathering for digital assets & AI",
-          "sentiment": "neutral"
+          "title": "Price predictions 5/13: BTC, ETH, BNB, XRP, SOL, DOGE, HYPE, ADA, ZEC, BCH",
+          "sentiment": "bullish"
         }
       ]
     },
     "NVDA": {
       "signal": "🟡 中性",
-      "score": 46.8,
-      "raw_score": 50.0,
-      "fgi_adjust": -3.2,
-      "confidence": 18,
+      "score": 75.0,
+      "confidence": 20,
       "fgi_value": 42,
-      "fgi_class": "Fear",
-      "total_articles": 1,
-      "samples": [
-        {
-          "title": "WAIB Summit Monaco 2026 returns: the world’s most exclusive gathering for digital assets & AI",
-          "sentiment": "neutral"
-        }
-      ]
+      "total_articles": 0,
+      "note": "使用整体市场情绪"
     },
     "TSLA": {
       "signal": "🟡 中性",
-      "score": 46.8,
-      "raw_score": 50.0,
-      "fgi_adjust": -3.2,
-      "confidence": 18,
+      "score": 75.0,
+      "confidence": 20,
       "fgi_value": 42,
-      "fgi_class": "Fear",
-      "total_articles": 1,
-      "samples": [
-        {
-          "title": "WAIB Summit Monaco 2026 returns: the world’s most exclusive gathering for digital assets & AI",
-          "sentiment": "neutral"
-        }
-      ]
+      "total_articles": 0,
+      "note": "使用整体市场情绪"
     },
     "AAPL": {
       "signal": "🟡 中性",
-      "score": 46.8,
-      "raw_score": 50.0,
-      "fgi_adjust": -3.2,
-      "confidence": 18,
+      "score": 75.0,
+      "confidence": 20,
       "fgi_value": 42,
-      "fgi_class": "Fear",
-      "total_articles": 1,
-      "samples": [
-        {
-          "title": "WAIB Summit Monaco 2026 returns: the world’s most exclusive gathering for digital assets & AI",
-          "sentiment": "neutral"
-        }
-      ]
+      "total_articles": 0,
+      "note": "使用整体市场情绪"
     },
     "SPY": {
       "signal": "🟡 中性",
-      "score": 46.8,
+      "score": 48.8,
       "raw_score": 50.0,
-      "fgi_adjust": -3.2,
-      "confidence": 18,
+      "confidence": 50,
       "fgi_value": 42,
-      "fgi_class": "Fear",
-      "total_articles": 1,
+      "total_articles": 2,
       "samples": [
         {
-          "title": "WAIB Summit Monaco 2026 returns: the world’s most exclusive gathering for digital assets & AI",
-          "sentiment": "neutral"
+          "title": "Jane Street slashes Bitcoin ETF holdings, adds Ether funds in Q1 2026",
+          "sentiment": "bullish"
+        },
+        {
+          "title": "Hyperliquid ETF attracts $1.2M inflows in 'very solid' US debut",
+          "sentiment": "bearish"
         }
       ]
     }
+  },
+  "methodology": "RSS新闻情绪关键词分析 + Fear&Greed指数加权",
+  "rss_feeds": {
+    "crypto": [
+      "https://cointelegraph.com/rss",
+      "https://cryptonews.com/feed/",
+      "https://decrypt.co/feed"
+    ],
+    "stocks": [
+      "https://cointelegraph.com/rss"
+    ]
   }
 }
