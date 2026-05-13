@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-05-13T10:24:44.965639Z",
+  "timestamp": "2026-05-13T14:28:17.371720Z",
   "source": "RSS feeds (CoinTelegraph + CryptoNews + Decrypt)",
   "fear_greed": {
     "value": 42,
@@ -7,42 +7,42 @@
   },
   "results": {
     "BTC": {
-      "signal": "🟡 中性",
-      "score": 54.5,
-      "raw_score": 58.5,
+      "signal": "🔴 偏空",
+      "score": 34.9,
+      "raw_score": 38.9,
       "fgi_adjust": -4,
-      "confidence": 34,
+      "confidence": 33,
+      "fgi_value": 42,
+      "fgi_class": "Fear",
+      "total_articles": 3,
+      "samples": [
+        {
+          "title": "Metaplanet Q1 profit jumps, but Bitcoin losses hit bottom line",
+          "sentiment": "bearish"
+        },
+        {
+          "title": "Bitcoin to $100K in Q2? Strategy’s STRC unlocks potential to buy 3K BTC in two days",
+          "sentiment": "bullish"
+        }
+      ]
+    },
+    "ETH": {
+      "signal": "🟡 中性",
+      "score": 56.0,
+      "raw_score": 60.0,
+      "fgi_adjust": -4,
+      "confidence": 39,
       "fgi_value": 42,
       "fgi_class": "Fear",
       "total_articles": 0,
       "note": "使用整体加密市场情绪"
     },
-    "ETH": {
-      "signal": "🟡 中性",
-      "score": 46.0,
-      "raw_score": 50.0,
-      "fgi_adjust": -4,
-      "confidence": 0,
-      "fgi_value": 42,
-      "fgi_class": "Fear",
-      "total_articles": 2,
-      "samples": [
-        {
-          "title": "Ethereum community launches security feature to end blind signing",
-          "sentiment": "neutral"
-        },
-        {
-          "title": "Kelp DAO eyes reopening withdrawals after rsETH burn",
-          "sentiment": "neutral"
-        }
-      ]
-    },
     "BNB": {
       "signal": "🟡 中性",
-      "score": 54.5,
-      "raw_score": 58.5,
+      "score": 56.0,
+      "raw_score": 60.0,
       "fgi_adjust": -4,
-      "confidence": 34,
+      "confidence": 39,
       "fgi_value": 42,
       "fgi_class": "Fear",
       "total_articles": 0,
@@ -50,7 +50,7 @@
     },
     "NVDA": {
       "signal": "🟡 中性",
-      "score": 83.3,
+      "score": 87.5,
       "confidence": 20,
       "fgi_value": 42,
       "total_articles": 0,
@@ -58,45 +58,41 @@
     },
     "TSLA": {
       "signal": "🟢 偏多",
-      "score": 61.3,
-      "raw_score": 62.5,
-      "confidence": 50,
+      "score": 98.8,
+      "raw_score": 100.0,
+      "confidence": 90,
       "fgi_value": 42,
-      "total_articles": 2,
+      "total_articles": 1,
       "samples": [
         {
           "title": "Senate confirms Kevin Warsh as Federal Reserve governor, with chair vote expected",
           "sentiment": "bullish"
-        },
-        {
-          "title": "Bitcoin may avoid historic bear market losses as ETF flows grow, says analyst",
-          "sentiment": "bearish"
         }
       ]
     },
     "AAPL": {
       "signal": "🟡 中性",
-      "score": 83.3,
+      "score": 87.5,
       "confidence": 20,
       "fgi_value": 42,
       "total_articles": 0,
       "note": "使用整体市场情绪"
     },
     "SPY": {
-      "signal": "🔴 偏空",
-      "score": 32.1,
-      "raw_score": 33.3,
+      "signal": "🟡 中性",
+      "score": 57.1,
+      "raw_score": 58.3,
       "confidence": 67,
       "fgi_value": 42,
       "total_articles": 3,
       "samples": [
         {
-          "title": "Hyperliquid ETF attracts $1.2M inflows in 'very solid' US debut",
-          "sentiment": "bearish"
+          "title": "Jane Street slashes Bitcoin ETF holdings, adds Ether funds in Q1 2026",
+          "sentiment": "bullish"
         },
         {
-          "title": "XRP traders say bullishness ‘growing’ as ETFs log largest inflow since January",
-          "sentiment": "bullish"
+          "title": "Hyperliquid ETF attracts $1.2M inflows in 'very solid' US debut",
+          "sentiment": "bearish"
         }
       ]
     }
