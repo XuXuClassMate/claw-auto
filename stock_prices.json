@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-05-13T22:38:15.294154+00:00",
+  "last_update": "2026-05-13T23:41:40.558630+00:00",
   "source": "Yahoo Finance",
   "data": [
     {
@@ -71,7 +71,7 @@
       "name": "NVIDIA Corp",
       "current_price": 225.83,
       "price_change_percentage_24h": 2.29,
-      "market_cap": 5488798334976,
+      "market_cap": 5469721067520,
       "volume": 142420434
     },
     {
