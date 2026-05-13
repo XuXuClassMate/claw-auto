@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-05-13T17:59:38.333054Z",
-  "source": "RSS feeds (CoinTelegraph + CryptoNews + Decrypt)",
+  "timestamp": "2026-05-13T18:02:33.595212+00:00",
+  "source": "alternative.me + 新浪财经 + RSS feeds",
   "fear_greed": {
     "value": 42,
     "classification": "Fear"
@@ -8,109 +8,131 @@
   "results": {
     "BTC": {
       "signal": "🟡 中性",
-      "score": 46.0,
+      "score": 46.8,
       "raw_score": 50.0,
-      "fgi_adjust": -4,
-      "confidence": 0,
+      "fgi_adjust": -3.2,
+      "confidence": 18,
       "fgi_value": 42,
       "fgi_class": "Fear",
-      "total_articles": 2,
+      "total_articles": 1,
       "samples": [
         {
-          "title": "Bitcoin price targets $79K as US PPI inflation hits highest since 2022",
-          "sentiment": "neutral"
-        },
-        {
-          "title": "Here’s what happened in crypto today",
+          "title": "WAIB Summit Monaco 2026 returns: the world’s most exclusive gathering for digital assets & AI",
           "sentiment": "neutral"
         }
       ]
     },
     "ETH": {
-      "signal": "🟢 偏多",
-      "score": 96.0,
-      "raw_score": 100.0,
-      "fgi_adjust": -4,
-      "confidence": 90,
+      "signal": "🟡 中性",
+      "score": 46.8,
+      "raw_score": 50.0,
+      "fgi_adjust": -3.2,
+      "confidence": 18,
       "fgi_value": 42,
       "fgi_class": "Fear",
       "total_articles": 1,
       "samples": [
         {
-          "title": "Traders say Ethereum ready for a 'strong move' after ETH price taps $2.3K",
-          "sentiment": "bullish"
+          "title": "WAIB Summit Monaco 2026 returns: the world’s most exclusive gathering for digital assets & AI",
+          "sentiment": "neutral"
         }
       ]
     },
     "BNB": {
       "signal": "🟡 中性",
-      "score": 55.5,
-      "raw_score": 59.5,
-      "fgi_adjust": -4,
-      "confidence": 37,
+      "score": 46.8,
+      "raw_score": 50.0,
+      "fgi_adjust": -3.2,
+      "confidence": 18,
       "fgi_value": 42,
       "fgi_class": "Fear",
-      "total_articles": 0,
-      "note": "使用整体加密市场情绪"
-    },
-    "NVDA": {
-      "signal": "🟡 中性",
-      "score": 83.3,
-      "confidence": 20,
-      "fgi_value": 42,
-      "total_articles": 0,
-      "note": "使用整体市场情绪"
-    },
-    "TSLA": {
-      "signal": "🟢 偏多",
-      "score": 98.8,
-      "raw_score": 100.0,
-      "confidence": 90,
-      "fgi_value": 42,
       "total_articles": 1,
       "samples": [
         {
-          "title": "Senate confirms Kevin Warsh as Federal Reserve governor, with chair vote expected",
-          "sentiment": "bullish"
+          "title": "WAIB Summit Monaco 2026 returns: the world’s most exclusive gathering for digital assets & AI",
+          "sentiment": "neutral"
+        }
+      ]
+    },
+    "SOL": {
+      "signal": "🟡 中性",
+      "score": 46.8,
+      "raw_score": 50.0,
+      "fgi_adjust": -3.2,
+      "confidence": 18,
+      "fgi_value": 42,
+      "fgi_class": "Fear",
+      "total_articles": 1,
+      "samples": [
+        {
+          "title": "WAIB Summit Monaco 2026 returns: the world’s most exclusive gathering for digital assets & AI",
+          "sentiment": "neutral"
+        }
+      ]
+    },
+    "NVDA": {
+      "signal": "🟡 中性",
+      "score": 46.8,
+      "raw_score": 50.0,
+      "fgi_adjust": -3.2,
+      "confidence": 18,
+      "fgi_value": 42,
+      "fgi_class": "Fear",
+      "total_articles": 1,
+      "samples": [
+        {
+          "title": "WAIB Summit Monaco 2026 returns: the world’s most exclusive gathering for digital assets & AI",
+          "sentiment": "neutral"
+        }
+      ]
+    },
+    "TSLA": {
+      "signal": "🟡 中性",
+      "score": 46.8,
+      "raw_score": 50.0,
+      "fgi_adjust": -3.2,
+      "confidence": 18,
+      "fgi_value": 42,
+      "fgi_class": "Fear",
+      "total_articles": 1,
+      "samples": [
+        {
+          "title": "WAIB Summit Monaco 2026 returns: the world’s most exclusive gathering for digital assets & AI",
+          "sentiment": "neutral"
         }
       ]
     },
     "AAPL": {
       "signal": "🟡 中性",
-      "score": 83.3,
-      "confidence": 20,
+      "score": 46.8,
+      "raw_score": 50.0,
+      "fgi_adjust": -3.2,
+      "confidence": 18,
       "fgi_value": 42,
-      "total_articles": 0,
-      "note": "使用整体市场情绪"
+      "fgi_class": "Fear",
+      "total_articles": 1,
+      "samples": [
+        {
+          "title": "WAIB Summit Monaco 2026 returns: the world’s most exclusive gathering for digital assets & AI",
+          "sentiment": "neutral"
+        }
+      ]
     },
     "SPY": {
       "signal": "🟡 中性",
-      "score": 48.8,
+      "score": 46.8,
       "raw_score": 50.0,
-      "confidence": 50,
+      "fgi_adjust": -3.2,
+      "confidence": 18,
       "fgi_value": 42,
-      "total_articles": 2,
+      "fgi_class": "Fear",
+      "total_articles": 1,
       "samples": [
         {
-          "title": "Jane Street slashes Bitcoin ETF holdings, adds Ether funds in Q1 2026",
-          "sentiment": "bullish"
-        },
-        {
-          "title": "Hyperliquid ETF attracts $1.2M inflows in 'very solid' US debut",
-          "sentiment": "bearish"
+          "title": "WAIB Summit Monaco 2026 returns: the world’s most exclusive gathering for digital assets & AI",
+          "sentiment": "neutral"
         }
       ]
     }
-  },
-  "methodology": "RSS新闻情绪关键词分析 + Fear&Greed指数加权",
-  "rss_feeds": {
-    "crypto": [
-      "https://cointelegraph.com/rss",
-      "https://cryptonews.com/feed/",
-      "https://decrypt.co/feed"
-    ],
-    "stocks": [
-      "https://cointelegraph.com/rss"
-    ]
   }
 }
