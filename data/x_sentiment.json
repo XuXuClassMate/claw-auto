@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-05-14T10:13:06.365462Z",
-  "source": "RSS feeds (CoinTelegraph + CryptoNews + Decrypt)",
+  "timestamp": "2026-05-14T10:17:28.015286+00:00",
+  "source": "alternative.me + 新浪财经 + RSS feeds",
   "fear_greed": {
     "value": 34,
     "classification": "Fear"
@@ -8,115 +8,91 @@
   "results": {
     "BTC": {
       "signal": "🟡 中性",
-      "score": 58.7,
-      "raw_score": 66.7,
-      "fgi_adjust": -8,
-      "confidence": 33,
+      "score": 43.6,
+      "raw_score": 50,
+      "fgi_adjust": -6.4,
+      "confidence": 20,
       "fgi_value": 34,
       "fgi_class": "Fear",
-      "total_articles": 3,
-      "samples": [
-        {
-          "title": "Bitcoin firm Nakamoto records net loss in Q1 despite sixfold revenue growth",
-          "sentiment": "bullish"
-        },
-        {
-          "title": "Bitcoin risks slump after hitting ‘major bear market resistance’: CryptoQuant",
-          "sentiment": "neutral"
-        }
-      ]
+      "total_articles": 0,
+      "samples": []
     },
     "ETH": {
-      "signal": "🟢 偏多",
-      "score": 92.0,
-      "raw_score": 100.0,
-      "fgi_adjust": -8,
-      "confidence": 90,
+      "signal": "🟡 中性",
+      "score": 43.6,
+      "raw_score": 50,
+      "fgi_adjust": -6.4,
+      "confidence": 20,
       "fgi_value": 34,
       "fgi_class": "Fear",
-      "total_articles": 1,
-      "samples": [
-        {
-          "title": "NY judge pushes back hearing for Aave’s bid to unfreeze $71M in ETH",
-          "sentiment": "bullish"
-        }
-      ]
+      "total_articles": 0,
+      "samples": []
     },
     "BNB": {
       "signal": "🟡 中性",
-      "score": 51.0,
-      "raw_score": 59.0,
-      "fgi_adjust": -8,
-      "confidence": 33,
+      "score": 43.6,
+      "raw_score": 50,
+      "fgi_adjust": -6.4,
+      "confidence": 20,
       "fgi_value": 34,
       "fgi_class": "Fear",
       "total_articles": 0,
-      "note": "使用整体加密市场情绪"
+      "samples": []
+    },
+    "SOL": {
+      "signal": "🟡 中性",
+      "score": 43.6,
+      "raw_score": 50,
+      "fgi_adjust": -6.4,
+      "confidence": 20,
+      "fgi_value": 34,
+      "fgi_class": "Fear",
+      "total_articles": 0,
+      "samples": []
     },
     "NVDA": {
       "signal": "🟡 中性",
-      "score": 87.5,
+      "score": 43.6,
+      "raw_score": 50,
+      "fgi_adjust": -6.4,
       "confidence": 20,
       "fgi_value": 34,
+      "fgi_class": "Fear",
       "total_articles": 0,
-      "note": "使用整体市场情绪"
+      "samples": []
     },
     "TSLA": {
-      "signal": "🟢 偏多",
-      "score": 72.6,
-      "raw_score": 75.0,
-      "confidence": 50,
+      "signal": "🟡 中性",
+      "score": 43.6,
+      "raw_score": 50,
+      "fgi_adjust": -6.4,
+      "confidence": 20,
       "fgi_value": 34,
-      "total_articles": 2,
-      "samples": [
-        {
-          "title": "AI chatbot Claude helps man recover 5 Bitcoin after finding old seed phrase",
-          "sentiment": "neutral"
-        },
-        {
-          "title": "Senate confirms Kevin Warsh to lead Federal Reserve",
-          "sentiment": "bullish"
-        }
-      ]
+      "fgi_class": "Fear",
+      "total_articles": 0,
+      "samples": []
     },
     "AAPL": {
       "signal": "🟡 中性",
-      "score": 47.6,
-      "raw_score": 50.0,
-      "confidence": 0,
+      "score": 43.6,
+      "raw_score": 50,
+      "fgi_adjust": -6.4,
+      "confidence": 20,
       "fgi_value": 34,
-      "total_articles": 1,
-      "samples": [
-        {
-          "title": "AI chatbot Claude helps man recover 5 Bitcoin after finding old seed phrase",
-          "sentiment": "neutral"
-        }
-      ]
+      "fgi_class": "Fear",
+      "total_articles": 0,
+      "samples": []
     },
     "SPY": {
-      "signal": "🟢 偏多",
-      "score": 97.6,
-      "raw_score": 100.0,
-      "confidence": 90,
+      "signal": "🟡 中性",
+      "score": 43.6,
+      "raw_score": 50,
+      "fgi_adjust": -6.4,
+      "confidence": 20,
       "fgi_value": 34,
-      "total_articles": 1,
-      "samples": [
-        {
-          "title": "Jane Street slashes Bitcoin ETF holdings, adds Ether funds in Q1 2026",
-          "sentiment": "bullish"
-        }
-      ]
+      "fgi_class": "Fear",
+      "total_articles": 0,
+      "samples": []
     }
-  },
-  "methodology": "RSS新闻情绪关键词分析 + Fear&Greed指数加权",
-  "rss_feeds": {
-    "crypto": [
-      "https://cointelegraph.com/rss",
-      "https://cryptonews.com/feed/",
-      "https://decrypt.co/feed"
-    ],
-    "stocks": [
-      "https://cointelegraph.com/rss"
-    ]
   }
 }
