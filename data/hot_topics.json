@@ -1,57 +1,57 @@
 {
-  "timestamp": "2026-05-13T10:28:44.424153+00:00",
+  "timestamp": "2026-05-14T10:17:08.904426+00:00",
   "domestic": {
     "weibo": {
       "source": "Weibo Hot Search",
       "items": [
         {
           "rank": 1,
-          "title": "欢迎特朗普访问中国",
+          "title": "中美领导人致辞",
           "hot": ""
         },
         {
           "rank": 2,
-          "title": "华南理工男生偷拍女同学裙底",
+          "title": "关闭支付宝支付功能后被扣捐赠184万",
           "hot": ""
         },
         {
           "rank": 3,
-          "title": "北方多地迎今年首个高温日",
+          "title": "这些美方代表在中美元首会谈会场",
           "hot": ""
         },
         {
           "rank": 4,
-          "title": "上淘宝抢618直播红包0元付定",
+          "title": "白鹿演唱会票价加起来是十年",
           "hot": ""
         },
         {
           "rank": 5,
-          "title": "程十安改名姜乘澜回归",
+          "title": "给阿嬷的情书女主官宣入行",
           "hot": ""
         },
         {
           "rank": 6,
-          "title": "封神2特效 不如AI",
+          "title": "韩国股市暴涨超200%散户癫狂",
           "hot": ""
         },
         {
           "rank": 7,
-          "title": "黄灿灿瘦了好多",
+          "title": "律师说法",
           "hot": ""
         },
         {
           "rank": 8,
-          "title": "丁禹兮范思哲全球香水代言人",
+          "title": "歌手2026定档官宣",
           "hot": ""
         },
         {
           "rank": 9,
-          "title": "小米新耳机将采用全新形态设计",
+          "title": "腾讯成立800人团队适配鸿蒙",
           "hot": ""
         },
         {
           "rank": 10,
-          "title": "豆包收费 大模型将告别免费时代",
+          "title": "世界杯",
           "hot": ""
         }
       ]
@@ -67,53 +67,53 @@
       "items": [
         {
           "rank": 1,
-          "title": "Deterministic Fully-Static Whole-Binary Translation Without Heuristics",
-          "score": 183
+          "title": "Claude for Small Business",
+          "score": 256
         },
         {
           "rank": 2,
-          "title": "Restore full BambuNetwork support for Bambu Lab printers",
-          "score": 442
+          "title": "Scorched Earth 2000 – Web",
+          "score": 262
         },
         {
           "rank": 3,
-          "title": "Googlebook",
-          "score": 790
+          "title": "Linux gaming is faster because Windows APIs are becoming Linux kernel features",
+          "score": 740
         },
         {
           "rank": 4,
-          "title": "The vi family",
-          "score": 177
+          "title": "Classic 7 is a Windows 10 LTSC mod to look 1:1 to Windows 7",
+          "score": 54
         },
         {
           "rank": 5,
-          "title": "Show HN: Needle: We Distilled Gemini Tool Calling into a 26M Model",
-          "score": 471
+          "title": "Setting up a free *.city.state.us locality domain (2025)",
+          "score": 562
         },
         {
           "rank": 6,
-          "title": "New stainless steel can survive conditions for hydrogen production in seawater",
-          "score": 53
+          "title": "MacBook Neo Deep Dive: Benchmarks, Wafer Economics, and the 8GB Gamble",
+          "score": 221
         },
         {
           "rank": 7,
-          "title": "SecurityBaseline.eu",
-          "score": 157
+          "title": "A History of IDEs at Google",
+          "score": 374
         },
         {
           "rank": 8,
-          "title": "How to make your text look futuristic (2016)",
-          "score": 358
+          "title": "The Emacsification of Software",
+          "score": 305
         },
         {
           "rank": 9,
-          "title": "Why senior developers fail to communicate their expertise",
-          "score": 590
+          "title": "Extraordinary Ordinals",
+          "score": 25
         },
         {
           "rank": 10,
-          "title": "CERT is releasing six CVEs for serious security vulnerabilities in dnsmasq",
-          "score": 318
+          "title": "Technical Dimensions of Live Feedback in Programming Systems",
+          "score": 7
         }
       ]
     },
@@ -122,11 +122,11 @@
       "items": [
         {
           "rank": 1,
-          "title": "Ask HN: If HTML supersedes Markdown fr AI, Will it be versatile enough for devs?"
+          "title": "Tell HN: Dont use Claude Design, lost access to my projects after unsubscribing"
         },
         {
           "rank": 2,
-          "title": "Ask HN: What are you working on? (May 2026)"
+          "title": "Tell HN: Starting June 15, claude -p usage will change"
         },
         {
           "rank": 3,
@@ -134,11 +134,11 @@
         },
         {
           "rank": 4,
-          "title": "Rumors of my death are slightly exaggerated"
+          "title": "Ask HN: What are you working on? (May 2026)"
         },
         {
           "rank": 5,
-          "title": "Ask HN: Is Spam getting worse or is Gmail getting worse?"
+          "title": "Rumors of my death are slightly exaggerated"
         }
       ]
     },
@@ -148,62 +148,62 @@
         {
           "rank": 1,
           "title": "FULU-Foundation/OrcaSlicer-bambulab",
-          "stars": 1939,
+          "stars": 3164,
           "language": "C++"
         },
         {
           "rank": 2,
           "title": "huangserva/3DCellForge",
-          "stars": 1758,
+          "stars": 1943,
           "language": "JavaScript"
         },
         {
           "rank": 3,
-          "title": "ywnd1144/Gopay_plus_automatic",
-          "stars": 672,
-          "language": "Python"
+          "title": "Nightmare-Eclipse/YellowKey",
+          "stars": 1312,
+          "language": ""
         },
         {
           "rank": 4,
-          "title": "Nightmare-Eclipse/YellowKey",
-          "stars": 581,
-          "language": ""
+          "title": "HermannBjorgvin/Clawdmeter",
+          "stars": 755,
+          "language": "C"
         },
         {
           "rank": 5,
-          "title": "thakur-works/DarkGPT",
-          "stars": 533,
-          "language": ""
+          "title": "ywnd1144/Gopay_plus_automatic",
+          "stars": 741,
+          "language": "Python"
         },
         {
           "rank": 6,
-          "title": "patchfighterway90/cs2-external-overlay",
-          "stars": 533,
+          "title": "TencentARC/Pixal3D",
+          "stars": 582,
           "language": "Python"
         },
         {
           "rank": 7,
-          "title": "thakur-works/Velocity-Executor",
-          "stars": 528,
-          "language": ""
+          "title": "cclank/cell-architecture-studio",
+          "stars": 550,
+          "language": "TypeScript"
         },
         {
           "rank": 8,
-          "title": "RadianceToadAmend/Fortnite-Cheats-2026",
-          "stars": 521,
+          "title": "simonlin1212/a-stock-data",
+          "stars": 547,
           "language": ""
         },
         {
           "rank": 9,
-          "title": "RadianceToadAmend/ARC-Raiders-External-Tool",
-          "stars": 521,
-          "language": "C++"
+          "title": "thakur-works/DarkGPT",
+          "stars": 535,
+          "language": ""
         },
         {
           "rank": 10,
-          "title": "RadianceToadAmend/cs2-overlay-utility",
-          "stars": 499,
-          "language": "C++"
+          "title": "patchfighterway90/cs2-external-overlay",
+          "stars": 535,
+          "language": "Python"
         }
       ]
     },
@@ -212,43 +212,43 @@
       "items": [
         {
           "rank": 1,
-          "title": "Redis and the Cost of Ambition"
+          "title": "Sovereign Tech Fund invests over €1 million in KDE software development"
         },
         {
           "rank": 2,
-          "title": "What is BusyBox?"
+          "title": "Points are a weird and inconsistent unit of measure"
         },
         {
           "rank": 3,
-          "title": "Bambu Lab is abusing the open source social contract"
+          "title": "Setting up a free *.city.state.us locality domain"
         },
         {
           "rank": 4,
-          "title": "what 262,715 regex questions on stack overflow haven't answered"
+          "title": "The Most Emacs Bzr Saga"
         },
         {
           "rank": 5,
-          "title": "How Rockstar fit an entire city into PlayStation 2 memory"
+          "title": "Classic 7 is a Windows 10 LTSC mod to look 1:1 to Windows 7"
         },
         {
           "rank": 6,
-          "title": "All the ways to mock your Rust code"
+          "title": "Redis and the Cost of Ambition"
         },
         {
           "rank": 7,
-          "title": "Partial static single information form"
+          "title": "Erlang/OTP 29.0 Release"
         },
         {
           "rank": 8,
-          "title": "Learning Software Architecture"
+          "title": "httpx2 - Fork by Pydantic"
         },
         {
           "rank": 9,
-          "title": "taken"
+          "title": "Lua as a practical \"soft-bedrock\" language"
         },
         {
           "rank": 10,
-          "title": "The BeBox: BeOS Hardware, Photos, and the Apple Deal That Wasn't"
+          "title": "MacBook Neo Review: The Laptop For The Rest Of Us"
         }
       ]
     },
@@ -257,50 +257,49 @@
       "items": [
         {
           "rank": 1,
-          "title": "Is there a way to host a MySQL database and deploy a PHP website using that data for free?",
-          "answers": 3,
+          "title": "cors error e specific and imagine you’re asking a question to another person. Min 15 characters",
+          "answers": 0,
           "tags": [
-            "php",
-            "database",
-            "hosting"
+            "cors"
           ]
         },
         {
           "rank": 2,
-          "title": "ASP.NET Core How to build a class diagram in Razor Pages project type",
-          "answers": 0,
+          "title": "PHP 8.4 OPcache calling wrong internal functions — round() becomes sin(), file_get_contents() becomes unlink()",
+          "answers": 4,
           "tags": [
-            "c#",
-            "asp.net",
-            "entity-framework"
+            "php",
+            "yii2",
+            "yii2-advanced-app"
           ]
         },
         {
           "rank": 3,
-          "title": "How to handle Sequelize migrations in a multi-tenant NestJS application with multiple MySQL databases?",
+          "title": "Neovim colorscheme slate: make parentheses visible",
           "answers": 0,
           "tags": [
-            "mysql",
-            "node.js",
-            "database"
+            "vim",
+            "neovim"
           ]
         },
         {
           "rank": 4,
-          "title": "Optimization and performance of multiple array iterations for WooCommerce role-based discounts",
-          "answers": 5,
+          "title": "How to export a MySQL database to JSON?",
+          "answers": 19,
           "tags": [
-            "php",
-            "optimization",
-            "woocommerce"
+            "sql",
+            "mysql",
+            "json"
           ]
         },
         {
           "rank": 5,
-          "title": "How to make a report module in laravel?",
-          "answers": 1,
+          "title": "Architecture review: Locally hosted web app with VPN access for confidential business data",
+          "answers": 0,
           "tags": [
-            "laravel"
+            "docker",
+            "security",
+            "deployment"
           ]
         }
       ]
@@ -310,31 +309,31 @@
       "items": [
         {
           "rank": 1,
-          "title": "SQL injection is 17 years old. Why is it still around?",
-          "answers": 17,
+          "title": "Authenticating a request from a valid application (unshadowed)",
+          "answers": 4,
           "tags": [
-            "web-application",
-            "sql-injection",
-            "data-leakage"
+            "linux",
+            "python",
+            "docker"
           ]
         },
         {
           "rank": 2,
-          "title": "AWS Service-To-Service authentication via Identity document",
+          "title": "How would strict CORS headers mitigate a \"stolen JWT\" situation?",
           "answers": 1,
           "tags": [
-            "authentication",
-            "aws"
+            "jwt",
+            "cors"
           ]
         },
         {
           "rank": 3,
-          "title": "too many failed atempts",
-          "answers": 0,
+          "title": "Genymotion with burpsuite proxy setup failed",
+          "answers": 1,
           "tags": [
-            "authentication",
-            "google",
-            "google-cloud-platform"
+            "android",
+            "proxy",
+            "burp-suite"
           ]
         }
       ]
@@ -344,31 +343,32 @@
       "items": [
         {
           "rank": 1,
-          "title": "Are there tail-aware strategies that keep tree-based boosting models from underpredicting extreme values at the tails of data?",
+          "title": "Given an axis-angle rotation vector, how can I find the unit rotation axis and angle?",
           "answers": 1,
           "tags": [
-            "machine-learning",
-            "regression",
-            "gradient"
+            "math",
+            "robotics",
+            "homework"
           ]
         },
         {
           "rank": 2,
-          "title": "Is it compulsary to normalize the dataset if doing so can negatively impact a Binary Logistic regression performance?",
+          "title": "Are there any good ways of simultaneously incorporating object detection with speech recognition?",
           "answers": 1,
           "tags": [
-            "machine-learning",
-            "datasets",
-            "logistic-regression"
+            "reference-request",
+            "object-detection",
+            "speech-recognition"
           ]
         },
         {
           "rank": 3,
-          "title": "How do you operationalize confidence metrics correctly for a “neither” option in cue-conflict decision classification?",
-          "answers": 0,
+          "title": "Can Federated IID and Non-IID training for datasets with various censoring rates be simplified to a single batch size?",
+          "answers": 1,
           "tags": [
-            "convolutional-neural-networks",
-            "image-net"
+            "deep-learning",
+            "batch-size",
+            "benchmarks"
           ]
         }
       ]
@@ -378,31 +378,31 @@
       "items": [
         {
           "rank": 1,
-          "title": "Ubuntu 22.04, Dual graphic cards, Intel for display, NVidia for GPGPU, how to setup?",
-          "answers": 3,
+          "title": "changes to /etc/mail.rc does not seem to take effect",
+          "answers": 1,
           "tags": [
-            "ubuntu",
-            "nvidia",
-            "intel"
+            "cron",
+            "mailx"
           ]
         },
         {
           "rank": 2,
-          "title": "From where all those older /dev/fd data come from?",
-          "answers": 2,
+          "title": "Associating pts and tty to a process",
+          "answers": 1,
           "tags": [
-            "file-descriptors",
-            "fd"
+            "shell",
+            "tty",
+            "pts"
           ]
         },
         {
           "rank": 3,
-          "title": "Firefox scroll wheel control",
-          "answers": 1,
+          "title": "create variables from CSV with varying number of fields",
+          "answers": 5,
           "tags": [
-            "debian",
-            "firefox",
-            "mouse"
+            "shell-script",
+            "variable",
+            "csv"
           ]
         }
       ]
@@ -413,63 +413,63 @@
     "items": [
       {
         "rank": 1,
-        "title": "艾奎诺克斯黄金宣布收购奥尔拉矿业，合并后新公司市值约达185亿美元",
-        "ctime": "1778667885",
-        "intro": "5月13日，艾奎诺克斯黄金公司（Equinox Gold）宣布将正式收购奥尔拉矿业公司（Orla Mining）。此项并购交易旨在打造一家以北美为核心业务区的大"
+        "title": "考虑到受供应偏紧等因素，汇丰银行上调未来数年白银价格预期",
+        "ctime": "1778753423",
+        "intro": "鉴于全球市场供应持续偏紧及美元走软，汇丰银行（HSBC）周四发布研究报告，大幅上调了2026年至2027年的白银价格预期。报告指出，尽管市场波动加剧..."
       },
       {
         "rank": 2,
-        "title": "斯塔默推进对欧缓和政策，直面残酷政治现实",
-        "ctime": "1778667587",
-        "intro": "核心要点英国首相斯塔默承诺，将在 7 月与欧盟峰会中为英国确立全新发展方向。英欧关系重启虽受部分企业和投资者欢迎，却有疏远大量选民的风险。"
+        "title": "习近平为特朗普举行欢迎宴会",
+        "ctime": "1778753401",
+        "intro": "5月14日晚，国家主席习近平在人民大会堂金色大厅为美国总统特朗普举行欢迎宴会。"
       },
       {
         "rank": 3,
-        "title": "卢比汇率持续走低，全球第二大黄金市场印度上调金银进口关税",
-        "ctime": "1778667317",
-        "intro": "核心要点作为全球第二大黄金消费国，印度将黄金、白银进口关税从6% 上调至 15%。印度总理莫迪呼吁民众一年内暂缓购买黄金，因海外黄金采购加剧卢比贬值压力。"
+        "title": "折扣零售商Action业绩放缓3i集团股价暴跌",
+        "ctime": "1778753024",
+        "intro": "欧股早盘该股最大跌幅达 25%富时 100 成分股 3i 集团截至 3 月 31 日，对旗下折扣零售商 Action 65.4% 的持股估值达 237.4 亿英"
       },
       {
         "rank": 4,
-        "title": "英国工党内部“逼宫”浪潮加剧，卫生大臣拜访斯塔默",
-        "ctime": "1778667245",
-        "intro": "当地时间5月13日，英国政治危机持续升级。首相基尔·斯塔默（Keir Starmer）在面临党内大规模“倒戈”的严峻形势下，于唐宁街10号同内阁要员举行私人会晤"
+        "title": "雪佛龙以21.7亿美元向日本引能仕出售部分亚太资产",
+        "ctime": "1778752886",
+        "intro": "交易预计于 2027 年完成加油站标识上展示着引能仕（Eneos）公司 logo，背景可见东京塔。 雪佛龙表示，此次资产组合调整是 “为顺应不断变化的市场格局”"
       },
       {
         "rank": 5,
-        "title": "美以伊战争冲击下，廉价航班将面临怎样的未来？",
-        "ctime": "1778667116",
-        "intro": "海伦・马丁刚为自己旅行社的客户敲定了一场梦寐以求的蜜月行程：先在新加坡停留数晚，再前往马来西亚兰卡威，原计划定于2027年初出行。然而，伊朗战争随即爆发。"
+        "title": "习近平同美国总统特朗普参观天坛",
+        "ctime": "1778752362",
+        "intro": "新华社北京5月14日电（记者杨依军、孙奕）5月14日，国家主席习近平同来华进行国事访问的美国总统特朗普参观天坛。 初夏的天坛，古柏含章，清风送爽。"
       },
       {
         "rank": 6,
-        "title": "黑田东彦：日元汇率跌破160可能性较低，日本经济基本面稳健",
-        "ctime": "1778667016",
-        "intro": "5月13日，日本前央行行长黑田东彦在出席研讨会时表示，鉴于日本货币当局当前的汇率干预立场，日元兑美元汇率进一步跌破160水平的可能性较低。"
+        "title": "中天期货:碳酸锂高位回落 焦煤调整",
+        "ctime": "1778752202",
+        "intro": "热点品种分析 一、商品指数 二、股指 中国上证综指5月14日（周四）收盘下跌64.65点，跌幅1.52%，报4177.92点； 中国深证成指5月14日（周四）收"
       },
       {
         "rank": 7,
-        "title": "软银愿景基金获利460亿美元，主要由重仓OpenAI投资收益拉动",
-        "ctime": "1778666927",
-        "intro": "核心要点软银旗下愿景基金年度获利460 亿美元，很大程度源于对 OpenAI 投资估值的大幅飙升。这家日本巨头在酷澎、滴滴全球等其他投资项目上出现亏损。"
+        "title": "特朗普乘车抵达欢迎宴会现场",
+        "ctime": "1778752107",
+        "intro": "5月14日晚，美国总统特朗普乘车抵达欢迎宴会现场。"
       },
       {
         "rank": 8,
-        "title": "为应对欧盟反垄断调查，Meta宣布将向竞争对手开放WhatsApp接口",
-        "ctime": "1778666522",
-        "intro": "5月13日，美国社交媒体巨头Meta平台公司（Meta Platforms）宣布，将允许竞争对手的人工智能聊天机器人免费使用其即时通讯软件WhatsApp的相关"
+        "title": "【建投有色】锌：秘鲁炼厂突发事故，利多因素正在累积",
+        "ctime": "1778752103",
+        "intro": "CFC金属研究 分析师 | 王贤伟 中信建投期货研究发展部 研究助理 | 刘城鑫 中信建投期货研究发展部 期货交易咨询业务资格：证监许可〔2011〕1461号 "
       },
       {
         "rank": 9,
-        "title": "伊朗空袭行动期间摩萨德局长到访阿联酋 协助战事协同部署",
-        "ctime": "1778666419",
-        "intro": "据阿拉伯官员及知情人士透露，以色列情报机构摩萨德负责人在与伊朗交战期间，至少两次到访阿联酋，就战事开展协同对接，此举也凸显出以色列与这个海湾阿拉伯国家的合作关系"
+        "title": "习近平将为特朗普举行欢迎宴会",
+        "ctime": "1778751932",
+        "intro": "5月14日晚，国家主席习近平将为来华进行国事访问的美国总统特朗普举行欢迎宴会。"
       },
       {
         "rank": 10,
-        "title": "国际能源署警示：霍尔木兹海峡供应冲击 复苏需耗时数月",
-        "ctime": "1778666226",
-        "intro": "国际能源署表示，霍尔木兹海峡近乎断航，已对全球能源市场引发一场前所未有的供给冲击；即便这条关键航道恢复通航，原油供应紧张的局面仍可能持续数月之久。"
+        "title": "央行公布最新数据，直接融资“崛起”",
+        "ctime": "1778751859",
+        "intro": "中国人民银行5月14日发布的金融统计数据报告显示，4月末，广义货币（M2）余额、社会融资规模存量、人民币各项贷款余额分别同比增长8.6%、7.8%和5.6%。"
       }
     ]
   }
