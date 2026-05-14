@@ -1,98 +1,121 @@
 {
-  "timestamp": "2026-05-13T23:05:50.786738+00:00",
-  "source": "alternative.me + 新浪财经 + RSS feeds",
+  "timestamp": "2026-05-14T02:53:43.515974Z",
+  "source": "RSS feeds (CoinTelegraph + CryptoNews + Decrypt)",
   "fear_greed": {
-    "value": 42,
+    "value": 34,
     "classification": "Fear"
   },
   "results": {
     "BTC": {
       "signal": "🟡 中性",
-      "score": 46.8,
-      "raw_score": 50,
-      "fgi_adjust": -3.2,
-      "confidence": 20,
-      "fgi_value": 42,
+      "score": 48.2,
+      "raw_score": 56.2,
+      "fgi_adjust": -8,
+      "confidence": 25,
+      "fgi_value": 34,
       "fgi_class": "Fear",
-      "total_articles": 0,
-      "samples": []
+      "total_articles": 4,
+      "samples": [
+        {
+          "title": "Here’s what happened in crypto today",
+          "sentiment": "neutral"
+        },
+        {
+          "title": "Whale shorts $70M in crypto and tech: Should Bitcoin traders worry?",
+          "sentiment": "neutral"
+        }
+      ]
     },
     "ETH": {
-      "signal": "🟡 中性",
-      "score": 46.8,
-      "raw_score": 50,
-      "fgi_adjust": -3.2,
-      "confidence": 20,
-      "fgi_value": 42,
+      "signal": "🟢 偏多",
+      "score": 92.0,
+      "raw_score": 100.0,
+      "fgi_adjust": -8,
+      "confidence": 90,
+      "fgi_value": 34,
       "fgi_class": "Fear",
-      "total_articles": 0,
-      "samples": []
+      "total_articles": 1,
+      "samples": [
+        {
+          "title": "Price predictions 5/13: BTC, ETH, BNB, XRP, SOL, DOGE, HYPE, ADA, ZEC, BCH",
+          "sentiment": "bullish"
+        }
+      ]
     },
     "BNB": {
-      "signal": "🟡 中性",
-      "score": 46.8,
-      "raw_score": 50,
-      "fgi_adjust": -3.2,
-      "confidence": 20,
-      "fgi_value": 42,
+      "signal": "🟢 偏多",
+      "score": 92.0,
+      "raw_score": 100.0,
+      "fgi_adjust": -8,
+      "confidence": 90,
+      "fgi_value": 34,
       "fgi_class": "Fear",
-      "total_articles": 0,
-      "samples": []
-    },
-    "SOL": {
-      "signal": "🟡 中性",
-      "score": 46.8,
-      "raw_score": 50,
-      "fgi_adjust": -3.2,
-      "confidence": 20,
-      "fgi_value": 42,
-      "fgi_class": "Fear",
-      "total_articles": 0,
-      "samples": []
+      "total_articles": 1,
+      "samples": [
+        {
+          "title": "Price predictions 5/13: BTC, ETH, BNB, XRP, SOL, DOGE, HYPE, ADA, ZEC, BCH",
+          "sentiment": "bullish"
+        }
+      ]
     },
     "NVDA": {
       "signal": "🟡 中性",
-      "score": 46.8,
-      "raw_score": 50,
-      "fgi_adjust": -3.2,
+      "score": 81.2,
       "confidence": 20,
-      "fgi_value": 42,
-      "fgi_class": "Fear",
+      "fgi_value": 34,
       "total_articles": 0,
-      "samples": []
+      "note": "使用整体市场情绪"
     },
     "TSLA": {
-      "signal": "🟡 中性",
-      "score": 46.8,
-      "raw_score": 50,
-      "fgi_adjust": -3.2,
-      "confidence": 20,
-      "fgi_value": 42,
-      "fgi_class": "Fear",
-      "total_articles": 0,
-      "samples": []
+      "signal": "🟢 偏多",
+      "score": 97.6,
+      "raw_score": 100.0,
+      "confidence": 90,
+      "fgi_value": 34,
+      "total_articles": 1,
+      "samples": [
+        {
+          "title": "Senate confirms Kevin Warsh to lead Federal Reserve",
+          "sentiment": "bullish"
+        }
+      ]
     },
     "AAPL": {
       "signal": "🟡 中性",
-      "score": 46.8,
-      "raw_score": 50,
-      "fgi_adjust": -3.2,
+      "score": 81.2,
       "confidence": 20,
-      "fgi_value": 42,
-      "fgi_class": "Fear",
+      "fgi_value": 34,
       "total_articles": 0,
-      "samples": []
+      "note": "使用整体市场情绪"
     },
     "SPY": {
       "signal": "🟡 中性",
-      "score": 46.8,
-      "raw_score": 50,
-      "fgi_adjust": -3.2,
-      "confidence": 20,
-      "fgi_value": 42,
-      "fgi_class": "Fear",
-      "total_articles": 0,
-      "samples": []
+      "score": 47.6,
+      "raw_score": 50.0,
+      "confidence": 50,
+      "fgi_value": 34,
+      "total_articles": 2,
+      "samples": [
+        {
+          "title": "Jane Street slashes Bitcoin ETF holdings, adds Ether funds in Q1 2026",
+          "sentiment": "bullish"
+        },
+        {
+          "title": "Hyperliquid ETF attracts $1.2M inflows in 'very solid' US debut",
+          "sentiment": "bearish"
+        }
+      ]
     }
+  },
+  "methodology": "RSS新闻情绪关键词分析 + Fear&Greed指数加权",
+  "rss_feeds": {
+    "crypto": [
+      "https://cointelegraph.com/rss",
+      "https://cryptonews.com/feed/",
+      "https://decrypt.co/feed"
+    ],
+    "stocks": [
+      "https://cointelegraph.com/rss"
+    ]
   }
 }
