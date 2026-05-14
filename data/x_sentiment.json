@@ -1,98 +1,126 @@
 {
-  "timestamp": "2026-05-14T10:17:28.015286+00:00",
-  "source": "alternative.me + 新浪财经 + RSS feeds",
+  "timestamp": "2026-05-14T14:05:08.197199Z",
+  "source": "RSS feeds (CoinTelegraph + CryptoNews + Decrypt)",
   "fear_greed": {
     "value": 34,
     "classification": "Fear"
   },
   "results": {
     "BTC": {
-      "signal": "🟡 中性",
-      "score": 43.6,
-      "raw_score": 50,
-      "fgi_adjust": -6.4,
-      "confidence": 20,
+      "signal": "🟢 偏多",
+      "score": 67.0,
+      "raw_score": 75.0,
+      "fgi_adjust": -8,
+      "confidence": 50,
       "fgi_value": 34,
       "fgi_class": "Fear",
-      "total_articles": 0,
-      "samples": []
+      "total_articles": 2,
+      "samples": [
+        {
+          "title": "Analysts are watching these Bitcoin price levels ahead of CLARITY Act vote",
+          "sentiment": "neutral"
+        },
+        {
+          "title": "JPMorgan lifts Bitcoin ETF exposure in Q1, led by BlackRock’s IBIT",
+          "sentiment": "bullish"
+        }
+      ]
     },
     "ETH": {
       "signal": "🟡 中性",
-      "score": 43.6,
-      "raw_score": 50,
-      "fgi_adjust": -6.4,
-      "confidence": 20,
+      "score": 58.7,
+      "raw_score": 66.7,
+      "fgi_adjust": -8,
+      "confidence": 33,
       "fgi_value": 34,
       "fgi_class": "Fear",
-      "total_articles": 0,
-      "samples": []
+      "total_articles": 3,
+      "samples": [
+        {
+          "title": "Tether’s T3 Crime Unit says it has frozen $450M in suspected illicit crypto",
+          "sentiment": "neutral"
+        },
+        {
+          "title": "JPMorgan lifts Bitcoin ETF exposure in Q1, led by BlackRock’s IBIT",
+          "sentiment": "bullish"
+        }
+      ]
     },
     "BNB": {
       "signal": "🟡 中性",
-      "score": 43.6,
-      "raw_score": 50,
-      "fgi_adjust": -6.4,
-      "confidence": 20,
+      "score": 49.8,
+      "raw_score": 57.8,
+      "fgi_adjust": -8,
+      "confidence": 37,
       "fgi_value": 34,
       "fgi_class": "Fear",
       "total_articles": 0,
-      "samples": []
-    },
-    "SOL": {
-      "signal": "🟡 中性",
-      "score": 43.6,
-      "raw_score": 50,
-      "fgi_adjust": -6.4,
-      "confidence": 20,
-      "fgi_value": 34,
-      "fgi_class": "Fear",
-      "total_articles": 0,
-      "samples": []
+      "note": "使用整体加密市场情绪"
     },
     "NVDA": {
       "signal": "🟡 中性",
-      "score": 43.6,
-      "raw_score": 50,
-      "fgi_adjust": -6.4,
+      "score": 87.5,
       "confidence": 20,
       "fgi_value": 34,
-      "fgi_class": "Fear",
       "total_articles": 0,
-      "samples": []
+      "note": "使用整体市场情绪"
     },
     "TSLA": {
-      "signal": "🟡 中性",
-      "score": 43.6,
-      "raw_score": 50,
-      "fgi_adjust": -6.4,
-      "confidence": 20,
+      "signal": "🟢 偏多",
+      "score": 72.6,
+      "raw_score": 75.0,
+      "confidence": 50,
       "fgi_value": 34,
-      "fgi_class": "Fear",
-      "total_articles": 0,
-      "samples": []
+      "total_articles": 2,
+      "samples": [
+        {
+          "title": "AI chatbot Claude helps man recover 5 Bitcoin after finding old seed phrase",
+          "sentiment": "neutral"
+        },
+        {
+          "title": "Senate confirms Kevin Warsh to lead Federal Reserve",
+          "sentiment": "bullish"
+        }
+      ]
     },
     "AAPL": {
       "signal": "🟡 中性",
-      "score": 43.6,
-      "raw_score": 50,
-      "fgi_adjust": -6.4,
-      "confidence": 20,
+      "score": 47.6,
+      "raw_score": 50.0,
+      "confidence": 0,
       "fgi_value": 34,
-      "fgi_class": "Fear",
-      "total_articles": 0,
-      "samples": []
+      "total_articles": 1,
+      "samples": [
+        {
+          "title": "AI chatbot Claude helps man recover 5 Bitcoin after finding old seed phrase",
+          "sentiment": "neutral"
+        }
+      ]
     },
     "SPY": {
-      "signal": "🟡 中性",
-      "score": 43.6,
-      "raw_score": 50,
-      "fgi_adjust": -6.4,
-      "confidence": 20,
+      "signal": "🟢 偏多",
+      "score": 97.6,
+      "raw_score": 100.0,
+      "confidence": 90,
       "fgi_value": 34,
-      "fgi_class": "Fear",
-      "total_articles": 0,
-      "samples": []
+      "total_articles": 1,
+      "samples": [
+        {
+          "title": "JPMorgan lifts Bitcoin ETF exposure in Q1, led by BlackRock’s IBIT",
+          "sentiment": "bullish"
+        }
+      ]
     }
+  },
+  "methodology": "RSS新闻情绪关键词分析 + Fear&Greed指数加权",
+  "rss_feeds": {
+    "crypto": [
+      "https://cointelegraph.com/rss",
+      "https://cryptonews.com/feed/",
+      "https://decrypt.co/feed"
+    ],
+    "stocks": [
+      "https://cointelegraph.com/rss"
+    ]
   }
 }
