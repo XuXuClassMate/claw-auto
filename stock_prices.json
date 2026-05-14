@@ -1,126 +1,126 @@
 {
-  "last_update": "2026-05-14T19:06:26.544233+00:00",
+  "last_update": "2026-05-14T20:45:03.304641+00:00",
   "source": "Yahoo Finance",
   "data": [
     {
       "symbol": "SPY",
       "name": "SPDR S&P 500 ETF",
-      "current_price": 748.54,
-      "price_change_percentage_24h": 0.84,
+      "current_price": 748.17,
+      "price_change_percentage_24h": 0.79,
       "market_cap": 0,
-      "volume": 28927753
+      "volume": 42099723
     },
     {
       "symbol": "QQQ",
       "name": "Invesco QQQ Trust",
-      "current_price": 720.6,
-      "price_change_percentage_24h": 0.82,
+      "current_price": 719.79,
+      "price_change_percentage_24h": 0.71,
       "market_cap": 0,
-      "volume": 26708226
+      "volume": 31339541
     },
     {
       "symbol": "DIA",
       "name": "SPDR Dow Jones ETF",
-      "current_price": 501.02,
-      "price_change_percentage_24h": 0.78,
+      "current_price": 500.8,
+      "price_change_percentage_24h": 0.74,
       "market_cap": 0,
-      "volume": 4078483
+      "volume": 4609536
     },
     {
       "symbol": "IWM",
       "name": "iShares Russell 2000 ETF",
-      "current_price": 284.75,
-      "price_change_percentage_24h": 0.74,
+      "current_price": 284.45,
+      "price_change_percentage_24h": 0.63,
       "market_cap": 0,
-      "volume": 13412903
+      "volume": 16630791
     },
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
-      "current_price": 298.875,
-      "price_change_percentage_24h": 0.0,
-      "market_cap": 4389683593216,
-      "volume": 22813811
+      "current_price": 298.21,
+      "price_change_percentage_24h": -0.22,
+      "market_cap": 4379916369920,
+      "volume": 33673067
     },
     {
       "symbol": "MSFT",
       "name": "Microsoft Corp",
-      "current_price": 409.62,
-      "price_change_percentage_24h": 1.09,
-      "market_cap": 3042835431424,
-      "volume": 18000255
+      "current_price": 409.43,
+      "price_change_percentage_24h": 1.04,
+      "market_cap": 3041424048128,
+      "volume": 25106919
     },
     {
       "symbol": "GOOGL",
       "name": "Alphabet Inc.",
-      "current_price": 400.79,
-      "price_change_percentage_24h": -0.45,
-      "market_cap": 4855748886528,
-      "volume": 15815597
+      "current_price": 401.07,
+      "price_change_percentage_24h": -0.38,
+      "market_cap": 4859141029888,
+      "volume": 20996229
     },
     {
       "symbol": "AMZN",
       "name": "Amazon.com Inc.",
-      "current_price": 267.67,
-      "price_change_percentage_24h": -0.91,
-      "market_cap": 2879355617280,
-      "volume": 19385797
+      "current_price": 267.22,
+      "price_change_percentage_24h": -1.08,
+      "market_cap": 2874514866176,
+      "volume": 29206139
     },
     {
       "symbol": "NVDA",
       "name": "NVIDIA Corp",
-      "current_price": 236.11,
-      "price_change_percentage_24h": 4.55,
-      "market_cap": 5718950281216,
-      "volume": 144019914
+      "current_price": 235.74,
+      "price_change_percentage_24h": 4.39,
+      "market_cap": 5709746405376,
+      "volume": 175521705
     },
     {
       "symbol": "META",
       "name": "Meta Platforms",
-      "current_price": 617.5,
-      "price_change_percentage_24h": 0.14,
-      "market_cap": 1567476416512,
-      "volume": 7868983
+      "current_price": 618.43,
+      "price_change_percentage_24h": 0.29,
+      "market_cap": 1569837154304,
+      "volume": 10031286
     },
     {
       "symbol": "TSLA",
       "name": "Tesla Inc.",
-      "current_price": 445.61,
-      "price_change_percentage_24h": 0.08,
-      "market_cap": 1673587982336,
-      "volume": 38828186
+      "current_price": 443.3,
+      "price_change_percentage_24h": -0.44,
+      "market_cap": 1664912326656,
+      "volume": 45182287
     },
     {
       "symbol": "BRK-B",
       "name": "Berkshire Hathaway",
-      "current_price": 483.935,
-      "price_change_percentage_24h": -0.33,
-      "market_cap": 1043776995328,
-      "volume": 1961781
+      "current_price": 484.06,
+      "price_change_percentage_24h": -0.3,
+      "market_cap": 1044046610432,
+      "volume": 2509852
     },
     {
       "symbol": "JPM",
       "name": "JPMorgan Chase",
-      "current_price": 300.98,
-      "price_change_percentage_24h": 0.24,
-      "market_cap": 806479331328,
-      "volume": 4222503
+      "current_price": 299.91,
+      "price_change_percentage_24h": -0.11,
+      "market_cap": 803612262400,
+      "volume": 5320801
     },
     {
       "symbol": "V",
       "name": "Visa Inc.",
-      "current_price": 321.71,
-      "price_change_percentage_24h": 0.44,
-      "market_cap": 611809951744,
-      "volume": 3060890
+      "current_price": 322.52,
+      "price_change_percentage_24h": 0.69,
+      "market_cap": 613350375424,
+      "volume": 3872653
     },
     {
       "symbol": "UNH",
       "name": "UnitedHealth Group",
-      "current_price": 400.86,
-      "price_change_percentage_24h": -0.07,
-      "market_cap": 364038750208,
-      "volume": 3751943
+      "current_price": 399.09,
+      "price_change_percentage_24h": -0.52,
+      "market_cap": 362431348736,
+      "volume": 4655055
     }
   ]
 }
