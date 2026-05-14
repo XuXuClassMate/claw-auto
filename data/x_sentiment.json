@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-05-14T02:53:43.515974Z",
-  "source": "RSS feeds (CoinTelegraph + CryptoNews + Decrypt)",
+  "timestamp": "2026-05-14T03:31:27.814934+00:00",
+  "source": "alternative.me + 新浪财经 + RSS feeds",
   "fear_greed": {
     "value": 34,
     "classification": "Fear"
@@ -8,114 +8,91 @@
   "results": {
     "BTC": {
       "signal": "🟡 中性",
-      "score": 48.2,
-      "raw_score": 56.2,
-      "fgi_adjust": -8,
-      "confidence": 25,
+      "score": 43.6,
+      "raw_score": 50,
+      "fgi_adjust": -6.4,
+      "confidence": 20,
       "fgi_value": 34,
       "fgi_class": "Fear",
-      "total_articles": 4,
-      "samples": [
-        {
-          "title": "Here’s what happened in crypto today",
-          "sentiment": "neutral"
-        },
-        {
-          "title": "Whale shorts $70M in crypto and tech: Should Bitcoin traders worry?",
-          "sentiment": "neutral"
-        }
-      ]
+      "total_articles": 0,
+      "samples": []
     },
     "ETH": {
-      "signal": "🟢 偏多",
-      "score": 92.0,
-      "raw_score": 100.0,
-      "fgi_adjust": -8,
-      "confidence": 90,
+      "signal": "🟡 中性",
+      "score": 43.6,
+      "raw_score": 50,
+      "fgi_adjust": -6.4,
+      "confidence": 20,
       "fgi_value": 34,
       "fgi_class": "Fear",
-      "total_articles": 1,
-      "samples": [
-        {
-          "title": "Price predictions 5/13: BTC, ETH, BNB, XRP, SOL, DOGE, HYPE, ADA, ZEC, BCH",
-          "sentiment": "bullish"
-        }
-      ]
+      "total_articles": 0,
+      "samples": []
     },
     "BNB": {
-      "signal": "🟢 偏多",
-      "score": 92.0,
-      "raw_score": 100.0,
-      "fgi_adjust": -8,
-      "confidence": 90,
+      "signal": "🟡 中性",
+      "score": 43.6,
+      "raw_score": 50,
+      "fgi_adjust": -6.4,
+      "confidence": 20,
       "fgi_value": 34,
       "fgi_class": "Fear",
-      "total_articles": 1,
-      "samples": [
-        {
-          "title": "Price predictions 5/13: BTC, ETH, BNB, XRP, SOL, DOGE, HYPE, ADA, ZEC, BCH",
-          "sentiment": "bullish"
-        }
-      ]
+      "total_articles": 0,
+      "samples": []
+    },
+    "SOL": {
+      "signal": "🟡 中性",
+      "score": 43.6,
+      "raw_score": 50,
+      "fgi_adjust": -6.4,
+      "confidence": 20,
+      "fgi_value": 34,
+      "fgi_class": "Fear",
+      "total_articles": 0,
+      "samples": []
     },
     "NVDA": {
       "signal": "🟡 中性",
-      "score": 81.2,
+      "score": 43.6,
+      "raw_score": 50,
+      "fgi_adjust": -6.4,
       "confidence": 20,
       "fgi_value": 34,
+      "fgi_class": "Fear",
       "total_articles": 0,
-      "note": "使用整体市场情绪"
+      "samples": []
     },
     "TSLA": {
-      "signal": "🟢 偏多",
-      "score": 97.6,
-      "raw_score": 100.0,
-      "confidence": 90,
+      "signal": "🟡 中性",
+      "score": 43.6,
+      "raw_score": 50,
+      "fgi_adjust": -6.4,
+      "confidence": 20,
       "fgi_value": 34,
-      "total_articles": 1,
-      "samples": [
-        {
-          "title": "Senate confirms Kevin Warsh to lead Federal Reserve",
-          "sentiment": "bullish"
-        }
-      ]
+      "fgi_class": "Fear",
+      "total_articles": 0,
+      "samples": []
     },
     "AAPL": {
       "signal": "🟡 中性",
-      "score": 81.2,
+      "score": 43.6,
+      "raw_score": 50,
+      "fgi_adjust": -6.4,
       "confidence": 20,
       "fgi_value": 34,
+      "fgi_class": "Fear",
       "total_articles": 0,
-      "note": "使用整体市场情绪"
+      "samples": []
     },
     "SPY": {
       "signal": "🟡 中性",
-      "score": 47.6,
-      "raw_score": 50.0,
-      "confidence": 50,
+      "score": 43.6,
+      "raw_score": 50,
+      "fgi_adjust": -6.4,
+      "confidence": 20,
       "fgi_value": 34,
-      "total_articles": 2,
-      "samples": [
-        {
-          "title": "Jane Street slashes Bitcoin ETF holdings, adds Ether funds in Q1 2026",
-          "sentiment": "bullish"
-        },
-        {
-          "title": "Hyperliquid ETF attracts $1.2M inflows in 'very solid' US debut",
-          "sentiment": "bearish"
-        }
-      ]
+      "fgi_class": "Fear",
+      "total_articles": 0,
+      "samples": []
     }
-  },
-  "methodology": "RSS新闻情绪关键词分析 + Fear&Greed指数加权",
-  "rss_feeds": {
-    "crypto": [
-      "https://cointelegraph.com/rss",
-      "https://cryptonews.com/feed/",
-      "https://decrypt.co/feed"
-    ],
-    "stocks": [
-      "https://cointelegraph.com/rss"
-    ]
   }
 }
