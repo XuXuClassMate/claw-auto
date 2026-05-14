@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-05-14T20:45:03.304641+00:00",
+  "last_update": "2026-05-14T21:53:57.468728+00:00",
   "source": "Yahoo Finance",
   "data": [
     {
@@ -8,7 +8,7 @@
       "current_price": 748.17,
       "price_change_percentage_24h": 0.79,
       "market_cap": 0,
-      "volume": 42099723
+      "volume": 44783639
     },
     {
       "symbol": "QQQ",
@@ -48,7 +48,7 @@
       "current_price": 409.43,
       "price_change_percentage_24h": 1.04,
       "market_cap": 3041424048128,
-      "volume": 25106919
+      "volume": 26419511
     },
     {
       "symbol": "GOOGL",
@@ -56,7 +56,7 @@
       "current_price": 401.07,
       "price_change_percentage_24h": -0.38,
       "market_cap": 4859141029888,
-      "volume": 20996229
+      "volume": 21077099
     },
     {
       "symbol": "AMZN",
@@ -64,7 +64,7 @@
       "current_price": 267.22,
       "price_change_percentage_24h": -1.08,
       "market_cap": 2874514866176,
-      "volume": 29206139
+      "volume": 31151517
     },
     {
       "symbol": "NVDA",
@@ -104,7 +104,7 @@
       "current_price": 299.91,
       "price_change_percentage_24h": -0.11,
       "market_cap": 803612262400,
-      "volume": 5320801
+      "volume": 7329924
     },
     {
       "symbol": "V",
@@ -120,7 +120,7 @@
       "current_price": 399.09,
       "price_change_percentage_24h": -0.52,
       "market_cap": 362431348736,
-      "volume": 4655055
+      "volume": 5336044
     }
   ]
 }
