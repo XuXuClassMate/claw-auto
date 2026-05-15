@@ -1,14 +1,14 @@
 {
-  "last_update": "2026-05-15T06:45:04.502118+00:00",
+  "last_update": "2026-05-15T09:35:47.566811+00:00",
   "source": "CryptoCompare",
   "data": [
     {
       "id": "bitcoin",
       "symbol": "BTC",
       "name": "Bitcoin",
-      "current_price": 80597.8422944906,
-      "price_change_percentage_24h": 1.02,
-      "market_cap": 1614341494249.7793,
+      "current_price": 80600.0566213595,
+      "price_change_percentage_24h": 1.26,
+      "market_cap": 1614385846302.4463,
       "high_24h": 82054.1176806808,
       "low_24h": 79197.3836202577
     },
@@ -16,9 +16,9 @@
       "id": "ethereum",
       "symbol": "ETH",
       "name": "Ethereum",
-      "current_price": 2255.53069096873,
-      "price_change_percentage_24h": -0.51,
-      "market_cap": 272211187841.0209,
+      "current_price": 2257.48425145941,
+      "price_change_percentage_24h": 0.03,
+      "market_cap": 272446955425.0385,
       "high_24h": 2319.5728424827,
       "low_24h": 2237.53476838652
     },
@@ -26,19 +26,19 @@
       "id": "binancecoin",
       "symbol": "BNB",
       "name": "BNB",
-      "current_price": 682.6267189490928,
-      "price_change_percentage_24h": 1.91,
-      "market_cap": 92008139222.04488,
-      "high_24h": 687.3061915671469,
-      "low_24h": 667.8638107315446
+      "current_price": 682.8314927346233,
+      "price_change_percentage_24h": 1.87,
+      "market_cap": 97006286869.93222,
+      "high_24h": 688.9662551765649,
+      "low_24h": 670.1345717108035
     },
     {
       "id": "solana",
       "symbol": "SOL",
       "name": "Solana",
-      "current_price": 91.0221278048829,
-      "price_change_percentage_24h": -0.38,
-      "market_cap": 57012182704.03506,
+      "current_price": 91.2294377243092,
+      "price_change_percentage_24h": 0.44,
+      "market_cap": 57142031231.76669,
       "high_24h": 93.641901777173,
       "low_24h": 90.2619417175197
     },
@@ -46,29 +46,29 @@
       "id": "ripple",
       "symbol": "XRP",
       "name": "XRP",
-      "current_price": 1.46873448197345,
-      "price_change_percentage_24h": 2.42,
-      "market_cap": 146852401299.78012,
+      "current_price": 1.46713793046504,
+      "price_change_percentage_24h": 2.67,
+      "market_cap": 146692769027.4488,
       "high_24h": 1.54991475922873,
-      "low_24h": 1.42694514464912
+      "low_24h": 1.42757288884066
     },
     {
       "id": "cardano",
       "symbol": "ADA",
       "name": "Cardano",
-      "current_price": 0.267395422728736,
-      "price_change_percentage_24h": 0.8,
-      "market_cap": 12032794022.79312,
+      "current_price": 0.266924873926346,
+      "price_change_percentage_24h": 0.86,
+      "market_cap": 12011619326.68557,
       "high_24h": 0.280414140525198,
-      "low_24h": 0.263606426533167
+      "low_24h": 0.263620549233288
     },
     {
       "id": "dogecoin",
       "symbol": "DOGE",
       "name": "Dogecoin",
-      "current_price": 0.114456059084686,
-      "price_change_percentage_24h": -0.07,
-      "market_cap": 17653880690.767265,
+      "current_price": 0.11460997693775,
+      "price_change_percentage_24h": 1.16,
+      "market_cap": 17677621219.979095,
       "high_24h": 0.11851855905111,
       "low_24h": 0.112695558562901
     },
@@ -76,9 +76,9 @@
       "id": "polkadot",
       "symbol": "DOT",
       "name": "Polkadot",
-      "current_price": 1.33842709530704,
-      "price_change_percentage_24h": 0.55,
-      "market_cap": 2253805585.2548347,
+      "current_price": 1.3321966717012,
+      "price_change_percentage_24h": 0.68,
+      "market_cap": 2243314043.675482,
       "high_24h": 1.42184235320782,
       "low_24h": 1.31971832906446
     },
@@ -86,31 +86,31 @@
       "id": "avalanche-2",
       "symbol": "AVAX",
       "name": "Avalanche",
-      "current_price": 9.76286693326141,
-      "price_change_percentage_24h": 0.15,
-      "market_cap": 4524513411.68258,
+      "current_price": 9.76003992269902,
+      "price_change_percentage_24h": 0.98,
+      "market_cap": 4523203258.907587,
       "high_24h": 10.1424331156198,
-      "low_24h": 9.62884188667924
+      "low_24h": 9.66097392039316
     },
     {
       "id": "chainlink",
       "symbol": "LINK",
       "name": "Chainlink",
-      "current_price": 10.2982494030574,
-      "price_change_percentage_24h": 0.42,
-      "market_cap": 10298249403.0574,
+      "current_price": 10.2952399911835,
+      "price_change_percentage_24h": 0.8,
+      "market_cap": 10295239991.1835,
       "high_24h": 10.7671307483054,
-      "low_24h": 10.1831583193549
+      "low_24h": 10.1921908330556
     },
     {
       "id": "tron",
       "symbol": "TRX",
       "name": "Tron",
-      "current_price": 0.3531997769859518,
-      "price_change_percentage_24h": 0.64,
-      "market_cap": 33483279061.426918,
+      "current_price": 0.3523517206141374,
+      "price_change_percentage_24h": -0.2,
+      "market_cap": 33402886388.795692,
       "high_24h": 0.355515066494447,
-      "low_24h": 0.3505534250857545
+      "low_24h": 0.3512288578026489
     },
     {
       "id": "polygon",
@@ -126,9 +126,9 @@
       "id": "shiba-inu",
       "symbol": "SHIB",
       "name": "Shiba Inu",
-      "current_price": 6.28037321728608e-06,
-      "price_change_percentage_24h": -0.25,
-      "market_cap": 3702948711.3342175,
+      "current_price": 6.27009138225477e-06,
+      "price_change_percentage_24h": -0.05,
+      "market_cap": 3696886474.8297777,
       "high_24h": 6.47995518962879e-06,
       "low_24h": 6.21504696358691e-06
     },
@@ -136,9 +136,9 @@
       "id": "litecoin",
       "symbol": "LTC",
       "name": "Litecoin",
-      "current_price": 57.8664608227956,
-      "price_change_percentage_24h": 1.16,
-      "market_cap": 4465541876.517916,
+      "current_price": 58.2620190974731,
+      "price_change_percentage_24h": 2.29,
+      "market_cap": 4496067020.358746,
       "high_24h": 59.5406266838054,
       "low_24h": 56.8578291319491
     },
@@ -146,11 +146,11 @@
       "id": "uniswap",
       "symbol": "UNI",
       "name": "Uniswap",
-      "current_price": 3.684773034299125,
-      "price_change_percentage_24h": 2.12,
-      "market_cap": 3684773034.299125,
+      "current_price": 3.698859181395624,
+      "price_change_percentage_24h": 3.18,
+      "market_cap": 3698859181.395624,
       "high_24h": 3.815972765931809,
-      "low_24h": 3.572774312037205
+      "low_24h": 3.580047333970409
     }
   ]
 }
