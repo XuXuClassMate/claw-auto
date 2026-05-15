@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-05-15T03:34:56.416763+00:00",
-  "source": "alternative.me + 新浪财经 + RSS feeds",
+  "timestamp": "2026-05-15T06:53:36.244807Z",
+  "source": "RSS feeds (CoinTelegraph + CryptoNews + Decrypt)",
   "fear_greed": {
     "value": 43,
     "classification": "Fear"
@@ -8,159 +8,103 @@
   "results": {
     "BTC": {
       "signal": "🟡 中性",
-      "score": 47.2,
+      "score": 46.0,
       "raw_score": 50.0,
-      "fgi_adjust": -2.8,
-      "confidence": 18,
+      "fgi_adjust": -4,
+      "confidence": 0,
       "fgi_value": 43,
       "fgi_class": "Fear",
-      "total_articles": 1,
+      "total_articles": 3,
       "samples": [
         {
-          "title": "Bitcoin holds key support for $85K breakout as S&P 500 hits new all-time high",
+          "title": "Strive rallies 5.8% as it clears debt in Q1, unveils daily dividends",
+          "sentiment": "neutral"
+        },
+        {
+          "title": "Dartmouth endowment invests in Solana ETF, holds $14M in crypto exposure",
           "sentiment": "neutral"
         }
       ]
     },
     "ETH": {
       "signal": "🟡 中性",
-      "score": 47.2,
+      "score": 46.0,
       "raw_score": 50.0,
-      "fgi_adjust": -2.8,
-      "confidence": 36,
+      "fgi_adjust": -4,
+      "confidence": 0,
       "fgi_value": 43,
       "fgi_class": "Fear",
-      "total_articles": 2,
+      "total_articles": 1,
       "samples": [
         {
-          "title": "Bitcoin holds key support for $85K breakout as S&P 500 hits new all-time high",
-          "sentiment": "neutral"
-        },
-        {
-          "title": "Law firm Fenwick & West sued for $525M over alleged role in FTX collapse",
+          "title": "Dartmouth endowment invests in Solana ETF, holds $14M in crypto exposure",
           "sentiment": "neutral"
         }
       ]
     },
     "BNB": {
       "signal": "🟡 中性",
-      "score": 47.2,
-      "raw_score": 50.0,
-      "fgi_adjust": -2.8,
-      "confidence": 36,
+      "score": 51.2,
+      "raw_score": 55.2,
+      "fgi_adjust": -4,
+      "confidence": 30,
       "fgi_value": 43,
       "fgi_class": "Fear",
-      "total_articles": 2,
-      "samples": [
-        {
-          "title": "Bitcoin holds key support for $85K breakout as S&P 500 hits new all-time high",
-          "sentiment": "neutral"
-        },
-        {
-          "title": "Law firm Fenwick & West sued for $525M over alleged role in FTX collapse",
-          "sentiment": "neutral"
-        }
-      ]
-    },
-    "SOL": {
-      "signal": "🟡 中性",
-      "score": 47.2,
-      "raw_score": 50.0,
-      "fgi_adjust": -2.8,
-      "confidence": 36,
-      "fgi_value": 43,
-      "fgi_class": "Fear",
-      "total_articles": 2,
-      "samples": [
-        {
-          "title": "Bitcoin holds key support for $85K breakout as S&P 500 hits new all-time high",
-          "sentiment": "neutral"
-        },
-        {
-          "title": "Law firm Fenwick & West sued for $525M over alleged role in FTX collapse",
-          "sentiment": "neutral"
-        }
-      ]
+      "total_articles": 0,
+      "note": "使用整体加密市场情绪"
     },
     "NVDA": {
       "signal": "🟡 中性",
-      "score": 47.2,
-      "raw_score": 50.0,
-      "fgi_adjust": -2.8,
-      "confidence": 36,
+      "score": 78.0,
+      "confidence": 20,
       "fgi_value": 43,
-      "fgi_class": "Fear",
-      "total_articles": 2,
-      "samples": [
-        {
-          "title": "Bitcoin holds key support for $85K breakout as S&P 500 hits new all-time high",
-          "sentiment": "neutral"
-        },
-        {
-          "title": "Law firm Fenwick & West sued for $525M over alleged role in FTX collapse",
-          "sentiment": "neutral"
-        }
-      ]
+      "total_articles": 0,
+      "note": "使用整体市场情绪"
     },
     "TSLA": {
       "signal": "🟡 中性",
-      "score": 47.2,
-      "raw_score": 50.0,
-      "fgi_adjust": -2.8,
-      "confidence": 36,
+      "score": 78.0,
+      "confidence": 20,
       "fgi_value": 43,
-      "fgi_class": "Fear",
-      "total_articles": 2,
-      "samples": [
-        {
-          "title": "Bitcoin holds key support for $85K breakout as S&P 500 hits new all-time high",
-          "sentiment": "neutral"
-        },
-        {
-          "title": "Law firm Fenwick & West sued for $525M over alleged role in FTX collapse",
-          "sentiment": "neutral"
-        }
-      ]
+      "total_articles": 0,
+      "note": "使用整体市场情绪"
     },
     "AAPL": {
       "signal": "🟡 中性",
-      "score": 47.2,
-      "raw_score": 50.0,
-      "fgi_adjust": -2.8,
-      "confidence": 36,
+      "score": 78.0,
+      "confidence": 20,
       "fgi_value": 43,
-      "fgi_class": "Fear",
-      "total_articles": 2,
-      "samples": [
-        {
-          "title": "Bitcoin holds key support for $85K breakout as S&P 500 hits new all-time high",
-          "sentiment": "neutral"
-        },
-        {
-          "title": "Law firm Fenwick & West sued for $525M over alleged role in FTX collapse",
-          "sentiment": "neutral"
-        }
-      ]
+      "total_articles": 0,
+      "note": "使用整体市场情绪"
     },
     "SPY": {
       "signal": "🟡 中性",
-      "score": 47.2,
-      "raw_score": 50.0,
-      "fgi_adjust": -2.8,
-      "confidence": 36,
+      "score": 56.3,
+      "raw_score": 57.5,
+      "confidence": 50,
       "fgi_value": 43,
-      "fgi_class": "Fear",
-      "total_articles": 2,
+      "total_articles": 4,
       "samples": [
         {
-          "title": "Bitcoin holds key support for $85K breakout as S&P 500 hits new all-time high",
+          "title": "Dartmouth endowment invests in Solana ETF, holds $14M in crypto exposure",
           "sentiment": "neutral"
         },
         {
-          "title": "Law firm Fenwick & West sued for $525M over alleged role in FTX collapse",
-          "sentiment": "neutral"
+          "title": "Bitcoin holds key support for $85K breakout as S&P 500 hits new all-time high",
+          "sentiment": "bullish"
         }
       ]
     }
+  },
+  "methodology": "RSS新闻情绪关键词分析 + Fear&Greed指数加权",
+  "rss_feeds": {
+    "crypto": [
+      "https://cointelegraph.com/rss",
+      "https://cryptonews.com/feed/",
+      "https://decrypt.co/feed"
+    ],
+    "stocks": [
+      "https://cointelegraph.com/rss"
+    ]
   }
 }
