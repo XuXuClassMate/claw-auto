@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-05-15T10:20:57.412620Z",
+  "timestamp": "2026-05-15T14:01:53.700640Z",
   "source": "RSS feeds (CoinTelegraph + CryptoNews + Decrypt)",
   "fear_greed": {
     "value": 43,
@@ -7,42 +7,56 @@
   },
   "results": {
     "BTC": {
-      "signal": "🟢 偏多",
-      "score": 96.0,
-      "raw_score": 100.0,
+      "signal": "🟡 中性",
+      "score": 57.1,
+      "raw_score": 61.1,
       "fgi_adjust": -4,
-      "confidence": 90,
+      "confidence": 33,
       "fgi_value": 43,
       "fgi_class": "Fear",
-      "total_articles": 1,
+      "total_articles": 3,
       "samples": [
         {
-          "title": "Strategy’s STRC hits record $1.5B trading volume",
+          "title": "Bitcoin stalls above $80K despite CLARITY Act pass: What will trigger a breakout?",
           "sentiment": "bullish"
+        },
+        {
+          "title": "Bitcoin risks ‘next downtrend’ as traders diverge on fate of $82K resistance",
+          "sentiment": "bearish"
         }
       ]
     },
     "ETH": {
       "signal": "🟡 中性",
-      "score": 52.4,
-      "raw_score": 56.4,
+      "score": 46.0,
+      "raw_score": 50.0,
       "fgi_adjust": -4,
-      "confidence": 37,
+      "confidence": 0,
       "fgi_value": 43,
       "fgi_class": "Fear",
-      "total_articles": 0,
-      "note": "使用整体加密市场情绪"
+      "total_articles": 1,
+      "samples": [
+        {
+          "title": "THORChain pauses trading after suspected $10M exploit",
+          "sentiment": "neutral"
+        }
+      ]
     },
     "BNB": {
       "signal": "🟡 中性",
-      "score": 52.4,
-      "raw_score": 56.4,
+      "score": 46.0,
+      "raw_score": 50.0,
       "fgi_adjust": -4,
-      "confidence": 37,
+      "confidence": 0,
       "fgi_value": 43,
       "fgi_class": "Fear",
-      "total_articles": 0,
-      "note": "使用整体加密市场情绪"
+      "total_articles": 1,
+      "samples": [
+        {
+          "title": "THORChain pauses trading after suspected $10M exploit",
+          "sentiment": "neutral"
+        }
+      ]
     },
     "NVDA": {
       "signal": "🟡 中性",
@@ -69,20 +83,20 @@
       "note": "使用整体市场情绪"
     },
     "SPY": {
-      "signal": "🟡 中性",
-      "score": 42.1,
-      "raw_score": 43.3,
-      "confidence": 33,
+      "signal": "🟢 偏多",
+      "score": 64.4,
+      "raw_score": 65.6,
+      "confidence": 67,
       "fgi_value": 43,
       "total_articles": 3,
       "samples": [
         {
-          "title": "Dartmouth endowment invests in Solana ETF, holds $14M in crypto exposure",
-          "sentiment": "neutral"
+          "title": "Why is Hyperliquid's HYPE token price up 23% in one day?",
+          "sentiment": "bullish"
         },
         {
-          "title": "Bitcoin holds key support for $85K breakout as S&P 500 hits new all-time high",
-          "sentiment": "bullish"
+          "title": "Dartmouth endowment invests in Solana ETF, holds $14M in crypto exposure",
+          "sentiment": "neutral"
         }
       ]
     }
