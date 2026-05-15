@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-05-15T14:09:03.082789+00:00",
-  "source": "alternative.me + 新浪财经 + RSS feeds",
+  "timestamp": "2026-05-15T17:25:57.317098Z",
+  "source": "RSS feeds (CoinTelegraph + CryptoNews + Decrypt)",
   "fear_greed": {
     "value": 43,
     "classification": "Fear"
@@ -8,131 +8,109 @@
   "results": {
     "BTC": {
       "signal": "🟡 中性",
-      "score": 47.2,
+      "score": 46.0,
       "raw_score": 50.0,
-      "fgi_adjust": -2.8,
-      "confidence": 18,
+      "fgi_adjust": -4,
+      "confidence": 0,
       "fgi_value": 43,
       "fgi_class": "Fear",
       "total_articles": 1,
       "samples": [
         {
-          "title": "Bitcoin holds key support for $85K breakout as S&P 500 hits new all-time high",
+          "title": "Bitcoin price dives under $79K as US bond market triggers 3% BTC price rout",
           "sentiment": "neutral"
         }
       ]
     },
     "ETH": {
       "signal": "🟡 中性",
-      "score": 47.2,
-      "raw_score": 50.0,
-      "fgi_adjust": -2.8,
-      "confidence": 18,
+      "score": 56.0,
+      "raw_score": 60.0,
+      "fgi_adjust": -4,
+      "confidence": 50,
       "fgi_value": 43,
       "fgi_class": "Fear",
-      "total_articles": 1,
+      "total_articles": 2,
       "samples": [
         {
-          "title": "Bitcoin holds key support for $85K breakout as S&P 500 hits new all-time high",
-          "sentiment": "neutral"
+          "title": "Ethereum analysts see ‘downside risks’ as bears eye 20% ETH price drop",
+          "sentiment": "bearish"
+        },
+        {
+          "title": "Crypto’s CLARITY Act faces partisan fight over ethics on Senate floor",
+          "sentiment": "bullish"
         }
       ]
     },
     "BNB": {
       "signal": "🟡 中性",
       "score": 47.2,
-      "raw_score": 50.0,
-      "fgi_adjust": -2.8,
-      "confidence": 18,
+      "raw_score": 51.2,
+      "fgi_adjust": -4,
+      "confidence": 24,
       "fgi_value": 43,
       "fgi_class": "Fear",
-      "total_articles": 1,
-      "samples": [
-        {
-          "title": "Bitcoin holds key support for $85K breakout as S&P 500 hits new all-time high",
-          "sentiment": "neutral"
-        }
-      ]
-    },
-    "SOL": {
-      "signal": "🟡 中性",
-      "score": 47.2,
-      "raw_score": 50.0,
-      "fgi_adjust": -2.8,
-      "confidence": 18,
-      "fgi_value": 43,
-      "fgi_class": "Fear",
-      "total_articles": 1,
-      "samples": [
-        {
-          "title": "Bitcoin holds key support for $85K breakout as S&P 500 hits new all-time high",
-          "sentiment": "neutral"
-        }
-      ]
+      "total_articles": 0,
+      "note": "使用整体加密市场情绪"
     },
     "NVDA": {
       "signal": "🟡 中性",
-      "score": 47.2,
-      "raw_score": 50.0,
-      "fgi_adjust": -2.8,
-      "confidence": 18,
+      "score": 72.5,
+      "confidence": 20,
       "fgi_value": 43,
-      "fgi_class": "Fear",
-      "total_articles": 1,
-      "samples": [
-        {
-          "title": "Bitcoin holds key support for $85K breakout as S&P 500 hits new all-time high",
-          "sentiment": "neutral"
-        }
-      ]
+      "total_articles": 0,
+      "note": "使用整体市场情绪"
     },
     "TSLA": {
       "signal": "🟡 中性",
-      "score": 47.2,
+      "score": 48.8,
       "raw_score": 50.0,
-      "fgi_adjust": -2.8,
-      "confidence": 18,
+      "confidence": 0,
       "fgi_value": 43,
-      "fgi_class": "Fear",
       "total_articles": 1,
       "samples": [
         {
-          "title": "Bitcoin holds key support for $85K breakout as S&P 500 hits new all-time high",
+          "title": "Bitcoin price dives under $79K as US bond market triggers 3% BTC price rout",
           "sentiment": "neutral"
         }
       ]
     },
     "AAPL": {
       "signal": "🟡 中性",
-      "score": 47.2,
-      "raw_score": 50.0,
-      "fgi_adjust": -2.8,
-      "confidence": 18,
+      "score": 72.5,
+      "confidence": 20,
       "fgi_value": 43,
-      "fgi_class": "Fear",
-      "total_articles": 1,
-      "samples": [
-        {
-          "title": "Bitcoin holds key support for $85K breakout as S&P 500 hits new all-time high",
-          "sentiment": "neutral"
-        }
-      ]
+      "total_articles": 0,
+      "note": "使用整体市场情绪"
     },
     "SPY": {
       "signal": "🟡 中性",
-      "score": 47.2,
-      "raw_score": 50.0,
-      "fgi_adjust": -2.8,
-      "confidence": 18,
+      "score": 42.1,
+      "raw_score": 43.4,
+      "confidence": 50,
       "fgi_value": 43,
-      "fgi_class": "Fear",
-      "total_articles": 1,
+      "total_articles": 2,
       "samples": [
         {
-          "title": "Bitcoin holds key support for $85K breakout as S&P 500 hits new all-time high",
-          "sentiment": "neutral"
+          "title": "Ethereum analysts see ‘downside risks’ as bears eye 20% ETH price drop",
+          "sentiment": "bearish"
+        },
+        {
+          "title": "Why is Hyperliquid's HYPE token price up 23% in one day?",
+          "sentiment": "bullish"
         }
       ]
     }
+  },
+  "methodology": "RSS新闻情绪关键词分析 + Fear&Greed指数加权",
+  "rss_feeds": {
+    "crypto": [
+      "https://cointelegraph.com/rss",
+      "https://cryptonews.com/feed/",
+      "https://decrypt.co/feed"
+    ],
+    "stocks": [
+      "https://cointelegraph.com/rss"
+    ]
   }
 }
