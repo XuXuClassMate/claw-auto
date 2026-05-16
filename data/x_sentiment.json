@@ -1,98 +1,125 @@
 {
-  "timestamp": "2026-05-15T22:55:22.872065+00:00",
-  "source": "alternative.me + 新浪财经 + RSS feeds",
+  "timestamp": "2026-05-16T02:42:16.898330Z",
+  "source": "RSS feeds (CoinTelegraph + CryptoNews + Decrypt)",
   "fear_greed": {
-    "value": 43,
+    "value": 31,
     "classification": "Fear"
   },
   "results": {
     "BTC": {
       "signal": "🟡 中性",
-      "score": 47.2,
-      "raw_score": 50,
-      "fgi_adjust": -2.8,
-      "confidence": 20,
-      "fgi_value": 43,
+      "score": 42.0,
+      "raw_score": 50.0,
+      "fgi_adjust": -8,
+      "confidence": 0,
+      "fgi_value": 31,
       "fgi_class": "Fear",
-      "total_articles": 0,
-      "samples": []
+      "total_articles": 2,
+      "samples": [
+        {
+          "title": "Bitcoin Depot filing casts doubt on company’s future amid lawsuits",
+          "sentiment": "neutral"
+        },
+        {
+          "title": "Price predictions 5/15: BTC, ETH, BNB, XRP, SOL, DOGE, HYPE, ADA, ZEC, BCH",
+          "sentiment": "neutral"
+        }
+      ]
     },
     "ETH": {
-      "signal": "🟡 中性",
-      "score": 47.2,
-      "raw_score": 50,
-      "fgi_adjust": -2.8,
-      "confidence": 20,
-      "fgi_value": 43,
+      "signal": "🔴 偏空",
+      "score": 27.0,
+      "raw_score": 35.0,
+      "fgi_adjust": -8,
+      "confidence": 50,
+      "fgi_value": 31,
       "fgi_class": "Fear",
-      "total_articles": 0,
-      "samples": []
+      "total_articles": 2,
+      "samples": [
+        {
+          "title": "Price predictions 5/15: BTC, ETH, BNB, XRP, SOL, DOGE, HYPE, ADA, ZEC, BCH",
+          "sentiment": "neutral"
+        },
+        {
+          "title": "Ethereum analysts see ‘downside risks’ as bears eye 20% ETH price drop",
+          "sentiment": "bearish"
+        }
+      ]
     },
     "BNB": {
       "signal": "🟡 中性",
-      "score": 47.2,
-      "raw_score": 50,
-      "fgi_adjust": -2.8,
-      "confidence": 20,
-      "fgi_value": 43,
+      "score": 42.0,
+      "raw_score": 50.0,
+      "fgi_adjust": -8,
+      "confidence": 0,
+      "fgi_value": 31,
       "fgi_class": "Fear",
-      "total_articles": 0,
-      "samples": []
-    },
-    "SOL": {
-      "signal": "🟡 中性",
-      "score": 47.2,
-      "raw_score": 50,
-      "fgi_adjust": -2.8,
-      "confidence": 20,
-      "fgi_value": 43,
-      "fgi_class": "Fear",
-      "total_articles": 0,
-      "samples": []
+      "total_articles": 1,
+      "samples": [
+        {
+          "title": "Price predictions 5/15: BTC, ETH, BNB, XRP, SOL, DOGE, HYPE, ADA, ZEC, BCH",
+          "sentiment": "neutral"
+        }
+      ]
     },
     "NVDA": {
       "signal": "🟡 中性",
-      "score": 47.2,
-      "raw_score": 50,
-      "fgi_adjust": -2.8,
+      "score": 72.0,
       "confidence": 20,
-      "fgi_value": 43,
-      "fgi_class": "Fear",
+      "fgi_value": 31,
       "total_articles": 0,
-      "samples": []
+      "note": "使用整体市场情绪"
     },
     "TSLA": {
       "signal": "🟡 中性",
-      "score": 47.2,
-      "raw_score": 50,
-      "fgi_adjust": -2.8,
-      "confidence": 20,
-      "fgi_value": 43,
-      "fgi_class": "Fear",
-      "total_articles": 0,
-      "samples": []
+      "score": 47.6,
+      "raw_score": 50.0,
+      "confidence": 0,
+      "fgi_value": 31,
+      "total_articles": 1,
+      "samples": [
+        {
+          "title": "Bitcoin price dives under $79K as US bond market triggers 3% BTC price rout",
+          "sentiment": "neutral"
+        }
+      ]
     },
     "AAPL": {
       "signal": "🟡 中性",
-      "score": 47.2,
-      "raw_score": 50,
-      "fgi_adjust": -2.8,
+      "score": 72.0,
       "confidence": 20,
-      "fgi_value": 43,
-      "fgi_class": "Fear",
+      "fgi_value": 31,
       "total_articles": 0,
-      "samples": []
+      "note": "使用整体市场情绪"
     },
     "SPY": {
       "signal": "🟡 中性",
-      "score": 47.2,
-      "raw_score": 50,
-      "fgi_adjust": -2.8,
-      "confidence": 20,
-      "fgi_value": 43,
-      "fgi_class": "Fear",
-      "total_articles": 0,
-      "samples": []
+      "score": 41.0,
+      "raw_score": 43.4,
+      "confidence": 50,
+      "fgi_value": 31,
+      "total_articles": 2,
+      "samples": [
+        {
+          "title": "Ethereum analysts see ‘downside risks’ as bears eye 20% ETH price drop",
+          "sentiment": "bearish"
+        },
+        {
+          "title": "Why is Hyperliquid's HYPE token price up 23% in one day?",
+          "sentiment": "bullish"
+        }
+      ]
     }
+  },
+  "methodology": "RSS新闻情绪关键词分析 + Fear&Greed指数加权",
+  "rss_feeds": {
+    "crypto": [
+      "https://cointelegraph.com/rss",
+      "https://cryptonews.com/feed/",
+      "https://decrypt.co/feed"
+    ],
+    "stocks": [
+      "https://cointelegraph.com/rss"
+    ]
   }
 }
