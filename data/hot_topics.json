@@ -1,57 +1,57 @@
 {
-  "timestamp": "2026-05-15T10:24:33.765915+00:00",
+  "timestamp": "2026-05-17T09:47:37.025954+00:00",
   "domestic": {
     "weibo": {
       "source": "Weibo Hot Search",
       "items": [
         {
           "rank": 1,
-          "title": "央视已获世界杯转播权",
+          "title": "卢昱晓道歉",
           "hot": ""
         },
         {
           "rank": 2,
-          "title": "特朗普结束访华",
+          "title": "女游客景区坠亡没有监控",
           "hot": ""
         },
         {
           "rank": 3,
-          "title": "跨越太平洋的握手",
+          "title": "今天全国助残日",
           "hot": ""
         },
         {
           "rank": 4,
-          "title": "618上京东领华为大额券真香",
+          "title": "电脑微信会惩罚每一个恋旧的人",
           "hot": ""
         },
         {
           "rank": 5,
-          "title": "央视6000万美元拿下世界杯版权",
+          "title": "给阿嬷的情书 屏摄",
           "hot": ""
         },
         {
           "rank": 6,
-          "title": "鹿晗这就是京圈佛子吗",
+          "title": "窦靖童没到30岁应让母亲陪同参赛",
           "hot": ""
         },
         {
           "rank": 7,
-          "title": "李小冉回应母校玩梗",
+          "title": "罕见病确诊 这才是互联网的意义",
           "hot": ""
         },
         {
           "rank": 8,
-          "title": "今日辟谣",
+          "title": "麦辣鸡腿堡 拉肚子",
           "hot": ""
         },
         {
           "rank": 9,
-          "title": "中美元首边走边谈",
+          "title": "咬壳吃荔枝 不上火",
           "hot": ""
         },
         {
           "rank": 10,
-          "title": "容易紧张是缺乏主体性",
+          "title": "特朗普警告台独",
           "hot": ""
         }
       ]
@@ -67,53 +67,53 @@
       "items": [
         {
           "rank": 1,
-          "title": "RelaxAI – UK sovereign LLM inference at 80% cheaper than OpenAI/Claude",
-          "score": 32
+          "title": "Zerostack – A Unix-inspired coding agent written in pure Rust",
+          "score": 390
         },
         {
           "rank": 2,
-          "title": "Explore Wikipedia Like a Windows XP Desktop",
-          "score": 53
+          "title": "Mozilla to UK regulators: VPNs are essential privacy and security tools",
+          "score": 170
         },
         {
           "rank": 3,
-          "title": "Removing the modem and GPS from my 2024 RAV4 hybrid",
-          "score": 881
+          "title": "Colossus: The Forbin Project",
+          "score": 101
         },
         {
           "rank": 4,
-          "title": "Building ML framework with Rust and Category Theory",
-          "score": 35
+          "title": "A nicer voltmeter clock",
+          "score": 176
         },
         {
           "rank": 5,
-          "title": "Show HN: GlycemicGPT – Open-source AI-powered diabetes management",
-          "score": 28
+          "title": "Hosting a website on an 8-bit microcontroller",
+          "score": 126
         },
         {
           "rank": 6,
-          "title": "A few words on DS4",
-          "score": 318
+          "title": "Playing Atari ST Music on the Amiga with Zero CPU",
+          "score": 29
         },
         {
           "rank": 7,
-          "title": "UK government replaces Palantir software with internally-built refugee system",
-          "score": 225
+          "title": "C++26 Shipped a SIMD Library Nobody Asked For",
+          "score": 131
         },
         {
           "rank": 8,
-          "title": "Details of the Daring Airdrop at Tristan Da Cunha",
-          "score": 147
+          "title": "OpenAI and Government of Malta partner to roll out ChatGPT Plus to all citizens",
+          "score": 188
         },
         {
           "rank": 9,
-          "title": "RTX 5090 and M4 MacBook Air: Can It Game?",
-          "score": 599
+          "title": "Moving away from Tailwind, and learning to structure my CSS",
+          "score": 540
         },
         {
           "rank": 10,
-          "title": "First public macOS kernel memory corruption exploit on Apple M5",
-          "score": 369
+          "title": "SANA-WM, a 2.6B open-source world model for 1-minute 720p video",
+          "score": 339
         }
       ]
     },
@@ -122,23 +122,23 @@
       "items": [
         {
           "rank": 1,
-          "title": "Propmpt-genned Rust shell is 13x the Ghostty size"
+          "title": "Ask HN: How to be SOC2 Type 2 compliant as a solo-entreprenuer?"
         },
         {
           "rank": 2,
-          "title": "Which country will be the first to pass laws limiting Meta Ray-Ban glasses?"
+          "title": "Tell HN: Mindie.dev is scraping emails from profiles to send spam"
         },
         {
           "rank": 3,
-          "title": "Viable open source Claude Design alternative?"
+          "title": "Ask HN: What LLM models are you using and why?"
         },
         {
           "rank": 4,
-          "title": "Tell HN: Dont use Claude Design, lost access to my projects after unsubscribing"
+          "title": "Ask HN: We just had an actual UUID v4 collision..."
         },
         {
           "rank": 5,
-          "title": "XS Programming Language"
+          "title": "Tell HN: Dont use Claude Design, lost access to my projects after unsubscribing"
         }
       ]
     },
@@ -148,62 +148,62 @@
         {
           "rank": 1,
           "title": "FULU-Foundation/OrcaSlicer-bambulab",
-          "stars": 4390,
+          "stars": 5502,
           "language": "C++"
         },
         {
           "rank": 2,
-          "title": "huangserva/3DCellForge",
-          "stars": 2038,
-          "language": "JavaScript"
-        },
-        {
-          "rank": 3,
           "title": "Nightmare-Eclipse/YellowKey",
-          "stars": 1881,
+          "stars": 2956,
           "language": ""
         },
         {
-          "rank": 4,
+          "rank": 3,
           "title": "nexu-io/html-anything",
-          "stars": 1631,
+          "stars": 2623,
           "language": "HTML"
         },
         {
+          "rank": 4,
+          "title": "huangserva/3DCellForge",
+          "stars": 2100,
+          "language": "JavaScript"
+        },
+        {
           "rank": 5,
-          "title": "HermannBjorgvin/Clawdmeter",
-          "stars": 930,
+          "title": "vercel-labs/zero",
+          "stars": 1256,
           "language": "C"
         },
         {
           "rank": 6,
-          "title": "ywnd1144/Gopay_plus_automatic",
-          "stars": 848,
-          "language": "Python"
+          "title": "yetone/native-feel-skill",
+          "stars": 1251,
+          "language": ""
         },
         {
           "rank": 7,
-          "title": "yetone/native-feel-skill",
-          "stars": 823,
-          "language": ""
+          "title": "HermannBjorgvin/Clawdmeter",
+          "stars": 1103,
+          "language": "C"
         },
         {
           "rank": 8,
           "title": "simonlin1212/a-stock-data",
-          "stars": 802,
+          "stars": 1043,
           "language": ""
         },
         {
           "rank": 9,
-          "title": "TencentARC/Pixal3D",
-          "stars": 667,
+          "title": "ywnd1144/Gopay_plus_automatic",
+          "stars": 910,
           "language": "Python"
         },
         {
           "rank": 10,
-          "title": "cclank/cell-architecture-studio",
-          "stars": 583,
-          "language": "TypeScript"
+          "title": "TencentARC/Pixal3D",
+          "stars": 846,
+          "language": "Python"
         }
       ]
     },
@@ -212,43 +212,43 @@
       "items": [
         {
           "rank": 1,
-          "title": "linux 0-day, access root-owned files as an unprivileged user"
+          "title": "Ascetic Computing"
         },
         {
           "rank": 2,
-          "title": "In what way if any are you a tech minimalist while maintaining your job/love for tech?"
+          "title": "The Futility of Lava Lamps: What Random Really Means"
         },
         {
           "rank": 3,
-          "title": "Bun's Rust rewrite has been merged"
+          "title": "Async I/O in Zig 0.16, today"
         },
         {
           "rank": 4,
-          "title": "Browsers Treat Big Sites Differently"
+          "title": "My Thoughts on Bun's Rust Rewrite"
         },
         {
           "rank": 5,
-          "title": "Amazonbot is finally respecting robots.txt"
+          "title": "Recent Kernel exploits, attack surface reduction, example IPSEC"
         },
         {
           "rank": 6,
-          "title": "A Simple Runtime Invariant Miner"
+          "title": "Hyperpolyglot Lisp: Common Lisp, Racket, Clojure, Emacs Lisp"
         },
         {
           "rank": 7,
-          "title": "Prolog Basics Explained with Pokémon"
+          "title": "A 90's era Keygen-like for X11 for Unix/Linux"
         },
         {
           "rank": 8,
-          "title": "How I Moved My Digital Stack to Europe"
+          "title": "LLM generated submissions should be disallowed"
         },
         {
           "rank": 9,
-          "title": "PyCon US 2026 Typing Summit Recap"
+          "title": "A few ways of specifying per-theme colours in only CSS"
         },
         {
           "rank": 10,
-          "title": "\"This is written by an LLM\" comments should be flagged as off-topic"
+          "title": "Introducing Incremental (2015)"
         }
       ]
     },
@@ -257,52 +257,48 @@
       "items": [
         {
           "rank": 1,
-          "title": "JSF app not working with Eclipse, Wildfly and Jakarta faces. Need help, I'ḿ new to jakarta faces",
+          "title": "Why do my HLSL arrays not accept changes in this specific context?",
           "answers": 0,
           "tags": [
-            "jsf",
-            "wildfly",
-            "jakarta"
+            "unity-game-engine",
+            "hlsl"
           ]
         },
         {
           "rank": 2,
-          "title": "seq.default, 'from' must be a finite number - error when creating partial dependence plot (randomForest) and when plotting logistic models in R",
-          "answers": 0,
+          "title": "Cleanly map DB constraint violations, no mimicking constraints in app",
+          "answers": 1,
           "tags": [
-            "r",
-            "logistic-regression",
-            "random-forest"
+            "java",
+            "spring-boot",
+            "spring-mvc"
           ]
         },
         {
           "rank": 3,
-          "title": "Load JSON page within C# fails, Google Chrome is OK - how to make it the correct way?",
+          "title": "Excel question my=AVERAGEIF(B2:B15,\"Football\",C2:C15) formula keeps returning DIV/0",
           "answers": 1,
           "tags": [
-            "c#",
-            "html",
-            "json"
+            "excel-formula"
           ]
         },
         {
           "rank": 4,
-          "title": "How to Learn DSA from scratch in python or JAVA",
-          "answers": 0,
+          "title": "How to achieve a 2 column grid of cards that expand into a full screen view when tapped upon?",
+          "answers": 1,
           "tags": [
-            "python",
-            "java",
-            "computer-science"
+            "ios",
+            "swift",
+            "swiftui"
           ]
         },
         {
           "rank": 5,
-          "title": "Improving a Convolutional Neural Network for simulating a fabric",
-          "answers": 0,
+          "title": "How to bypass the 8-digit mark?",
+          "answers": 1,
           "tags": [
-            "python",
-            "machine-learning",
-            "pytorch"
+            "batch-file",
+            "dos"
           ]
         }
       ]
@@ -312,31 +308,32 @@
       "items": [
         {
           "rank": 1,
-          "title": "Implications of querying OrientDB directly from front-end",
-          "answers": 1,
+          "title": "When is accepting risks acceptable?",
+          "answers": 0,
           "tags": [
-            "databases",
-            "architecture"
+            "risk-management",
+            "risk-analysis",
+            "risk-classification"
           ]
         },
         {
           "rank": 2,
-          "title": "can we use access token as session cookie in browser? and how to protect it?",
-          "answers": 2,
+          "title": "Why do sites implement locking after three failed password attempts?",
+          "answers": 14,
           "tags": [
-            "session-management",
-            "oauth",
-            "oauth2"
+            "passwords",
+            "attack-prevention",
+            "risk-analysis"
           ]
         },
         {
           "rank": 3,
-          "title": "Can an evil AP prevent real connections by claiming SAE-PK is needed?",
-          "answers": 0,
+          "title": "Developping an authentication system between client, server, and CouchDB database",
+          "answers": 1,
           "tags": [
-            "wifi",
-            "denial-of-service",
-            "evil-twin"
+            "authentication",
+            "web-application",
+            "databases"
           ]
         }
       ]
@@ -346,31 +343,32 @@
       "items": [
         {
           "rank": 1,
-          "title": "NoisyNet DQN with default parameters not exploring",
+          "title": "How to detect multiple playing cards of the same class with a neural network?",
           "answers": 1,
           "tags": [
-            "reinforcement-learning",
-            "dqn"
+            "neural-networks",
+            "classification",
+            "image-recognition"
           ]
         },
         {
           "rank": 2,
-          "title": "How do I show the relationship between theories and models using Conceptual Graphs?",
+          "title": "In Probabilistic Graphical Model (written by Daphne Koller), what's the meaning of \"parameter\" in representation of the distribution?",
           "answers": 1,
           "tags": [
-            "logic",
-            "knowledge-representation",
-            "ontology"
+            "terminology",
+            "bayesian-networks",
+            "books"
           ]
         },
         {
           "rank": 3,
-          "title": "What is the best distance measure between policies that are not probability distributions?",
+          "title": "Given an axis-angle rotation vector, how can I find the unit rotation axis and angle?",
           "answers": 1,
           "tags": [
-            "reinforcement-learning",
-            "policies",
-            "metric"
+            "math",
+            "robotics",
+            "homework"
           ]
         }
       ]
@@ -380,31 +378,32 @@
       "items": [
         {
           "rank": 1,
-          "title": "Will grep go faster with line breaks?",
-          "answers": 3,
+          "title": "Holding j causes a jump before fast-scrolling",
+          "answers": 0,
           "tags": [
-            "grep",
-            "performance"
+            "terminal",
+            "keyboard",
+            "scrolling"
           ]
         },
         {
           "rank": 2,
-          "title": "Freerouting under KiCad installed with flatpak",
+          "title": "HDD/s in raid5 array parking every few seconds",
           "answers": 1,
           "tags": [
-            "python",
-            "java",
-            "flatpak"
+            "debian",
+            "hard-disk",
+            "raid"
           ]
         },
         {
           "rank": 3,
-          "title": "nfs4_setfacl fails with username@domain (AD/SSSD) even though nfs4_getfacl prints ACEs in that format (Debian 13, Kerberos, OneFS)",
-          "answers": 0,
+          "title": "ACPI error (AE-ALREADY-EXISTS) while installing Debian",
+          "answers": 1,
           "tags": [
-            "linux",
+            "usb",
             "debian",
-            "nfs"
+            "acpi"
           ]
         }
       ]
@@ -415,63 +414,63 @@
     "items": [
       {
         "rank": 1,
-        "title": "本田70年来首次出现年度亏损",
-        "ctime": "1778840423",
-        "intro": "全球车企纷纷大幅收缩电动汽车规划，又一家巨头受到冲击：本田创下自 1955 年以来首次年度亏损。 特朗普政府调整美国尾气排放法规..."
+        "title": "世界卫生组织宣布刚果埃博拉疫情构成全球卫生紧急事件",
+        "ctime": "1779011119",
+        "intro": "世界卫生组织宣布刚果民主共和国和乌干达宣布发生的埃博拉疫情为国际关注的公共卫生紧急事件，并警告称这种罕见的病毒株目前尚无批准的疫苗或治疗方法..."
       },
       {
         "rank": 2,
-        "title": "Anthropic成本为何难以预估",
-        "ctime": "1778840139",
-        "intro": "作者：劳拉・布拉顿 本周三我和亚伦曾报道，Anthropic 的客户已因公司接连上调 AI 定价而倍感成本压力。更棘手的是，像 PagerDuty..."
+        "title": "衢州发展，终止重组！",
+        "ctime": "1779010887",
+        "intro": "来源：资本秘闻 5月17日，衢州发展（600208）披露公告称，公司终止发行股份购买资产并募集配套资金暨关联交易事项。 公告显示，衢州发展原拟通过发行股份方式购"
       },
       {
         "rank": 3,
-        "title": "Cerebras IPO造富：老虎环球入局 特殊目的投资载体SPV成标配",
-        "ctime": "1778839884",
-        "intro": "作者：凯蒂・鲁夫、朱莉娅・霍恩施泰因 今日清晨，我们独家披露了 AI 芯片设计公司Cerebras头部投资方的回报情况。该公司上市首日股价大幅飙升。"
+        "title": "九连板牛股，提示风险！实控人无注入算力资产计划",
+        "ctime": "1779010887",
+        "intro": "来源：资本秘闻 *ST准油（002207）称公司、控股股东和实控人并无注入算力资产计划。 在二级市场斩获九连板的*ST准油，于5月17日发布了股票交易异常波动暨"
       },
       {
         "rank": 4,
-        "title": "人工智能芯片厂商Cerebras在美上市首日大涨68%",
-        "ctime": "1778839836",
-        "intro": "硅谷人工智能芯片初创公司Cerebras正式登陆股票市场，首日股价大幅跃升。 该股开盘价报350美元，远高于185美元的发行价，最终收报311.07美元，涨幅达"
+        "title": "600208，重组终止！",
+        "ctime": "1779009818",
+        "intro": "衢州发展（600208）5月17日晚公告，公司第十二届董事会第二十七次会议审议通过了《关于终止发行股份购买资产并募集配套资金暨关联交易事项的议案》..."
       },
       {
         "rank": 5,
-        "title": "SpaceX AI人才大规模流失：近50余人离职",
-        "ctime": "1778839629",
-        "intro": "可称之为SpaceX AI 人才大外流。 多位知情人士透露，自今年 2 月 SpaceX 收购 xAI 以来，负责开发 Grok 大模型的50 余名研究人员和工"
+        "title": "一季度利润翻倍，“功能性护肤品第一股”走出低谷了吗？",
+        "ctime": "1779009321",
+        "intro": "来源：尺度商业 文 | 董武英 归母净利润在2023-2024年连续两年较大幅度下滑的国货美妆龙头上市公司，却交出了一份净利润翻倍增长的一季报，再一次获得市场关"
       },
       {
         "rank": 6,
-        "title": "OpenAI与苹果合作关系急剧恶化",
-        "ctime": "1778839453",
-        "intro": "据知情人士透露，OpenAI 似乎正与又一家重量级合作方苹果陷入关系裂痕。 一名了解内情的 OpenAI 员工表示，这家人工智能初创公司正考虑以违约为由对苹果采"
+        "title": "董事长被调查？“小作文”带崩山东赫达股价，公司紧急澄清",
+        "ctime": "1779007823",
+        "intro": "来源：华夏时报 华夏时报记者 何一华 李未来 北京报道 5月13日，由于出现各种针对公司的传闻，山东赫达（002810.SZ）股价尾盘快速跳水封死跌停板，引发市"
       },
       {
         "rank": 7,
-        "title": "时评：市场目前低估了金价的潜在波动",
-        "ctime": "1778839167",
-        "intro": "“通胀更高、更久”的现实冲击债券市场并支撑美元之际，市场低估了金价的潜在波动。 黄金的1个月和3个月期隐含波动率基本上是下跌的，与实际波动率背道而驰。"
+        "title": "002207！最新提示：无注入算力资产计划！股价9连涨停",
+        "ctime": "1779007250",
+        "intro": "*ST准油（002207）在5月15日继续以涨停报收，这是该股在近期连续收出的第9个涨停板。截至5月15日收盘时止，*ST准油报于10.15元，上涨0.48元，"
       },
       {
         "rank": 8,
-        "title": "丰田拟投20亿美元在得州新建装配线 计划2030年投产",
-        "ctime": "1778839126",
-        "intro": "建设计划：今年下半年动工，2030 年投产今年 3 月，丰田宣布将向肯塔基州与印第安纳州制造业务投资 10 亿美元。 内容速览 丰田汽车正考虑投资20 亿美元."
+        "title": "对话黄子韬：明星的身份我已拥有过，更想让人记住朵薇",
+        "ctime": "1779006242",
+        "intro": "5月17日，在朵薇品牌一周年的交流会上，朵薇护理品牌创始人黄子韬向外界系统地阐述了自己从明星到创业者的身份转变。 黄子韬表示，“去做朵薇这件事..."
       },
       {
         "rank": 9,
-        "title": "快讯：现货白银失守77美元/盎司",
-        "ctime": "1778839038",
-        "intro": "北京时间5月15日下午，现货白银失守77美元/盎司，日内跌7.93%。"
+        "title": "赛微电子：出售资产“扮靓”净利，实控人拟套现逾11亿元",
+        "ctime": "1779003608",
+        "intro": "来源：证券之星 5月11日晚间，赛微电子（300456.SZ）控股股东、实控人杨云春询价转让价格出炉，拟以40.86元/股转让所持公司部分股份，套现超11亿元。"
       },
       {
         "rank": 10,
-        "title": "Syensqo股价大涨 调整后盈利超预期",
-        "ctime": "1778838926",
-        "intro": "欧股早盘该股涨幅达 6.7%公司维持全年业绩指引不变。 比利时化工企业Syensqo周五公布一季度调整后盈利超市场预期，股价应声大涨，盘中涨幅达 6.80%。"
+        "title": "海信系入主一年半，科林电气Q1业绩“变脸”，遭股东轮番减持",
+        "ctime": "1779003608",
+        "intro": "来源：证券之星 近日，科林电气（603050.SH）股价走出新一轮上升行情，创下历史新高。但在股价攀升期间，公司股东及高管借机高位减持。"
       }
     ]
   }
