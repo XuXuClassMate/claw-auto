@@ -1,98 +1,116 @@
 {
-  "timestamp": "2026-05-17T03:32:27.360563+00:00",
-  "source": "alternative.me + 新浪财经 + RSS feeds",
+  "timestamp": "2026-05-17T06:42:52.165119Z",
+  "source": "RSS feeds (CoinTelegraph + CryptoNews + Decrypt)",
   "fear_greed": {
     "value": 27,
     "classification": "Fear"
   },
   "results": {
     "BTC": {
-      "signal": "🟡 中性",
-      "score": 40.8,
-      "raw_score": 50,
-      "fgi_adjust": -9.2,
-      "confidence": 20,
+      "signal": "🔴 偏空",
+      "score": 25.3,
+      "raw_score": 33.3,
+      "fgi_adjust": -8,
+      "confidence": 33,
       "fgi_value": 27,
       "fgi_class": "Fear",
-      "total_articles": 0,
-      "samples": []
+      "total_articles": 3,
+      "samples": [
+        {
+          "title": "Michael Saylor floated Bitcoin sales idea to avoid 'impairing' the asset",
+          "sentiment": "bearish"
+        },
+        {
+          "title": "Bitcoin analysis sees 'bear trap' as BTC price passes two-week lows under $78K",
+          "sentiment": "neutral"
+        }
+      ]
     },
     "ETH": {
       "signal": "🟡 中性",
-      "score": 40.8,
-      "raw_score": 50,
-      "fgi_adjust": -9.2,
-      "confidence": 20,
+      "score": 58.7,
+      "raw_score": 66.7,
+      "fgi_adjust": -8,
+      "confidence": 90,
       "fgi_value": 27,
       "fgi_class": "Fear",
-      "total_articles": 0,
-      "samples": []
+      "total_articles": 1,
+      "samples": [
+        {
+          "title": "Sharplink CEO points out 3 catalysts for Ethereum's price to surge higher",
+          "sentiment": "bullish"
+        }
+      ]
     },
     "BNB": {
-      "signal": "🟡 中性",
-      "score": 40.8,
-      "raw_score": 50,
-      "fgi_adjust": -9.2,
-      "confidence": 20,
+      "signal": "🔴 偏空",
+      "score": 39.9,
+      "raw_score": 47.9,
+      "fgi_adjust": -8,
+      "confidence": 32,
       "fgi_value": 27,
       "fgi_class": "Fear",
       "total_articles": 0,
-      "samples": []
-    },
-    "SOL": {
-      "signal": "🟡 中性",
-      "score": 40.8,
-      "raw_score": 50,
-      "fgi_adjust": -9.2,
-      "confidence": 20,
-      "fgi_value": 27,
-      "fgi_class": "Fear",
-      "total_articles": 0,
-      "samples": []
+      "note": "使用整体加密市场情绪"
     },
     "NVDA": {
       "signal": "🟡 中性",
-      "score": 40.8,
-      "raw_score": 50,
-      "fgi_adjust": -9.2,
+      "score": 68.3,
       "confidence": 20,
       "fgi_value": 27,
-      "fgi_class": "Fear",
       "total_articles": 0,
-      "samples": []
+      "note": "使用整体市场情绪"
     },
     "TSLA": {
       "signal": "🟡 中性",
-      "score": 40.8,
-      "raw_score": 50,
-      "fgi_adjust": -9.2,
-      "confidence": 20,
+      "score": 47.6,
+      "raw_score": 50.0,
+      "confidence": 0,
       "fgi_value": 27,
-      "fgi_class": "Fear",
-      "total_articles": 0,
-      "samples": []
+      "total_articles": 1,
+      "samples": [
+        {
+          "title": "Bitcoin price dives under $79K as US bond market triggers 3% BTC price rout",
+          "sentiment": "neutral"
+        }
+      ]
     },
     "AAPL": {
       "signal": "🟡 中性",
-      "score": 40.8,
-      "raw_score": 50,
-      "fgi_adjust": -9.2,
+      "score": 68.3,
       "confidence": 20,
       "fgi_value": 27,
-      "fgi_class": "Fear",
       "total_articles": 0,
-      "samples": []
+      "note": "使用整体市场情绪"
     },
     "SPY": {
-      "signal": "🟡 中性",
-      "score": 40.8,
-      "raw_score": 50,
-      "fgi_adjust": -9.2,
-      "confidence": 20,
+      "signal": "🔴 偏空",
+      "score": 7.6,
+      "raw_score": 10.0,
+      "confidence": 90,
       "fgi_value": 27,
-      "fgi_class": "Fear",
-      "total_articles": 0,
-      "samples": []
+      "total_articles": 2,
+      "samples": [
+        {
+          "title": "Spot Bitcoin ETFs bleed $1B in a week, snapping six-week inflow run",
+          "sentiment": "bearish"
+        },
+        {
+          "title": "Ethereum analysts see ‘downside risks’ as bears eye 20% ETH price drop",
+          "sentiment": "bearish"
+        }
+      ]
     }
+  },
+  "methodology": "RSS新闻情绪关键词分析 + Fear&Greed指数加权",
+  "rss_feeds": {
+    "crypto": [
+      "https://cointelegraph.com/rss",
+      "https://cryptonews.com/feed/",
+      "https://decrypt.co/feed"
+    ],
+    "stocks": [
+      "https://cointelegraph.com/rss"
+    ]
   }
 }
