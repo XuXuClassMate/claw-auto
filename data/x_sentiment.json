@@ -1,98 +1,116 @@
 {
-  "timestamp": "2026-05-17T22:54:54.943876+00:00",
-  "source": "alternative.me + 新浪财经 + RSS feeds",
+  "timestamp": "2026-05-18T03:28:47.830128Z",
+  "source": "RSS feeds (CoinTelegraph + CryptoNews + Decrypt)",
   "fear_greed": {
-    "value": 27,
+    "value": 28,
     "classification": "Fear"
   },
   "results": {
     "BTC": {
       "signal": "🟡 中性",
-      "score": 40.8,
-      "raw_score": 50,
-      "fgi_adjust": -9.2,
-      "confidence": 20,
-      "fgi_value": 27,
+      "score": 42.0,
+      "raw_score": 50.0,
+      "fgi_adjust": -8,
+      "confidence": 33,
+      "fgi_value": 28,
       "fgi_class": "Fear",
-      "total_articles": 0,
-      "samples": []
+      "total_articles": 3,
+      "samples": [
+        {
+          "title": "Here’s what happened in crypto today",
+          "sentiment": "neutral"
+        },
+        {
+          "title": "Saylor signals BTC buy as retail holders get push on STRC dividend vote",
+          "sentiment": "bullish"
+        }
+      ]
     },
     "ETH": {
       "signal": "🟡 中性",
-      "score": 40.8,
-      "raw_score": 50,
-      "fgi_adjust": -9.2,
-      "confidence": 20,
-      "fgi_value": 27,
+      "score": 40.2,
+      "raw_score": 48.2,
+      "fgi_adjust": -8,
+      "confidence": 32,
+      "fgi_value": 28,
       "fgi_class": "Fear",
       "total_articles": 0,
-      "samples": []
+      "note": "使用整体加密市场情绪"
     },
     "BNB": {
-      "signal": "🟡 中性",
-      "score": 40.8,
-      "raw_score": 50,
-      "fgi_adjust": -9.2,
-      "confidence": 20,
-      "fgi_value": 27,
+      "signal": "🔴 偏空",
+      "score": 0,
+      "raw_score": 0.0,
+      "fgi_adjust": -8,
+      "confidence": 90,
+      "fgi_value": 28,
       "fgi_class": "Fear",
-      "total_articles": 0,
-      "samples": []
-    },
-    "SOL": {
-      "signal": "🟡 中性",
-      "score": 40.8,
-      "raw_score": 50,
-      "fgi_adjust": -9.2,
-      "confidence": 20,
-      "fgi_value": 27,
-      "fgi_class": "Fear",
-      "total_articles": 0,
-      "samples": []
+      "total_articles": 1,
+      "samples": [
+        {
+          "title": "Grayscale, VanEck amend US spot BNB ETF filings, stepping closer to a potential launch",
+          "sentiment": "bearish"
+        }
+      ]
     },
     "NVDA": {
       "signal": "🟡 中性",
-      "score": 40.8,
-      "raw_score": 50,
-      "fgi_adjust": -9.2,
+      "score": 62.0,
       "confidence": 20,
-      "fgi_value": 27,
-      "fgi_class": "Fear",
+      "fgi_value": 28,
       "total_articles": 0,
-      "samples": []
+      "note": "使用整体市场情绪"
     },
     "TSLA": {
       "signal": "🟡 中性",
-      "score": 40.8,
-      "raw_score": 50,
-      "fgi_adjust": -9.2,
-      "confidence": 20,
-      "fgi_value": 27,
-      "fgi_class": "Fear",
-      "total_articles": 0,
-      "samples": []
+      "score": 47.6,
+      "raw_score": 50.0,
+      "confidence": 0,
+      "fgi_value": 28,
+      "total_articles": 1,
+      "samples": [
+        {
+          "title": "Bitcoin price dives under $79K as US bond market triggers 3% BTC price rout",
+          "sentiment": "neutral"
+        }
+      ]
     },
     "AAPL": {
       "signal": "🟡 中性",
-      "score": 40.8,
-      "raw_score": 50,
-      "fgi_adjust": -9.2,
+      "score": 62.0,
       "confidence": 20,
-      "fgi_value": 27,
-      "fgi_class": "Fear",
+      "fgi_value": 28,
       "total_articles": 0,
-      "samples": []
+      "note": "使用整体市场情绪"
     },
     "SPY": {
-      "signal": "🟡 中性",
-      "score": 40.8,
-      "raw_score": 50,
-      "fgi_adjust": -9.2,
-      "confidence": 20,
-      "fgi_value": 27,
-      "fgi_class": "Fear",
-      "total_articles": 0,
-      "samples": []
+      "signal": "🔴 偏空",
+      "score": 4.3,
+      "raw_score": 6.7,
+      "confidence": 90,
+      "fgi_value": 28,
+      "total_articles": 3,
+      "samples": [
+        {
+          "title": "Grayscale, VanEck amend US spot BNB ETF filings, stepping closer to a potential launch",
+          "sentiment": "bearish"
+        },
+        {
+          "title": "Spot Bitcoin ETFs bleed $1B in a week, snapping six-week inflow run",
+          "sentiment": "bearish"
+        }
+      ]
     }
+  },
+  "methodology": "RSS新闻情绪关键词分析 + Fear&Greed指数加权",
+  "rss_feeds": {
+    "crypto": [
+      "https://cointelegraph.com/rss",
+      "https://cryptonews.com/feed/",
+      "https://decrypt.co/feed"
+    ],
+    "stocks": [
+      "https://cointelegraph.com/rss"
+    ]
   }
 }
