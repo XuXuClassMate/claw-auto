@@ -1,98 +1,123 @@
 {
-  "timestamp": "2026-05-18T19:45:32.662830+00:00",
-  "source": "alternative.me + 新浪财经 + RSS feeds",
+  "timestamp": "2026-05-18T21:11:01.135771Z",
+  "source": "RSS feeds (CoinTelegraph + CryptoNews + Decrypt)",
   "fear_greed": {
     "value": 28,
     "classification": "Fear"
   },
   "results": {
     "BTC": {
-      "signal": "🟡 中性",
-      "score": 41.2,
-      "raw_score": 50,
-      "fgi_adjust": -8.8,
-      "confidence": 20,
+      "signal": "🔴 偏空",
+      "score": 30.9,
+      "raw_score": 38.9,
+      "fgi_adjust": -8,
+      "confidence": 33,
       "fgi_value": 28,
       "fgi_class": "Fear",
-      "total_articles": 0,
-      "samples": []
+      "total_articles": 3,
+      "samples": [
+        {
+          "title": "Bitcoin’s trend defining battle starts at the $74K support: Analyst",
+          "sentiment": "neutral"
+        },
+        {
+          "title": "Price predictions 5/18: SPX, DXY, BTC, ETH, XRP, BNB, SOL, DOGE, HYPE, ADA",
+          "sentiment": "bullish"
+        }
+      ]
     },
     "ETH": {
-      "signal": "🟡 中性",
-      "score": 41.2,
-      "raw_score": 50,
-      "fgi_adjust": -8.8,
-      "confidence": 20,
+      "signal": "🔴 偏空",
+      "score": 14.2,
+      "raw_score": 22.2,
+      "fgi_adjust": -8,
+      "confidence": 67,
       "fgi_value": 28,
       "fgi_class": "Fear",
-      "total_articles": 0,
-      "samples": []
+      "total_articles": 3,
+      "samples": [
+        {
+          "title": "Price predictions 5/18: SPX, DXY, BTC, ETH, XRP, BNB, SOL, DOGE, HYPE, ADA",
+          "sentiment": "bullish"
+        },
+        {
+          "title": "Crypto funds see $1B in outflows as Iran tensions revive risk-off sentiment",
+          "sentiment": "bearish"
+        }
+      ]
     },
     "BNB": {
-      "signal": "🟡 中性",
-      "score": 41.2,
-      "raw_score": 50,
-      "fgi_adjust": -8.8,
-      "confidence": 20,
+      "signal": "🔴 偏空",
+      "score": 25.4,
+      "raw_score": 33.4,
+      "fgi_adjust": -8,
+      "confidence": 50,
       "fgi_value": 28,
       "fgi_class": "Fear",
-      "total_articles": 0,
-      "samples": []
-    },
-    "SOL": {
-      "signal": "🟡 中性",
-      "score": 41.2,
-      "raw_score": 50,
-      "fgi_adjust": -8.8,
-      "confidence": 20,
-      "fgi_value": 28,
-      "fgi_class": "Fear",
-      "total_articles": 0,
-      "samples": []
+      "total_articles": 2,
+      "samples": [
+        {
+          "title": "Price predictions 5/18: SPX, DXY, BTC, ETH, XRP, BNB, SOL, DOGE, HYPE, ADA",
+          "sentiment": "bullish"
+        },
+        {
+          "title": "Ethereum traders say bears ‘in control’ after ETH price drop to $2K",
+          "sentiment": "bearish"
+        }
+      ]
     },
     "NVDA": {
       "signal": "🟡 中性",
-      "score": 41.2,
-      "raw_score": 50,
-      "fgi_adjust": -8.8,
+      "score": 56.2,
       "confidence": 20,
       "fgi_value": 28,
-      "fgi_class": "Fear",
       "total_articles": 0,
-      "samples": []
+      "note": "使用整体市场情绪"
     },
     "TSLA": {
       "signal": "🟡 中性",
-      "score": 41.2,
-      "raw_score": 50,
-      "fgi_adjust": -8.8,
+      "score": 56.2,
       "confidence": 20,
       "fgi_value": 28,
-      "fgi_class": "Fear",
       "total_articles": 0,
-      "samples": []
+      "note": "使用整体市场情绪"
     },
     "AAPL": {
       "signal": "🟡 中性",
-      "score": 41.2,
-      "raw_score": 50,
-      "fgi_adjust": -8.8,
+      "score": 56.2,
       "confidence": 20,
       "fgi_value": 28,
-      "fgi_class": "Fear",
       "total_articles": 0,
-      "samples": []
+      "note": "使用整体市场情绪"
     },
     "SPY": {
-      "signal": "🟡 中性",
-      "score": 41.2,
-      "raw_score": 50,
-      "fgi_adjust": -8.8,
-      "confidence": 20,
+      "signal": "🔴 偏空",
+      "score": 14.3,
+      "raw_score": 16.7,
+      "confidence": 67,
       "fgi_value": 28,
-      "fgi_class": "Fear",
-      "total_articles": 0,
-      "samples": []
+      "total_articles": 3,
+      "samples": [
+        {
+          "title": "Ethereum traders say bears ‘in control’ after ETH price drop to $2K",
+          "sentiment": "bearish"
+        },
+        {
+          "title": "Goldman Sachs exits XRP, Solana ETF exposure in Q1 2026",
+          "sentiment": "neutral"
+        }
+      ]
     }
+  },
+  "methodology": "RSS新闻情绪关键词分析 + Fear&Greed指数加权",
+  "rss_feeds": {
+    "crypto": [
+      "https://cointelegraph.com/rss",
+      "https://cryptonews.com/feed/",
+      "https://decrypt.co/feed"
+    ],
+    "stocks": [
+      "https://cointelegraph.com/rss"
+    ]
   }
 }
