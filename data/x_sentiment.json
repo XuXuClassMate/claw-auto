@@ -1,116 +1,98 @@
 {
-  "timestamp": "2026-05-19T14:57:22.867296Z",
-  "source": "RSS feeds (CoinTelegraph + CryptoNews + Decrypt)",
+  "timestamp": "2026-05-19T15:24:59.760805+00:00",
+  "source": "alternative.me + 新浪财经 + RSS feeds",
   "fear_greed": {
     "value": 25,
     "classification": "Extreme Fear"
   },
   "results": {
     "BTC": {
-      "signal": "🔴 偏空",
-      "score": 17.0,
-      "raw_score": 25.0,
-      "fgi_adjust": -8,
-      "confidence": 90,
+      "signal": "🟡 中性",
+      "score": 40.0,
+      "raw_score": 50,
+      "fgi_adjust": -10.0,
+      "confidence": 20,
       "fgi_value": 25,
       "fgi_class": "Extreme Fear",
-      "total_articles": 1,
-      "samples": [
-        {
-          "title": "Bitcoin miner Canaan posts $88.7M net loss in Q1 amid BTC decline",
-          "sentiment": "bearish"
-        }
-      ]
+      "total_articles": 0,
+      "samples": []
     },
     "ETH": {
-      "signal": "🔴 偏空",
-      "score": 0,
-      "raw_score": 0.0,
-      "fgi_adjust": -8,
-      "confidence": 90,
+      "signal": "🟡 中性",
+      "score": 40.0,
+      "raw_score": 50,
+      "fgi_adjust": -10.0,
+      "confidence": 20,
       "fgi_value": 25,
       "fgi_class": "Extreme Fear",
-      "total_articles": 1,
-      "samples": [
-        {
-          "title": "South Korean funeral company records $33M unrealized loss on leveraged ETH ETFs",
-          "sentiment": "bearish"
-        }
-      ]
+      "total_articles": 0,
+      "samples": []
     },
     "BNB": {
       "signal": "🟡 中性",
-      "score": 44.7,
-      "raw_score": 52.7,
-      "fgi_adjust": -8,
-      "confidence": 33,
+      "score": 40.0,
+      "raw_score": 50,
+      "fgi_adjust": -10.0,
+      "confidence": 20,
       "fgi_value": 25,
       "fgi_class": "Extreme Fear",
       "total_articles": 0,
-      "note": "使用整体加密市场情绪"
+      "samples": []
+    },
+    "SOL": {
+      "signal": "🟡 中性",
+      "score": 40.0,
+      "raw_score": 50,
+      "fgi_adjust": -10.0,
+      "confidence": 20,
+      "fgi_value": 25,
+      "fgi_class": "Extreme Fear",
+      "total_articles": 0,
+      "samples": []
     },
     "NVDA": {
       "signal": "🟡 中性",
-      "score": 67.8,
+      "score": 40.0,
+      "raw_score": 50,
+      "fgi_adjust": -10.0,
       "confidence": 20,
       "fgi_value": 25,
+      "fgi_class": "Extreme Fear",
       "total_articles": 0,
-      "note": "使用整体市场情绪"
+      "samples": []
     },
     "TSLA": {
       "signal": "🟡 中性",
-      "score": 47.6,
-      "raw_score": 50.0,
-      "confidence": 25,
+      "score": 40.0,
+      "raw_score": 50,
+      "fgi_adjust": -10.0,
+      "confidence": 20,
       "fgi_value": 25,
-      "total_articles": 4,
-      "samples": [
-        {
-          "title": "South Korean funeral company records $33M unrealized loss on leveraged ETH ETFs",
-          "sentiment": "bearish"
-        },
-        {
-          "title": "About 10% of Americans used crypto in 2025, highest level since 2022: Fed",
-          "sentiment": "neutral"
-        }
-      ]
+      "fgi_class": "Extreme Fear",
+      "total_articles": 0,
+      "samples": []
     },
     "AAPL": {
       "signal": "🟡 中性",
-      "score": 67.8,
+      "score": 40.0,
+      "raw_score": 50,
+      "fgi_adjust": -10.0,
       "confidence": 20,
       "fgi_value": 25,
+      "fgi_class": "Extreme Fear",
       "total_articles": 0,
-      "note": "使用整体市场情绪"
+      "samples": []
     },
     "SPY": {
-      "signal": "🔴 偏空",
-      "score": 22.6,
-      "raw_score": 25.0,
-      "confidence": 50,
+      "signal": "🟡 中性",
+      "score": 40.0,
+      "raw_score": 50,
+      "fgi_adjust": -10.0,
+      "confidence": 20,
       "fgi_value": 25,
-      "total_articles": 2,
-      "samples": [
-        {
-          "title": "South Korean funeral company records $33M unrealized loss on leveraged ETH ETFs",
-          "sentiment": "bearish"
-        },
-        {
-          "title": "Bitget Wallet integrates Kraken-backed xStocks tokenized equities",
-          "sentiment": "neutral"
-        }
-      ]
+      "fgi_class": "Extreme Fear",
+      "total_articles": 0,
+      "samples": []
     }
-  },
-  "methodology": "RSS新闻情绪关键词分析 + Fear&Greed指数加权",
-  "rss_feeds": {
-    "crypto": [
-      "https://cointelegraph.com/rss",
-      "https://cryptonews.com/feed/",
-      "https://decrypt.co/feed"
-    ],
-    "stocks": [
-      "https://cointelegraph.com/rss"
-    ]
   }
 }
