@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-05-19T11:15:27.659402Z",
+  "timestamp": "2026-05-19T14:57:22.867296Z",
   "source": "RSS feeds (CoinTelegraph + CryptoNews + Decrypt)",
   "fear_greed": {
     "value": 25,
@@ -7,51 +7,43 @@
   },
   "results": {
     "BTC": {
-      "signal": "🟢 偏多",
-      "score": 92.0,
-      "raw_score": 100.0,
+      "signal": "🔴 偏空",
+      "score": 17.0,
+      "raw_score": 25.0,
       "fgi_adjust": -8,
       "confidence": 90,
       "fgi_value": 25,
       "fgi_class": "Extreme Fear",
-      "total_articles": 2,
+      "total_articles": 1,
       "samples": [
         {
-          "title": "Swan Bitcoin sued for nearly $1B over pre-bankruptcy transfers from Prime Trust",
-          "sentiment": "bullish"
-        },
-        {
-          "title": "Echo Protocol's eBTC exploited for $77M in admin key compromise",
-          "sentiment": "bullish"
+          "title": "Bitcoin miner Canaan posts $88.7M net loss in Q1 amid BTC decline",
+          "sentiment": "bearish"
         }
       ]
     },
     "ETH": {
-      "signal": "🟢 偏多",
-      "score": 92.0,
-      "raw_score": 100.0,
+      "signal": "🔴 偏空",
+      "score": 0,
+      "raw_score": 0.0,
       "fgi_adjust": -8,
       "confidence": 90,
       "fgi_value": 25,
       "fgi_class": "Extreme Fear",
-      "total_articles": 2,
+      "total_articles": 1,
       "samples": [
         {
-          "title": "Ethereum Foundation sees 2 more high-profile departures",
-          "sentiment": "bullish"
-        },
-        {
-          "title": "Ether pullback was ‘attractive opportunity’ for 71,672 ETH buy: Bitmine’s Lee",
-          "sentiment": "bullish"
+          "title": "South Korean funeral company records $33M unrealized loss on leveraged ETH ETFs",
+          "sentiment": "bearish"
         }
       ]
     },
     "BNB": {
       "signal": "🟡 中性",
-      "score": 45.2,
-      "raw_score": 53.2,
+      "score": 44.7,
+      "raw_score": 52.7,
       "fgi_adjust": -8,
-      "confidence": 34,
+      "confidence": 33,
       "fgi_value": 25,
       "fgi_class": "Extreme Fear",
       "total_articles": 0,
@@ -59,33 +51,33 @@
     },
     "NVDA": {
       "signal": "🟡 中性",
-      "score": 70.0,
+      "score": 67.8,
       "confidence": 20,
       "fgi_value": 25,
       "total_articles": 0,
       "note": "使用整体市场情绪"
     },
     "TSLA": {
-      "signal": "🟢 偏多",
-      "score": 64.3,
-      "raw_score": 66.7,
-      "confidence": 33,
+      "signal": "🟡 中性",
+      "score": 47.6,
+      "raw_score": 50.0,
+      "confidence": 25,
       "fgi_value": 25,
-      "total_articles": 3,
+      "total_articles": 4,
       "samples": [
         {
-          "title": "About 10% of Americans used crypto in 2025, highest level since 2022: Fed",
-          "sentiment": "neutral"
+          "title": "South Korean funeral company records $33M unrealized loss on leveraged ETH ETFs",
+          "sentiment": "bearish"
         },
         {
-          "title": "SEC to make ‘innovation exemption’ for tokenized stock trading: Report",
+          "title": "About 10% of Americans used crypto in 2025, highest level since 2022: Fed",
           "sentiment": "neutral"
         }
       ]
     },
     "AAPL": {
       "signal": "🟡 中性",
-      "score": 70.0,
+      "score": 67.8,
       "confidence": 20,
       "fgi_value": 25,
       "total_articles": 0,
@@ -93,15 +85,19 @@
     },
     "SPY": {
       "signal": "🔴 偏空",
-      "score": 0,
-      "raw_score": 0.0,
-      "confidence": 90,
+      "score": 22.6,
+      "raw_score": 25.0,
+      "confidence": 50,
       "fgi_value": 25,
-      "total_articles": 1,
+      "total_articles": 2,
       "samples": [
         {
-          "title": "Ethereum traders say bears ‘in control’ after ETH price drop to $2K",
+          "title": "South Korean funeral company records $33M unrealized loss on leveraged ETH ETFs",
           "sentiment": "bearish"
+        },
+        {
+          "title": "Bitget Wallet integrates Kraken-backed xStocks tokenized equities",
+          "sentiment": "neutral"
         }
       ]
     }
