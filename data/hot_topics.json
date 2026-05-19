@@ -1,57 +1,57 @@
 {
-  "timestamp": "2026-05-18T11:44:38.958265+00:00",
+  "timestamp": "2026-05-19T11:18:35.770633+00:00",
   "domestic": {
     "weibo": {
       "source": "Weibo Hot Search",
       "items": [
         {
           "rank": 1,
-          "title": "特朗普连发15张图分享中国记忆",
+          "title": "洁丽雅晒公证书",
           "hot": ""
         },
         {
           "rank": 2,
-          "title": "上海交大通报学生私吞竞赛奖金",
+          "title": "特朗普暗示日本过头了",
           "hot": ""
         },
         {
           "rank": 3,
-          "title": "共赴网络文明之约",
+          "title": "让高品质文旅点亮诗和远方",
           "hot": ""
         },
         {
           "rank": 4,
-          "title": "欧文体验昊铂S600智能辅助驾驶看粤超",
+          "title": "腾势N9闪充版上市价40.98万起",
           "hot": ""
         },
         {
           "rank": 5,
-          "title": "武汉一村庄585人62人患癌",
+          "title": "杨梅泡药事件冲击浙江杨梅市场",
           "hot": ""
         },
         {
           "rank": 6,
-          "title": "老乡杯",
+          "title": "恋与深空礼盒",
           "hot": ""
         },
         {
           "rank": 7,
-          "title": "98岁奶奶拿出了她当年的嫁妆",
+          "title": "工作留痕的重要性",
           "hot": ""
         },
         {
           "rank": 8,
-          "title": "杨幂同款公牛AI大路灯",
+          "title": "我的520在陪它",
           "hot": ""
         },
         {
           "rank": 9,
-          "title": "余秀华报警",
+          "title": "五月份不要轻易离职",
           "hot": ""
         },
         {
           "rank": 10,
-          "title": "穆里尼奥将回归执教皇马",
+          "title": "给阿嬷的情书 删减的最后一封信",
           "hot": ""
         }
       ]
@@ -67,53 +67,53 @@
       "items": [
         {
           "rank": 1,
-          "title": "The foundations of a provably secure operating system (PSOS) (1979) [pdf]",
-          "score": 43
+          "title": "Gaussian Splat of a Strawberry",
+          "score": 26
         },
         {
           "rank": 2,
-          "title": "GenCAD",
-          "score": 351
+          "title": "I Found Ultra-Pure Quantum Crystals in an Abandoned Mine in the Atacama Desert",
+          "score": 82
         },
         {
           "rank": 3,
-          "title": "Crystals found inside wreckage from the first nuclear bomb test",
-          "score": 97
+          "title": "Polypad",
+          "score": 85
         },
         {
           "rank": 4,
-          "title": "It is time to give up the dualism introduced by the debate on consciousness",
-          "score": 116
+          "title": "Peter Neumann has died",
+          "score": 139
         },
         {
           "rank": 5,
-          "title": "I turned a $80 RK3562 Android tablet into a Debian Linux workstation",
-          "score": 383
+          "title": "Click (2016)",
+          "score": 313
         },
         {
           "rank": 6,
-          "title": "NASA still maintains some of the Voyager spacecraft code from the 70s era",
-          "score": 17
+          "title": "Kv4p HT – A homebrew 1W radio (VHF or UHF) that plugs into an Android phone",
+          "score": 99
         },
         {
           "rank": 7,
-          "title": "Ask an Astronaut: 333 hours of Q&A footage with astronauts",
-          "score": 157
+          "title": "The last six months in LLMs in five minutes",
+          "score": 480
         },
         {
           "rank": 8,
-          "title": "Where Are the Vibecoded Photoshops?",
-          "score": 130
+          "title": "The lasting influence of Netscape Time",
+          "score": 39
         },
         {
           "rank": 9,
-          "title": "Jank now has its own custom IR",
-          "score": 165
+          "title": "Cursor Introduces Composer 2.5",
+          "score": 160
         },
         {
           "rank": 10,
-          "title": "Show HN: Semble – Code search for agents that uses 98% fewer tokens than grep",
-          "score": 353
+          "title": "Anthropic acquires Stainless",
+          "score": 458
         }
       ]
     },
@@ -122,23 +122,23 @@
       "items": [
         {
           "rank": 1,
-          "title": "Ask HN: How to be SOC2 Type 2 compliant as a solo-entreprenuer?"
+          "title": "Windows on Mobile Screen"
         },
         {
           "rank": 2,
-          "title": "Ask HN: When did computers stop being fun?"
+          "title": "Ask HN: How to enforce engineers to understand the code they are shipping"
         },
         {
           "rank": 3,
-          "title": "Ask HN: We just had an actual UUID v4 collision..."
+          "title": "Ask HN: How to be SOC2 Type 2 compliant as a solo-entreprenuer?"
         },
         {
           "rank": 4,
-          "title": "SlothDB is an OLAP DB ahead of DuckDB on Clickbench SQL database in C++20"
+          "title": "Ask HN: Company is rapidly cutting AI tool spend how to prep team?"
         },
         {
           "rank": 5,
-          "title": "Tell HN: Mindie.dev is scraping emails from profiles to send spam"
+          "title": "Ask HN: When did computers stop being fun?"
         }
       ]
     },
@@ -148,61 +148,61 @@
         {
           "rank": 1,
           "title": "FULU-Foundation/OrcaSlicer-bambulab",
-          "stars": 5835,
+          "stars": 5967,
           "language": "C++"
         },
         {
           "rank": 2,
-          "title": "Nightmare-Eclipse/YellowKey",
-          "stars": 3266,
-          "language": ""
-        },
-        {
-          "rank": 3,
           "title": "nexu-io/html-anything",
-          "stars": 3070,
+          "stars": 3679,
           "language": "HTML"
         },
         {
+          "rank": 3,
+          "title": "Nightmare-Eclipse/YellowKey",
+          "stars": 3511,
+          "language": ""
+        },
+        {
           "rank": 4,
-          "title": "huangserva/3DCellForge",
-          "stars": 2128,
-          "language": "JavaScript"
+          "title": "vercel-labs/zero",
+          "stars": 2493,
+          "language": "C"
         },
         {
           "rank": 5,
-          "title": "vercel-labs/zero",
-          "stars": 2025,
-          "language": "C"
+          "title": "huangserva/3DCellForge",
+          "stars": 2215,
+          "language": "JavaScript"
         },
         {
           "rank": 6,
           "title": "yetone/native-feel-skill",
-          "stars": 1303,
+          "stars": 1333,
           "language": ""
         },
         {
           "rank": 7,
-          "title": "HermannBjorgvin/Clawdmeter",
-          "stars": 1171,
-          "language": "C"
-        },
-        {
-          "rank": 8,
           "title": "simonlin1212/a-stock-data",
-          "stars": 1165,
+          "stars": 1333,
           "language": ""
         },
         {
+          "rank": 8,
+          "title": "HermannBjorgvin/Clawdmeter",
+          "stars": 1200,
+          "language": "C"
+        },
+        {
           "rank": 9,
-          "title": "TencentARC/Pixal3D",
-          "stars": 992,
+          "title": "facebookresearch/vggt-omega",
+          "stars": 1116,
           "language": "Python"
         },
         {
           "rank": 10,
-          "title": "ywnd1144/Gopay_plus_automatic",
-          "stars": 926,
+          "title": "TencentARC/Pixal3D",
+          "stars": 1056,
           "language": "Python"
         }
       ]
@@ -212,43 +212,43 @@
       "items": [
         {
           "rank": 1,
-          "title": "Don't answer the first question"
+          "title": "The Quiet Renovation at Bitwarden"
         },
         {
           "rank": 2,
-          "title": "Researcher says Microsoft secretly built a backdoor into BitLocker"
+          "title": "Comprehensive Response to Bambu's AGPLv3 Violations"
         },
         {
           "rank": 3,
-          "title": "New design for the FreeBSD website"
+          "title": "Introducing Casuarina Linux: A glibc-Based Chimera Linux Derivative"
         },
         {
           "rank": 4,
-          "title": "Native all the way, until you need text"
+          "title": "Haiku OS runs on M1 Macs now"
         },
         {
           "rank": 5,
-          "title": "Fits on a Floppy - A Manifesto for Small Software"
+          "title": "De‐bloating Javascript"
         },
         {
           "rank": 6,
-          "title": "The occasional `ECONNRESET`"
+          "title": "Programming as Theory Building (1985)"
         },
         {
           "rank": 7,
-          "title": "Coding on Paper"
+          "title": "Spork: A posix_spawn you can use as a fork"
         },
         {
           "rank": 8,
-          "title": "May I recommend eww for Emacs’s innovative UI?"
+          "title": "Researcher says Microsoft secretly built a backdoor into BitLocker"
         },
         {
           "rank": 9,
-          "title": "Reviewing so called Pull Requests at $dayjob"
+          "title": "CISA Admin Leaked AWS GovCloud Keys on Github"
         },
         {
           "rank": 10,
-          "title": "What are you doing this week?"
+          "title": "A 16-byte x86 demo: Matrix rain with sound"
         }
       ]
     },
@@ -257,49 +257,50 @@
       "items": [
         {
           "rank": 1,
-          "title": "Is there a way to set \"Session ID\" when using Azure.Monitor.OpenTelemetry.AspNetCore",
-          "answers": 2,
+          "title": "Chessboard layout, fill parent and remain perfect square",
+          "answers": 0,
           "tags": [
-            ".net",
-            "azure",
-            "azure-application-insights"
+            "javascript",
+            "html",
+            "css"
           ]
         },
         {
           "rank": 2,
-          "title": "how to make sure compilation hapens on my external hdd?",
+          "title": "What is the easiest way to parse an INI file in Java?",
           "answers": 13,
           "tags": [
-            "c++"
+            "java",
+            "parsing",
+            "ini"
           ]
         },
         {
           "rank": 3,
-          "title": "ERR_BLOCKED_BY_ORB with puppeteer",
-          "answers": 9,
+          "title": "How can I get CTRL+K CTRL+E to work in terminal",
+          "answers": 2,
           "tags": [
-            "node.js",
-            "request",
-            "cors"
+            "visual-studio-code",
+            "terminal",
+            "windows-subsystem-for-linux"
           ]
         },
         {
           "rank": 4,
-          "title": "GCP DMS PostgreSQL FULL_DUMP fails after ~3h30 with generic failed to sync all databases",
+          "title": "How to generate dynamic SEO meta tags for online course pages in Next.js?",
           "answers": 0,
           "tags": [
-            "postgresql",
-            "database-migration",
-            "google-cloud-sql"
+            "next.js"
           ]
         },
         {
           "rank": 5,
-          "title": "How to handle dimension mapping during QuickBooks to Dynamics 365 Business Central migration?",
+          "title": "JS Express Backend! Is there any way to make all of this more compact or more reuseable?",
           "answers": 0,
           "tags": [
-            "microsoft-dynamics",
-            "quickbooks"
+            "javascript",
+            "node.js",
+            "express"
           ]
         }
       ]
@@ -309,30 +310,28 @@
       "items": [
         {
           "rank": 1,
-          "title": "Which host key algorithm is best to use for SSH?",
-          "answers": 4,
+          "title": "Is there a list of easy-to-read and easy-to-use secure coding practices?",
+          "answers": 0,
           "tags": [
-            "encryption",
-            "ssh",
-            "rsa"
+            "secure-coding"
           ]
         },
         {
           "rank": 2,
-          "title": "VM Hosting requirement for a Virtual Terminal application in SAQ-C-VT",
-          "answers": 1,
+          "title": "Supply chain risks for OS packages",
+          "answers": 3,
           "tags": [
-            "pci-dss"
+            "operating-systems",
+            "package-manager"
           ]
         },
         {
           "rank": 3,
-          "title": "avoiding plaintext on the hard drive",
-          "answers": 1,
+          "title": "Does the yellowkey exploit work against bitlocker with PIN only, no TPM",
+          "answers": 2,
           "tags": [
-            "encryption",
-            "gnupg",
-            "decryption"
+            "windows",
+            "bitlocker"
           ]
         }
       ]
@@ -342,31 +341,32 @@
       "items": [
         {
           "rank": 1,
-          "title": "What is the difference between prompt tuning and prefix tuning?",
-          "answers": 2,
+          "title": "Can a neural net model a mixed-strategy Nash equilibrium?",
+          "answers": 1,
           "tags": [
-            "deep-learning",
-            "fine-tuning",
-            "pretrained-models"
+            "neural-networks",
+            "game-ai",
+            "game-theory"
           ]
         },
         {
           "rank": 2,
-          "title": "How to train a model to predict the number of people at a certain bus stop before they cumulate in large numbers?",
+          "title": "How to use RL on a robotic moving arm?",
           "answers": 1,
           "tags": [
-            "machine-learning",
-            "ai-design",
-            "prediction"
+            "reinforcement-learning",
+            "deep-rl",
+            "proximal-policy-optimization"
           ]
         },
         {
           "rank": 3,
-          "title": "Can MAX ensure maximum minimum gain by using minimax once at game start?",
-          "answers": 1,
+          "title": "How does one find top k embedding vectors such that they are similar to one particular vector and dissimilar to another?",
+          "answers": 2,
           "tags": [
-            "minimax",
-            "zero-sum-games"
+            "machine-learning",
+            "word-embedding",
+            "word2vec"
           ]
         }
       ]
@@ -376,28 +376,31 @@
       "items": [
         {
           "rank": 1,
-          "title": "How to get zsh to not treat \"word\" as literal in \"${var:?word}\"",
-          "answers": 1,
+          "title": "How can I disable usb autosuspend for a given particular device or all usb",
+          "answers": 2,
           "tags": [
-            "zsh"
+            "fedora",
+            "usb",
+            "powertop"
           ]
         },
         {
           "rank": 2,
-          "title": "Changing the theme for default windows in Awesome WM",
-          "answers": 1,
+          "title": "Build GIMP source code on Linux Mint 21.3 machine",
+          "answers": 0,
           "tags": [
-            "awesome"
+            "linux",
+            "compiling",
+            "flatpak"
           ]
         },
         {
           "rank": 3,
-          "title": "Open all files from find command",
-          "answers": 2,
+          "title": "fish: pip command return permission error",
+          "answers": 1,
           "tags": [
-            "linux",
-            "find",
-            "geany"
+            "fish",
+            "pip"
           ]
         }
       ]
@@ -408,63 +411,63 @@
     "items": [
       {
         "rank": 1,
-        "title": "英国央行官员格林表示，各国央行不能想当然认为伊朗战事带来的影响只是暂时的",
-        "ctime": "1779103333",
-        "intro": "英国央行货币政策委员梅根・格林表示，各国央行不能想当然认为伊朗局势冲突带来的通胀冲击只是暂时性的，政策制定者也不必等冲击影响全部显现后，再敲定利率政策立场。"
+        "title": "丁薛祥会见俄罗斯第一副总理曼图罗夫",
+        "ctime": "1779186600",
+        "intro": "新华社北京5月19日电 中共中央政治局常委、国务院副总理丁薛祥19日在北京会见俄罗斯第一副总理曼图罗夫。 丁薛祥表示，在习近平主席和普京总统战略引领下..."
       },
       {
         "rank": 2,
-        "title": "中天期货:原油短线反弹 白银继续大跌",
-        "ctime": "1779102434",
-        "intro": "热点品种分析 一、商品指数 二、股指 中国上证综指5月18日（周一）收盘下跌3.86点，跌幅0.09%，报4131.53点； 中国深证成指5月18日（周一）收盘"
+        "title": "瑞典宣布40亿美元国防投入 萨博股价大涨5%",
+        "ctime": "1779186559",
+        "intro": "核心要点瑞典敲定 40 亿美元军购大单，向法国采购四艘海军战舰，防空战力实现翻倍增长瑞典首相表示，这是该国自上世纪 80 年代以来规模最大的一笔国防投资欧洲军工"
       },
       {
         "rank": 3,
-        "title": "中天策略:5月18日市场分析",
-        "ctime": "1779101564",
-        "intro": ""
+        "title": "特朗普上季度交易超5000万美元“七巨头”股票：增持苹果与谷歌，抛售特斯拉",
+        "ctime": "1779186033",
+        "intro": "一份新的伦理申报文件显示，特朗普总统在 2026 年第一季度对 “七巨头” 科技股进行了 94 笔交易，即便在他频繁会见并时常为这些顶尖科技企业站台期间..."
       },
       {
         "rank": 4,
-        "title": "丁薛祥在调研算力网建设时强调 加快构建全国一体化算力网 赋能经济社会高质量发展",
-        "ctime": "1779100200",
-        "intro": "新华社呼和浩特5月18日电（记者齐中熙）近日，中共中央政治局常委、国务院副总理丁薛祥先后在北京、河北、内蒙古调研算力网建设。"
+        "title": "谷歌联合黑石成立TPU算力云服务商",
+        "ctime": "1779185564",
+        "intro": "据知情人士透露，谷歌集团正联合黑石集团组建一家全新云计算公司，专门面向人工智能研发企业对外租赁谷歌自研 张量处理器（TPU） 算力资源。"
       },
       {
         "rank": 5,
-        "title": "学界紧急教改：培养适配人工智能时代的新一代会计人才",
-        "ctime": "1779100187",
-        "intro": "有教授坦言 “愈发跟不上时代”，入行岗位需求、注册会计师执业法规双双变革，各大高校加速课程革新 内容速览 基础会计工作逐步被人工智能自动化替代..."
+        "title": "洁丽雅再发声明",
+        "ctime": "1779185411",
+        "intro": "新京报记者 俞金旻 编辑 王进雨校对 穆祥桐 5月19日，洁丽雅再发声明： 现将相关鉴定、材料统一公示备查。 各类证明办理流程繁琐、周期较长..."
       },
       {
         "rank": 6,
-        "title": "长鑫科技半年500亿，是怎么赚出来的？",
-        "ctime": "1779100140",
-        "intro": "近期一则消息，震撼了整个半导体行业。 一个叫做“长鑫科技”的企业，今年一季度，归母净利润冲到了247.6亿；招股书还披露，预计上半年营收1100亿至1200亿元"
+        "title": "显卡定价尘埃落定：这家初创企业将英伟达芯片打造成稳健优质抵押资产",
+        "ctime": "1779185408",
+        "intro": "人工智能热潮席卷之下，大批新建电站、芯片与数据中心相继落地，与此同时，一套更为隐性的配套金融体系也应运而生，为高价硬件资产抵押贷款业务搭建起可行渠道。"
       },
       {
         "rank": 7,
-        "title": "特斯拉首席执行官马斯克：无人驾驶无人监管车辆今年将在美国大范围普及",
-        "ctime": "1779100089",
-        "intro": "特斯拉首席执行官埃隆・马斯克于周一表示，继无安全员值守的全自动自动驾驶车辆已在得克萨斯州落地运营后，他预计这类车辆将于今年下半年在美国进一步普及。"
+        "title": "老百姓、益丰药房被约谈，串换套保问题将直击利润率",
+        "ctime": "1779185320",
+        "intro": "来源：市值风云 一季度止跌回升势头恐生变。 作者 |螳螂虾 编辑 |小白 近日，国家医保局公告，针对湖南怀化、邵阳、衡阳、株洲及河南郑州等地定点零售药店将化妆品"
       },
       {
         "rank": 8,
-        "title": "瑞安航空预警票价走弱、旅客延后订票，股价应声下跌",
-        "ctime": "1779100020",
-        "intro": "公司预计截至 6 月的季度机票票价将低于去年同期 爱尔兰廉价航司瑞安航空发布预警，临近暑期出行旺季，机票定价承压、旅客普遍临近出行才订票，叠加燃油成本飙升..."
+        "title": "马斯克起诉OpenAI败诉，奥特曼赢得官司",
+        "ctime": "1779185227",
+        "intro": "法官认同陪审团裁定：马斯克相关诉求已过诉讼时效 陪审团驳回了埃隆・马斯克针对 OpenAI 的各项诉讼主张，在这场硅谷顶尖人物的恩怨纷争中..."
       },
       {
         "rank": 9,
-        "title": "英美资源集团拟最高 38.75亿美元出售澳大利亚炼钢煤炭资产",
-        "ctime": "1779099749",
-        "intro": "交易预计 2027 年一季度完成，自此彻底退出炼钢煤炭业务 内容速览 英美资源集团已达成协议，将旗下澳大利亚炼钢煤炭资产出售给迪尔玛矿业，交易总价最高达 38."
+        "title": "亚德诺半导体洽谈以15亿美元收购AI电源芯片初创企业",
+        "ctime": "1779185006",
+        "intro": "据知情人士透露，芯片厂商亚德诺半导体已进入深度谈判阶段，计划斥资约 15 亿美元收购初创企业赋能半导体，这笔交易凸显出市场对适配高功耗 AI..."
       },
       {
         "rank": 10,
-        "title": "特斯拉计划年内在全美推广完全自动驾驶",
-        "ctime": "1779099460",
-        "intro": "特斯拉首席执行官马斯克18日通过视频连线出席在特拉维夫举行的智能出行峰会时表示，继在德克萨斯州落地之后，特斯拉计划于今年晚些时候在全美范围内扩大取消人类安全监护"
+        "title": "毕马威携手Anthropic重塑全球税务与咨询服务平台",
+        "ctime": "1779184435",
+        "intro": "这家四大会计师事务所将把克劳德大模型嵌入承载绝大多数非审计业务的服务平台 内容速览 毕马威与人工智能企业Anthropic达成合作，将克劳德人工智能工具全面接入"
       }
     ]
   }
