@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-05-19T18:06:50.551939+00:00",
-  "source": "alternative.me + 新浪财经 + RSS feeds",
+  "timestamp": "2026-05-19T21:17:56.699323Z",
+  "source": "RSS feeds (CoinTelegraph + CryptoNews + Decrypt)",
   "fear_greed": {
     "value": 25,
     "classification": "Extreme Fear"
@@ -8,91 +8,108 @@
   "results": {
     "BTC": {
       "signal": "🟡 中性",
-      "score": 40.0,
-      "raw_score": 50,
-      "fgi_adjust": -10.0,
-      "confidence": 20,
+      "score": 42.0,
+      "raw_score": 50.0,
+      "fgi_adjust": -8,
+      "confidence": 50,
       "fgi_value": 25,
       "fgi_class": "Extreme Fear",
-      "total_articles": 0,
-      "samples": []
+      "total_articles": 2,
+      "samples": [
+        {
+          "title": "Data shows Bitcoin dip buyers waiting for lower prices: Is $70K BTC’s next stop?",
+          "sentiment": "bearish"
+        },
+        {
+          "title": "Bitcoin price stays under $77K as US bond yields near 20-year highs",
+          "sentiment": "bullish"
+        }
+      ]
     },
     "ETH": {
       "signal": "🟡 中性",
-      "score": 40.0,
-      "raw_score": 50,
-      "fgi_adjust": -10.0,
-      "confidence": 20,
+      "score": 49.6,
+      "raw_score": 57.6,
+      "fgi_adjust": -8,
+      "confidence": 41,
       "fgi_value": 25,
       "fgi_class": "Extreme Fear",
       "total_articles": 0,
-      "samples": []
+      "note": "使用整体加密市场情绪"
     },
     "BNB": {
       "signal": "🟡 中性",
-      "score": 40.0,
-      "raw_score": 50,
-      "fgi_adjust": -10.0,
-      "confidence": 20,
+      "score": 49.6,
+      "raw_score": 57.6,
+      "fgi_adjust": -8,
+      "confidence": 41,
       "fgi_value": 25,
       "fgi_class": "Extreme Fear",
       "total_articles": 0,
-      "samples": []
-    },
-    "SOL": {
-      "signal": "🟡 中性",
-      "score": 40.0,
-      "raw_score": 50,
-      "fgi_adjust": -10.0,
-      "confidence": 20,
-      "fgi_value": 25,
-      "fgi_class": "Extreme Fear",
-      "total_articles": 0,
-      "samples": []
+      "note": "使用整体加密市场情绪"
     },
     "NVDA": {
       "signal": "🟡 中性",
-      "score": 40.0,
-      "raw_score": 50,
-      "fgi_adjust": -10.0,
+      "score": 72.5,
       "confidence": 20,
       "fgi_value": 25,
-      "fgi_class": "Extreme Fear",
       "total_articles": 0,
-      "samples": []
+      "note": "使用整体市场情绪"
     },
     "TSLA": {
-      "signal": "🟡 中性",
-      "score": 40.0,
-      "raw_score": 50,
-      "fgi_adjust": -10.0,
-      "confidence": 20,
+      "signal": "🔴 偏空",
+      "score": 30.9,
+      "raw_score": 33.3,
+      "confidence": 33,
       "fgi_value": 25,
-      "fgi_class": "Extreme Fear",
-      "total_articles": 0,
-      "samples": []
+      "total_articles": 3,
+      "samples": [
+        {
+          "title": "South Korean funeral company records $33M unrealized loss on leveraged ETH ETFs",
+          "sentiment": "bearish"
+        },
+        {
+          "title": "About 10% of Americans used crypto in 2025, highest level since 2022: Fed",
+          "sentiment": "neutral"
+        }
+      ]
     },
     "AAPL": {
       "signal": "🟡 中性",
-      "score": 40.0,
-      "raw_score": 50,
-      "fgi_adjust": -10.0,
+      "score": 72.5,
       "confidence": 20,
       "fgi_value": 25,
-      "fgi_class": "Extreme Fear",
       "total_articles": 0,
-      "samples": []
+      "note": "使用整体市场情绪"
     },
     "SPY": {
-      "signal": "🟡 中性",
-      "score": 40.0,
-      "raw_score": 50,
-      "fgi_adjust": -10.0,
-      "confidence": 20,
+      "signal": "🔴 偏空",
+      "score": 20.9,
+      "raw_score": 23.3,
+      "confidence": 67,
       "fgi_value": 25,
-      "fgi_class": "Extreme Fear",
-      "total_articles": 0,
-      "samples": []
+      "total_articles": 3,
+      "samples": [
+        {
+          "title": "XRP price risks 50% drop despite 9-day ETF inflow streak",
+          "sentiment": "bearish"
+        },
+        {
+          "title": "South Korean funeral company records $33M unrealized loss on leveraged ETH ETFs",
+          "sentiment": "bearish"
+        }
+      ]
     }
+  },
+  "methodology": "RSS新闻情绪关键词分析 + Fear&Greed指数加权",
+  "rss_feeds": {
+    "crypto": [
+      "https://cointelegraph.com/rss",
+      "https://cryptonews.com/feed/",
+      "https://decrypt.co/feed"
+    ],
+    "stocks": [
+      "https://cointelegraph.com/rss"
+    ]
   }
 }
