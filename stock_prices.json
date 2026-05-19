@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-05-19T20:58:30.539725+00:00",
+  "last_update": "2026-05-19T22:20:03.443182+00:00",
   "source": "Yahoo Finance",
   "data": [
     {
@@ -32,7 +32,7 @@
       "current_price": 273.0,
       "price_change_percentage_24h": -1.08,
       "market_cap": 0,
-      "volume": 28192429
+      "volume": 29736090
     },
     {
       "symbol": "AAPL",
@@ -56,7 +56,7 @@
       "current_price": 387.66,
       "price_change_percentage_24h": -2.34,
       "market_cap": 4696673091584,
-      "volume": 32231851
+      "volume": 38640994
     },
     {
       "symbol": "AMZN",
@@ -96,7 +96,7 @@
       "current_price": 480.46,
       "price_change_percentage_24h": -1.62,
       "market_cap": 1036281970688,
-      "volume": 4442366
+      "volume": 5574031
     },
     {
       "symbol": "JPM",
@@ -112,7 +112,7 @@
       "current_price": 329.91,
       "price_change_percentage_24h": -0.82,
       "market_cap": 627404308480,
-      "volume": 5967185
+      "volume": 12855509
     },
     {
       "symbol": "UNH",
